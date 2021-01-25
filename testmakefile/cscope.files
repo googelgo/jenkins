@@ -1,0 +1,17 @@
+./make.h
+./inc/osxprot.h
+./inc/osxinc.h
+./inc/srmmemi.h
+./inc/srmmem.h
+./inc/osix.h
+./inc/macro.h
+./inc/proto.h
+./inc/osxsys.h
+./inc/utlmacro.h
+./inc/osxstd.h
+./src/taska.c
+./src/osixpth.c
+./src/main.c
+./src/taskb.c
+./src/utility.c
+./src/srmmem.c

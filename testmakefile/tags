@@ -1,0 +1,662 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AF_INET	inc/utlmacro.h	294;"	d
+AF_INET	inc/utlmacro.h	63;"	d
+AF_INET6	inc/utlmacro.h	295;"	d
+AF_INET6	inc/utlmacro.h	64;"	d
+ARCH_SYS_C	src/utility.c	2;"	d	file:
+ARCH_WATCHDOG_TIMER_C	src/main.c	3;"	d	file:
+ARG_LIST	inc/osix.h	130;"	d
+AR_UINT8	inc/macro.h	/^typedef long long unsigned int AR_UINT8;$/;"	t
+ATOI	inc/utlmacro.h	172;"	d
+ATOI	inc/utlmacro.h	19;"	d
+ATOL	inc/utlmacro.h	185;"	d
+ATOL	inc/utlmacro.h	20;"	d
+BOOL1	inc/macro.h	/^typedef char            BOOL1;$/;"	t
+BOOLEAN	inc/macro.h	/^typedef char            BOOLEAN;$/;"	t
+BYTE	inc/macro.h	/^typedef UINT1           BYTE;$/;"	t
+BlkDbg	inc/srmmemi.h	/^    tMemBlkDbg BlkDbg;$/;"	m	struct:__anon2
+BufList	inc/srmmemi.h	/^        tCRU_SLL  BufList;$/;"	m	struct:MEM_FREE_POOL_REC
+CAMEO_ARCH_MACRO_H	inc/macro.h	2;"	d
+CAMEO_ARCH_MAIN_H	inc/proto.h	2;"	d
+CEIL	inc/utlmacro.h	204;"	d
+CHR1	inc/macro.h	/^typedef char            CHR1;$/;"	t
+CM_ISS_PRI_TO_OS_PRI	inc/osix.h	73;"	d
+CM_OSIX_DEFAULT_LARGE_STACK_SIZE	inc/osxsys.h	47;"	d
+CM_SNMP_COUNTER64_TO_UINT8	inc/utlmacro.h	423;"	d
+CONST	inc/macro.h	31;"	d
+CRU_SLL	inc/srmmemi.h	/^typedef struct CRU_SLL {$/;"	s
+CRU_SLL_NODE	inc/srmmemi.h	/^typedef struct CRU_SLL_NODE {$/;"	s
+CmFileModifyTime	src/osixpth.c	/^CmFileModifyTime (INT4 i4Fd)$/;"	f
+CmFsapDumpTask	src/osixpth.c	/^INT4 CmFsapDumpTask (UINT4  u4Id)$/;"	f
+CmFsapSetTaskPRI	src/osixpth.c	/^CmFsapSetTaskPRI (UINT4  u4Id, UINT4  u4Pri)$/;"	f
+CmFsapSetTaskPRIByName	src/osixpth.c	/^CmFsapSetTaskPRIByName (UINT1 *pu1Name, UINT4  u4Pri)$/;"	f
+CmFsapShowMsgQue	src/osixpth.c	/^CmFsapShowMsgQue (UINT1 au1QName[])$/;"	f
+CmOsixGetMicroTimeTick	src/osixpth.c	/^CmOsixGetMicroTimeTick (VOID)$/;"	f
+CmOsixSemDebug	src/osixpth.c	/^VOID CmOsixSemDebug(VOID)$/;"	f
+CmOsixTskIdSelfWithLock	src/osixpth.c	/^CmOsixTskIdSelfWithLock (tOsixTaskId * pTskId)   $/;"	f
+CmOsixTskUsDelay	src/osixpth.c	/^CmOsixTskUsDelay (UINT4 u4Duration)$/;"	f
+DAYS_IN_YEAR	inc/utlmacro.h	274;"	d
+DBL8	inc/macro.h	/^typedef double          DBL8;$/;"	t
+DEBUG	inc/macro.h	37;"	d
+DEBUG_FLAG	inc/macro.h	36;"	d
+DebugShowMemPoolDetails	src/srmmem.c	/^DebugShowMemPoolDetails(VOID)$/;"	f
+ENTRY_FN	src/main.c	34;"	d	file:
+EXP	inc/utlmacro.h	207;"	d
+EXPORT	inc/osxstd.h	115;"	d
+EXPORT	inc/osxstd.h	82;"	d
+Event2TaskASend	src/taska.c	/^INT4 Event2TaskASend(VOID)$/;"	f
+Event2TaskBSend	src/taskb.c	/^INT4 Event2TaskBSend(VOID)$/;"	f
+EvtCond	src/osixpth.c	/^    pthread_cond_t      EvtCond;$/;"	m	struct:OsixRscTskStruct	file:
+EvtMutex	src/osixpth.c	/^    pthread_mutex_t     EvtMutex;$/;"	m	struct:OsixRscTskStruct	file:
+FAILURE	inc/macro.h	34;"	d
+FALSE	inc/osxstd.h	107;"	d
+FCLOSE	inc/utlmacro.h	78;"	d
+FLOOR	inc/utlmacro.h	203;"	d
+FLT4	inc/macro.h	/^typedef float           FLT4;$/;"	t
+FOPEN	inc/utlmacro.h	77;"	d
+FREAD	inc/utlmacro.h	80;"	d
+FSAP_ASSERT	inc/utlmacro.h	67;"	d
+FSAP_HIGH_PRIO	inc/osix.h	64;"	d
+FSAP_LOW_PRIO	inc/osix.h	63;"	d
+FSAP_OFFSETOF	inc/osxstd.h	73;"	d
+FSAP_OFFSETOF	inc/osxstd.h	75;"	d
+FSAP_STR2_U8	inc/utlmacro.h	401;"	d
+FSAP_U8_2STR	inc/utlmacro.h	404;"	d
+FSAP_U8_ADD	inc/utlmacro.h	373;"	d
+FSAP_U8_ASSIGN	inc/utlmacro.h	420;"	d
+FSAP_U8_ASSIGN_HI	inc/utlmacro.h	412;"	d
+FSAP_U8_ASSIGN_LO	inc/utlmacro.h	411;"	d
+FSAP_U8_CLR	inc/utlmacro.h	410;"	d
+FSAP_U8_CMP	inc/utlmacro.h	414;"	d
+FSAP_U8_DEC	inc/utlmacro.h	364;"	d
+FSAP_U8_DIV	inc/utlmacro.h	398;"	d
+FSAP_U8_FETCH_HI	inc/utlmacro.h	408;"	d
+FSAP_U8_FETCH_LO	inc/utlmacro.h	407;"	d
+FSAP_U8_INC	inc/utlmacro.h	355;"	d
+FSAP_U8_MUL	inc/utlmacro.h	395;"	d
+FSAP_U8_SUB	inc/utlmacro.h	384;"	d
+FS_DBL_MAX	inc/utlmacro.h	212;"	d
+FS_DBL_MIN	inc/utlmacro.h	210;"	d
+FS_FLT_MAX	inc/utlmacro.h	213;"	d
+FS_FLT_MIN	inc/utlmacro.h	211;"	d
+FS_LONG	inc/macro.h	/^typedef signed long     FS_LONG;$/;"	t
+FS_UINT8	inc/utlmacro.h	/^} FS_UINT8;$/;"	t	typeref:struct:__anon8
+FS_ULONG	inc/macro.h	/^typedef unsigned long   FS_ULONG;$/;"	t
+FWRITE	inc/utlmacro.h	79;"	d
+FileClose	src/osixpth.c	/^FileClose (INT4 i4Fd)$/;"	f
+FileDelete	src/osixpth.c	/^FileDelete (const UINT1 *pu1FileName)$/;"	f
+FileOpen	src/osixpth.c	/^FileOpen (const UINT1 *pu1FileName, INT4 i4InMode)$/;"	f
+FileRead	src/osixpth.c	/^FileRead (INT4 i4Fd, CHR1 * pBuf, UINT4 i4Count)$/;"	f
+FileSeek	src/osixpth.c	/^FileSeek (INT4 i4Fd, INT4 i4Offset, INT4 i4Whence)$/;"	f
+FileSize	src/osixpth.c	/^FileSize (INT4 i4Fd)$/;"	f
+FileStat	src/osixpth.c	/^FileStat (const CHR1 * pc1FileName)$/;"	f
+FileTruncate	src/osixpth.c	/^FileTruncate (INT4 i4Fd, INT4 i4Size)$/;"	f
+FileWrite	src/osixpth.c	/^FileWrite (INT4 i4Fd, const CHR1 * pBuf, UINT4 i4Count)$/;"	f
+Fsap2Start	src/osixpth.c	/^Fsap2Start ()$/;"	f
+FsapShowQue	src/osixpth.c	/^FsapShowQue (UINT1 au1QName[], UINT1 *pu1Result)$/;"	f
+FsapShowQueData	src/osixpth.c	/^FsapShowQueData (tPthreadQ * pPthreadQ, UINT1 *pu1Result)$/;"	f
+FsapShowSem	src/osixpth.c	/^FsapShowSem (UINT1 au1SemName[], UINT1 *pu1Result, UINT4 *pu4NextIdx)$/;"	f
+FsapShowTCB	src/osixpth.c	/^FsapShowTCB (UINT1 *pu1Result)$/;"	f
+FsapShowTask	src/osixpth.c	/^FsapShowTask (UINT1 au1TskName[], UINT1 *pu1Result)$/;"	f
+FsapTrace	src/osixpth.c	/^FsapTrace (UINT4 u4Flag, UINT4 u4Value, UINT4 *pu4TrcLvl)$/;"	f
+HOURS_IN_DAY	inc/utlmacro.h	279;"	d
+INET_ADDR	inc/utlmacro.h	192;"	d
+INET_ADDR	inc/utlmacro.h	21;"	d
+INET_ATON6	inc/utlmacro.h	201;"	d
+INET_NTOA	inc/utlmacro.h	193;"	d
+INET_NTOA	inc/utlmacro.h	22;"	d
+INET_NTOA6	inc/utlmacro.h	200;"	d
+INET_NTOP	inc/utlmacro.h	195;"	d
+INET_NTOP	inc/utlmacro.h	23;"	d
+INET_PTON	inc/utlmacro.h	197;"	d
+INET_PTON	inc/utlmacro.h	24;"	d
+INT1	inc/macro.h	/^typedef signed char     INT1;$/;"	t
+INT2	inc/macro.h	/^typedef signed short    INT2;$/;"	t
+INT4	inc/macro.h	/^typedef signed int      INT4;$/;"	t
+INVALID_POOL_ID	inc/srmmem.h	39;"	d
+ISALNUM	inc/utlmacro.h	87;"	d
+ISALPHA	inc/utlmacro.h	26;"	d
+ISALPHA	inc/utlmacro.h	86;"	d
+ISDIGIT	inc/utlmacro.h	25;"	d
+ISDIGIT	inc/utlmacro.h	85;"	d
+ISSPACE	inc/utlmacro.h	27;"	d
+ISSPACE	inc/utlmacro.h	88;"	d
+ISUPPER	inc/utlmacro.h	190;"	d
+ISXDIGIT	inc/utlmacro.h	186;"	d
+ISXDIGIT	inc/utlmacro.h	28;"	d
+IS_ASCII	inc/utlmacro.h	187;"	d
+IS_LEAP	inc/utlmacro.h	273;"	d
+KMALLOC_ALLOC_LIMIT	inc/utlmacro.h	114;"	d
+LOG	inc/utlmacro.h	205;"	d
+MEMCMP	inc/utlmacro.h	169;"	d
+MEMCMP	inc/utlmacro.h	30;"	d
+MEMCPY	inc/utlmacro.h	168;"	d
+MEMCPY	inc/utlmacro.h	31;"	d
+MEMMOVE	inc/utlmacro.h	171;"	d
+MEMSET	inc/utlmacro.h	170;"	d
+MEMSET	inc/utlmacro.h	35;"	d
+MEM_ALIGN	inc/srmmemi.h	171;"	d
+MEM_ALIGN_BYTE	inc/srmmemi.h	172;"	d
+MEM_CALLOC	inc/utlmacro.h	116;"	d
+MEM_CALLOC	inc/utlmacro.h	29;"	d
+MEM_DBG	inc/srmmemi.h	166;"	d
+MEM_DBG	inc/srmmemi.h	168;"	d
+MEM_DBG_ALWAYS	inc/srmmem.h	33;"	d
+MEM_DBG_CRITICAL	inc/srmmem.h	31;"	d
+MEM_DBG_FATAL	inc/srmmem.h	32;"	d
+MEM_DBG_FLAG	inc/srmmemi.h	162;"	d
+MEM_DBG_INFO_LEN	inc/srmmemi.h	43;"	d
+MEM_DBG_INFO_SZ	inc/srmmemi.h	42;"	d
+MEM_DBG_MAJOR	inc/srmmem.h	30;"	d
+MEM_DBG_MINOR	inc/srmmem.h	29;"	d
+MEM_DEBUG_FUNC	inc/srmmemi.h	132;"	d
+MEM_DEBUG_INFO_SIZE	inc/srmmemi.h	143;"	d
+MEM_DEBUG_INFO_SIZE	inc/srmmemi.h	145;"	d
+MEM_DEBUG_LINE	inc/srmmemi.h	136;"	d
+MEM_DEBUG_SIGNATURE	inc/srmmemi.h	125;"	d
+MEM_DEBUG_SIGNATURE_VAL	inc/srmmemi.h	107;"	d
+MEM_DEBUG_SYSTEM_DATA	inc/srmmemi.h	119;"	d
+MEM_DEBUG_TIMESTAMP	inc/srmmemi.h	122;"	d
+MEM_DEFAULT_MEMORY_TYPE	inc/srmmem.h	36;"	d
+MEM_ENTER_CS	inc/srmmemi.h	153;"	d
+MEM_FAILURE	inc/srmmem.h	26;"	d
+MEM_FREE	inc/utlmacro.h	117;"	d
+MEM_FREE	inc/utlmacro.h	32;"	d
+MEM_FREE_POOL_REC	inc/srmmemi.h	/^typedef struct MEM_FREE_POOL_REC{$/;"	s
+MEM_FREE_POOL_UNIT_COUNT	inc/srmmem.h	16;"	d
+MEM_HEAP_MEMORY_TYPE	inc/srmmem.h	37;"	d
+MEM_LEAVE_CS	inc/srmmemi.h	155;"	d
+MEM_MALLOC	inc/utlmacro.h	115;"	d
+MEM_MALLOC	inc/utlmacro.h	33;"	d
+MEM_MAX_BYTES	inc/utlmacro.h	286;"	d
+MEM_MODNAME	inc/srmmemi.h	163;"	d
+MEM_MUTEX_NAME	inc/srmmemi.h	160;"	d
+MEM_OK_BUT_NOT_ALIGNED	inc/srmmem.h	25;"	d
+MEM_POOL_GET_BLOCK_SIZE	inc/srmmemi.h	148;"	d
+MEM_POOL_GET_END_ADDR	inc/srmmemi.h	151;"	d
+MEM_POOL_GET_NUM_BLOCKS	inc/srmmemi.h	149;"	d
+MEM_POOL_GET_START_ADDR	inc/srmmemi.h	150;"	d
+MEM_PRNT	inc/srmmemi.h	170;"	d
+MEM_REALLOC	inc/utlmacro.h	34;"	d
+MEM_SUCCESS	inc/srmmem.h	24;"	d
+MEM_THRESHOLD_VAL	inc/srmmemi.h	108;"	d
+MINUTES_IN_HOUR	inc/utlmacro.h	280;"	d
+MemAllocMemBlk	inc/srmmem.h	114;"	d
+MemAllocMemBlkLeak	src/srmmem.c	/^MemAllocMemBlkLeak (tMemPoolId PoolId,$/;"	f
+MemAllocateMemBlock	inc/srmmem.h	112;"	d
+MemAllocateMemBlockLeak	src/srmmem.c	/^MemAllocateMemBlockLeak (tMemPoolId PoolId, UINT1 **ppu1Block,$/;"	f
+MemChunkCfg	inc/srmmem.h	/^        tMemChunkCfg MemChunkCfg[1];$/;"	m	struct:MemTypeCfg
+MemChunkCfg	inc/srmmem.h	/^typedef struct MemChunkCfg$/;"	s
+MemCreateMemPool	inc/srmmem.h	45;"	d
+MemCreateMemPoolDbg	src/srmmem.c	/^MemCreateMemPoolDbg (UINT4 u4BlockSize,$/;"	f
+MemDeleteMemPool	src/srmmem.c	/^MemDeleteMemPool (tMemPoolId PoolId)$/;"	f
+MemGetFreePoolId	src/srmmem.c	/^MemGetFreePoolId (void)$/;"	f
+MemGetFreeUnits	src/srmmem.c	/^MemGetFreeUnits (UINT4 u4QueID)$/;"	f
+MemGetTotalUnits	src/srmmem.c	/^MemGetTotalUnits (UINT4 u4QueID)$/;"	f
+MemInitMemPool	src/srmmem.c	/^MemInitMemPool (tMemPoolCfg * pMemPoolCfg)$/;"	f
+MemIsValidBlock	src/srmmem.c	/^MemIsValidBlock (tMemPoolId PoolId, UINT1 *pu1Block)$/;"	f
+MemIsValidMemoryType	src/srmmem.c	/^MemIsValidMemoryType (UINT4 u4Type)$/;"	f
+MemLeak	src/srmmem.c	/^MemLeak (tMemPoolId PoolId)$/;"	f
+MemMutex	src/srmmem.c	/^static tOsixSemId   MemMutex;    \/* Mutex used within Mem *\/$/;"	v	file:
+MemPoolCfg	inc/srmmem.h	/^typedef struct MemPoolCfg$/;"	s
+MemPoolInitVar	src/srmmem.c	/^MemPoolInitVar (tMemPoolCfg * pMemPoolCfg)$/;"	f
+MemPoolInitializeFreePoolList	src/srmmem.c	/^MemPoolInitializeFreePoolList (void)$/;"	f
+MemPoolValidateCreateParam	src/srmmem.c	/^MemPoolValidateCreateParam (UINT4 u4BlockSize,$/;"	f
+MemPrintMemPoolContent	src/srmmem.c	/^UINT4 MemPrintMemPoolContent (tMemPoolId PoolId)$/;"	f
+MemPrintMemPoolStatistics	src/srmmem.c	/^MemPrintMemPoolStatistics (tMemPoolId PoolId)$/;"	f
+MemReleaseMemBlock	inc/srmmem.h	129;"	d
+MemReleaseMemBlockDbg	src/srmmem.c	/^MemReleaseMemBlockDbg (tMemPoolId PoolId, UINT1 *pu1Block, $/;"	f
+MemSetDbg	src/srmmem.c	/^MemSetDbg (UINT4 u4Val)$/;"	f
+MemShutDownMemPool	src/srmmem.c	/^MemShutDownMemPool ()$/;"	f
+MemTypeCfg	inc/srmmem.h	/^typedef struct MemTypeCfg$/;"	s
+MemTypes	inc/srmmem.h	/^        tMemTypeCfg MemTypes [1];$/;"	m	struct:MemPoolCfg
+NULL	inc/osxstd.h	91;"	d
+OSIX_ALL_TRC	inc/osix.h	/^    OSIX_ALL_TRC = ~0L$/;"	e	enum:__anon4
+OSIX_BUF_TRC	inc/osix.h	/^    OSIX_BUF_TRC = 0x10,$/;"	e	enum:__anon4
+OSIX_CENTI_SECONDS	inc/osix.h	114;"	d
+OSIX_CPU_INF0	inc/osix.h	109;"	d
+OSIX_CPU_USAGE_COUNT	inc/osix.h	107;"	d
+OSIX_CPU_WAIT_TIME	inc/osix.h	110;"	d
+OSIX_DBG_CRITICAL	inc/osxsys.h	112;"	d
+OSIX_DBG_FATAL	inc/osxsys.h	113;"	d
+OSIX_DBG_MAJOR	inc/osxsys.h	111;"	d
+OSIX_DBG_MINOR	inc/osxsys.h	110;"	d
+OSIX_DEFAULT_SEM_MODE	inc/osxsys.h	69;"	d
+OSIX_DEFAULT_STACK_SIZE	inc/osxsys.h	42;"	d
+OSIX_DEFAULT_TASK_MODE	inc/osxsys.h	49;"	d
+OSIX_DEF_MSG_LEN	inc/osix.h	40;"	d
+OSIX_ERR_NOTSUSP	inc/osxsys.h	86;"	d
+OSIX_ERR_NO_EVENTS	inc/osxsys.h	87;"	d
+OSIX_ERR_NO_MSG	inc/osxsys.h	88;"	d
+OSIX_ERR_NO_RSRC	inc/osxsys.h	89;"	d
+OSIX_ERR_NO_SEM	inc/osxsys.h	90;"	d
+OSIX_ERR_NO_SUCH_OBJ	inc/osxsys.h	107;"	d
+OSIX_ERR_NO_SUCH_Q	inc/osxsys.h	91;"	d
+OSIX_ERR_NO_SUCH_SEM	inc/osxsys.h	92;"	d
+OSIX_ERR_NO_SUCH_TASK	inc/osxsys.h	93;"	d
+OSIX_ERR_OS_DOES_NOT_SUPP	inc/osxsys.h	106;"	d
+OSIX_ERR_PRIORITY	inc/osxsys.h	94;"	d
+OSIX_ERR_QNF	inc/osxsys.h	95;"	d
+OSIX_ERR_Q_DELETED	inc/osxsys.h	96;"	d
+OSIX_ERR_Q_FULL	inc/osxsys.h	97;"	d
+OSIX_ERR_SEM_DELETED	inc/osxsys.h	98;"	d
+OSIX_ERR_STK_SIZE	inc/osxsys.h	99;"	d
+OSIX_ERR_SUSP	inc/osxsys.h	100;"	d
+OSIX_ERR_TASKNF	inc/osxsys.h	101;"	d
+OSIX_ERR_TASK_ACTIVATION	inc/osxsys.h	102;"	d
+OSIX_ERR_TASK_MODE	inc/osxsys.h	103;"	d
+OSIX_ERR_TIMEOUT	inc/osxsys.h	104;"	d
+OSIX_ERR_UNKNOWN	inc/osxsys.h	105;"	d
+OSIX_EVT_TRC	inc/osix.h	/^    OSIX_EVT_TRC = 0x40,$/;"	e	enum:__anon4
+OSIX_EV_ALL	inc/osxsys.h	76;"	d
+OSIX_EV_ANY	inc/osxsys.h	75;"	d
+OSIX_FAILURE	inc/osxsys.h	84;"	d
+OSIX_FALSE	inc/osix.h	55;"	d
+OSIX_FILE_AP	inc/osix.h	97;"	d
+OSIX_FILE_CR	inc/osix.h	96;"	d
+OSIX_FILE_LOG	inc/osix.h	45;"	d
+OSIX_FILE_RO	inc/osix.h	93;"	d
+OSIX_FILE_RW	inc/osix.h	95;"	d
+OSIX_FILE_SY	inc/osix.h	98;"	d
+OSIX_FILE_TR	inc/osix.h	99;"	d
+OSIX_FILE_WO	inc/osix.h	94;"	d
+OSIX_GLOBAL	inc/osxsys.h	20;"	d
+OSIX_HTONF	inc/osxstd.h	128;"	d
+OSIX_HTONF	inc/osxstd.h	135;"	d
+OSIX_HTONL	inc/osxstd.h	125;"	d
+OSIX_HTONL	inc/osxstd.h	132;"	d
+OSIX_HTONS	inc/osxstd.h	126;"	d
+OSIX_HTONS	inc/osxstd.h	133;"	d
+OSIX_LOCAL	inc/osxsys.h	21;"	d
+OSIX_LOG_METHOD	inc/osix.h	48;"	d
+OSIX_MAX_QUES	inc/osix.h	44;"	d
+OSIX_MAX_Q_MSG_LEN	inc/osix.h	41;"	d
+OSIX_MAX_SEMS	inc/osix.h	28;"	d
+OSIX_MAX_STACK_FRAMES	inc/osix.h	120;"	d
+OSIX_MAX_STACK_TRACE_FILE_SIZE	inc/osix.h	122;"	d
+OSIX_MAX_TSKS	inc/osix.h	29;"	d
+OSIX_MAX_USAGE_COUNT	inc/osix.h	108;"	d
+OSIX_MEM_FREE	inc/osix.h	104;"	d
+OSIX_MEM_INFO	inc/osix.h	102;"	d
+OSIX_MEM_TOTAL	inc/osix.h	103;"	d
+OSIX_MEM_TRC	inc/osix.h	/^    OSIX_MEM_TRC = 0x08,$/;"	e	enum:__anon4
+OSIX_MICRO_SECONDS	inc/osix.h	116;"	d
+OSIX_MILLI_SECONDS	inc/osix.h	115;"	d
+OSIX_MSG_NORMAL	inc/osxsys.h	58;"	d
+OSIX_MSG_URGENT	inc/osxsys.h	59;"	d
+OSIX_NAME_LEN	inc/osix.h	39;"	d
+OSIX_NANO_SECONDS	inc/osix.h	117;"	d
+OSIX_NO_WAIT	inc/osix.h	88;"	d
+OSIX_NO_WAIT	inc/osix.h	90;"	d
+OSIX_NO_WAIT	inc/osxsys.h	23;"	d
+OSIX_NTOHF	inc/osxstd.h	127;"	d
+OSIX_NTOHF	inc/osxstd.h	134;"	d
+OSIX_NTOHL	inc/osxstd.h	119;"	d
+OSIX_NTOHL	inc/osxstd.h	130;"	d
+OSIX_NTOHS	inc/osxstd.h	124;"	d
+OSIX_NTOHS	inc/osxstd.h	131;"	d
+OSIX_OSXPROT_H	inc/osxprot.h	12;"	d
+OSIX_PTHREAD_DEF_STACK_SIZE	inc/osix.h	35;"	d
+OSIX_PTHREAD_MIN_STACK_SIZE	inc/osix.h	34;"	d
+OSIX_QUE	inc/osix.h	53;"	d
+OSIX_QUE_TRC	inc/osix.h	/^    OSIX_QUE_TRC = 0x02,$/;"	e	enum:__anon4
+OSIX_RAND	inc/utlmacro.h	179;"	d
+OSIX_RAND	inc/utlmacro.h	36;"	d
+OSIX_RAND_MAX	inc/utlmacro.h	176;"	d
+OSIX_RAND_MAX	inc/utlmacro.h	37;"	d
+OSIX_RSC_INV	inc/osix.h	56;"	d
+OSIX_SCHED_FIFO	inc/osix.h	82;"	d
+OSIX_SCHED_OTHER	inc/osix.h	83;"	d
+OSIX_SCHED_RR	inc/osix.h	81;"	d
+OSIX_SECONDS	inc/osix.h	113;"	d
+OSIX_SEED	inc/utlmacro.h	177;"	d
+OSIX_SEED	inc/utlmacro.h	38;"	d
+OSIX_SEM	inc/osix.h	52;"	d
+OSIX_SEM_FIFO	inc/osxsys.h	66;"	d
+OSIX_SEM_PRIOR	inc/osxsys.h	67;"	d
+OSIX_SEM_TRC	inc/osix.h	/^    OSIX_SEM_TRC = 0x04,$/;"	e	enum:__anon4
+OSIX_SRAND	inc/utlmacro.h	178;"	d
+OSIX_SRAND	inc/utlmacro.h	39;"	d
+OSIX_STACK_TRACE_FILE	inc/osix.h	121;"	d
+OSIX_STACK_TRACE_MAX_FILE_NAME_LEN	inc/osix.h	123;"	d
+OSIX_STUPS	inc/osix.h	43;"	d
+OSIX_SUCCESS	inc/osxsys.h	83;"	d
+OSIX_TASK_ISR_DISABLED	inc/osxsys.h	40;"	d
+OSIX_TASK_ISR_ENABLED	inc/osxsys.h	39;"	d
+OSIX_TASK_NON_PREEMPTIVE	inc/osxsys.h	38;"	d
+OSIX_TASK_PREEMPTIVE	inc/osxsys.h	37;"	d
+OSIX_TASK_SUPERVISORY_MODE	inc/osxsys.h	33;"	d
+OSIX_TASK_TIME_SLICING_DISABLED	inc/osxsys.h	36;"	d
+OSIX_TASK_TIME_SLICING_ENABLED	inc/osxsys.h	35;"	d
+OSIX_TASK_USER_MODE	inc/osxsys.h	34;"	d
+OSIX_TMR_TRC	inc/osix.h	/^    OSIX_TMR_TRC = 0x20,$/;"	e	enum:__anon4
+OSIX_TPS	inc/osix.h	42;"	d
+OSIX_TRC_FLAG	src/osixpth.c	121;"	d	file:
+OSIX_TRUE	inc/osix.h	54;"	d
+OSIX_TSK	inc/osix.h	51;"	d
+OSIX_TSK_TRC	inc/osix.h	/^    OSIX_TSK_TRC = 0x01,$/;"	e	enum:__anon4
+OSIX_WAIT	inc/osix.h	87;"	d
+OSIX_WAIT	inc/osix.h	89;"	d
+OSIX_WAIT	inc/osxsys.h	22;"	d
+OS_HIGH_PRIO	inc/osix.h	68;"	d
+OS_LOW_PRIO	inc/osix.h	67;"	d
+OsixCfg	inc/osxsys.h	/^typedef struct OsixCfg$/;"	s
+OsixCreateDir	src/osixpth.c	/^OsixCreateDir (const CHR1 * pc1DirName)$/;"	f
+OsixCreateSem	src/osixpth.c	/^OsixCreateSem (const UINT1 au1SemName[4], UINT4 u4InitialCount,$/;"	f
+OsixDelay	src/osixpth.c	/^OsixDelay (UINT4 u4Duration, INT4 i4Unit)$/;"	f
+OsixEvtRecv	src/osixpth.c	/^OsixEvtRecv (tOsixTaskId TskId, UINT4 u4Events, UINT4 u4Flg,$/;"	f
+OsixEvtRecvV1	src/osixpth.c	/^OsixEvtRecvV1 (tOsixTaskId TskId, UINT4 u4Events, UINT4 u4Flg,$/;"	f
+OsixEvtSend	src/osixpth.c	/^OsixEvtSend (tOsixTaskId TskId, UINT4 u4Events)$/;"	f
+OsixEvtSendV1	src/osixpth.c	/^OsixEvtSendV1 (tOsixTaskId TskId, UINT4 u4Events)$/;"	f
+OsixExGetTaskName	src/osixpth.c	/^OsixExGetTaskName (tOsixTaskId TskId)$/;"	f
+OsixGetSysTime	src/osixpth.c	/^OsixGetSysTime (tOsixSysTime * pSysTime)$/;"	f
+OsixGetSysTimeIn64Bit	src/osixpth.c	/^OsixGetSysTimeIn64Bit (FS_UINT8 * pSysTime)$/;"	f
+OsixGetSysUpTime	src/osixpth.c	/^OsixGetSysUpTime (VOID)$/;"	f
+OsixGetTaskMode	inc/osxprot.h	34;"	d
+OsixGetTaskPriority	inc/osxprot.h	35;"	d
+OsixGetTps	src/osixpth.c	/^OsixGetTps ()$/;"	f
+OsixInitialize	src/osixpth.c	/^OsixInitialize ()$/;"	f
+OsixQueCrt	src/osixpth.c	/^OsixQueCrt (UINT1 au1QName[], UINT4 u4MaxMsgLen,$/;"	f
+OsixQueDel	src/osixpth.c	/^OsixQueDel (tOsixQId QueId)$/;"	f
+OsixQueNumMsg	src/osixpth.c	/^OsixQueNumMsg (tOsixQId QueId, UINT4 *pu4NumMsg)$/;"	f
+OsixQueRecv	src/osixpth.c	/^OsixQueRecv (tOsixQId QueId, UINT1 *pu1Msg, UINT4 u4MsgLen, INT4 i4Timeout)$/;"	f
+OsixQueSend	src/osixpth.c	/^OsixQueSend (tOsixQId QueId, UINT1 *pu1Msg, UINT4 u4MsgLen)$/;"	f
+OsixResumeTask	inc/osxprot.h	39;"	d
+OsixRscAdd	src/osixpth.c	/^OsixRscAdd (UINT1 au1Name[], UINT4 u4RscType, UINT4 *pu4RscId)$/;"	f
+OsixRscDel	src/osixpth.c	/^OsixRscDel (UINT4 u4RscType, VOID *pRscId)$/;"	f
+OsixRscFind	src/osixpth.c	/^OsixRscFind (UINT1 au1Name[], UINT4 u4RscType, VOID **pRscId)$/;"	f
+OsixRscQueStruct	src/osixpth.c	/^typedef struct OsixRscQueStruct$/;"	s	file:
+OsixRscSemStruct	inc/osix.h	/^typedef struct OsixRscSemStruct$/;"	s
+OsixRscTskStruct	src/osixpth.c	/^typedef struct OsixRscTskStruct$/;"	s	file:
+OsixSTUPS2Ticks	src/osixpth.c	/^OsixSTUPS2Ticks (UINT4 u4Time)$/;"	f
+OsixSemCrt	src/osixpth.c	/^OsixSemCrt (UINT1 au1SemName[], tOsixSemId * pSemId)$/;"	f
+OsixSemDel	src/osixpth.c	/^OsixSemDel (tOsixSemId SemId)$/;"	f
+OsixSemGive	src/osixpth.c	/^OsixSemGive (tOsixSemId SemId)$/;"	f
+OsixSemTake	src/osixpth.c	/^OsixSemTake (tOsixSemId SemId)$/;"	f
+OsixSetLocalTime	src/osixpth.c	/^OsixSetLocalTime (void)$/;"	f
+OsixSetTaskMode	inc/osxprot.h	36;"	d
+OsixSetTaskPriority	inc/osxprot.h	37;"	d
+OsixShutDown	src/osixpth.c	/^OsixShutDown ()$/;"	f
+OsixSuspendTask	inc/osxprot.h	38;"	d
+OsixTskCrt	src/osixpth.c	/^OsixTskCrt (UINT1 au1TskName[], UINT4 u4TskPrio, UINT4 u4StackSize,$/;"	f
+OsixTskDel	src/osixpth.c	/^OsixTskDel (tOsixTaskId TskId)$/;"	f
+OsixTskDelay	src/osixpth.c	/^OsixTskDelay (UINT4 u4Duration)$/;"	f
+OsixTskEntry	inc/osix.h	/^typedef VOID (*OsixTskEntry)(INT1 *);$/;"	t
+OsixTskIdSelf	src/osixpth.c	/^OsixTskIdSelf (tOsixTaskId * pTskId)    \/* Get ID of current task *\/$/;"	f
+OsixTskWrapper	src/osixpth.c	/^OsixTskWrapper (void *pArg)$/;"	f	file:
+PARAM_UNUSED	src/srmmem.c	40;"	d	file:
+POW	inc/utlmacro.h	206;"	d
+PRINTF	inc/utlmacro.h	40;"	d
+PRINTF	inc/utlmacro.h	72;"	d
+PRINTF	inc/utlmacro.h	74;"	d
+PRIVATE	inc/osxstd.h	79;"	d
+PRIVATE	inc/osxstd.h	95;"	d
+PROJ_OBJ	Makefile	/^PROJ_OBJ 	 	 = $(PROJ_NAME).${ObjSuffix}$/;"	m
+PROJ_OBJ_LIST	Makefile	/^PROJ_OBJ_LIST	 = $(PROJ_OBJ_DIR)\/main.${ObjSuffix}$/;"	m
+PTHREAD_Create_MsgQ	src/osixpth.c	/^PTHREAD_Create_MsgQ (UINT4 u4MaxMsgs, UINT4 u4MsgLen)$/;"	f
+PTHREAD_Delete_MsgQ	src/osixpth.c	/^PTHREAD_Delete_MsgQ (tPthreadQId QId)$/;"	f
+PTHREAD_MsgQ_NumMsgs	src/osixpth.c	/^PTHREAD_MsgQ_NumMsgs (tPthreadQId QId)$/;"	f
+PTHREAD_Receive_MsgQ	src/osixpth.c	/^PTHREAD_Receive_MsgQ (tPthreadQId QId, UINT1 *pMsg, INT4 i4Timeout)$/;"	f
+PTHREAD_Send_MsgQ	src/osixpth.c	/^PTHREAD_Send_MsgQ (tPthreadQId QId, UINT1 *pMsg)$/;"	f
+PTR_ASSIGN2	inc/utlmacro.h	233;"	d
+PTR_ASSIGN4	inc/utlmacro.h	237;"	d
+PTR_FETCH2	inc/utlmacro.h	230;"	d
+PTR_FETCH4	inc/utlmacro.h	231;"	d
+PUBLIC	inc/osxstd.h	103;"	d
+PUBLIC	inc/osxstd.h	80;"	d
+QueCond	src/osixpth.c	/^    pthread_cond_t      QueCond;$/;"	m	struct:__anon9	file:
+QueMutex	src/osixpth.c	/^    pthread_mutex_t    *QueMutex;$/;"	m	struct:__anon9	file:
+RAND	inc/utlmacro.h	173;"	d
+RAND	inc/utlmacro.h	41;"	d
+SCANF	inc/utlmacro.h	42;"	d
+SCANF	inc/utlmacro.h	82;"	d
+SECS_IN_DAY	inc/utlmacro.h	276;"	d
+SECS_IN_HOUR	inc/utlmacro.h	277;"	d
+SECS_IN_MINUTE	inc/utlmacro.h	278;"	d
+SECS_IN_YEAR	inc/utlmacro.h	275;"	d
+SELF_TASKNAME	inc/osxsys.h	26;"	d
+SHUTDN_FN	src/main.c	35;"	d	file:
+SNPRINTF	inc/utlmacro.h	43;"	d
+SNPRINTF	inc/utlmacro.h	69;"	d
+SPRINTF	inc/utlmacro.h	44;"	d
+SPRINTF	inc/utlmacro.h	68;"	d
+SRAND	inc/utlmacro.h	174;"	d
+SRAND	inc/utlmacro.h	45;"	d
+SRM_MEMI_H	inc/srmmemi.h	11;"	d
+SRM_MEM_H	inc/srmmem.h	11;"	d
+SSCANF	inc/utlmacro.h	46;"	d
+SSCANF	inc/utlmacro.h	83;"	d
+STRCASECMP	inc/utlmacro.h	182;"	d
+STRCASECMP	inc/utlmacro.h	47;"	d
+STRCAT	inc/utlmacro.h	49;"	d
+STRCAT	inc/utlmacro.h	93;"	d
+STRCHR	inc/utlmacro.h	51;"	d
+STRCHR	inc/utlmacro.h	99;"	d
+STRCMP	inc/utlmacro.h	52;"	d
+STRCMP	inc/utlmacro.h	96;"	d
+STRCPY	inc/utlmacro.h	53;"	d
+STRCPY	inc/utlmacro.h	90;"	d
+STRCSPN	inc/utlmacro.h	108;"	d
+STRLEN	inc/utlmacro.h	102;"	d
+STRLEN	inc/utlmacro.h	54;"	d
+STRNCASECMP	inc/utlmacro.h	183;"	d
+STRNCASECMP	inc/utlmacro.h	48;"	d
+STRNCAT	inc/utlmacro.h	50;"	d
+STRNCAT	inc/utlmacro.h	94;"	d
+STRNCMP	inc/utlmacro.h	56;"	d
+STRNCMP	inc/utlmacro.h	97;"	d
+STRNCPY	inc/utlmacro.h	57;"	d
+STRNCPY	inc/utlmacro.h	91;"	d
+STRNLEN	inc/utlmacro.h	103;"	d
+STRNLEN	inc/utlmacro.h	55;"	d
+STRRCHR	inc/utlmacro.h	100;"	d
+STRRCHR	inc/utlmacro.h	58;"	d
+STRSTR	inc/utlmacro.h	181;"	d
+STRSTR	inc/utlmacro.h	59;"	d
+STRTOK	inc/utlmacro.h	105;"	d
+STRTOK	inc/utlmacro.h	60;"	d
+STRTOK_R	inc/utlmacro.h	106;"	d
+STRTOUL	inc/utlmacro.h	107;"	d
+SUCCESS	inc/macro.h	33;"	d
+SYSTEM	inc/osix.h	127;"	d
+SemId	inc/osix.h	/^    sem_t               SemId;$/;"	m	struct:OsixRscSemStruct
+SemId	inc/srmmemi.h	/^        tOsixSemId SemId;$/;"	m	struct:MEM_FREE_POOL_REC
+TASKA_C	src/taska.c	3;"	d	file:
+TASKA_EVENTA	src/taska.c	12;"	d	file:
+TASKB_C	src/taskb.c	2;"	d	file:
+TASKB_EVENTA	src/taskb.c	10;"	d	file:
+TIME_STR_BUF_SIZE	inc/utlmacro.h	282;"	d
+TM_BASE_YEAR	inc/utlmacro.h	281;"	d
+TM_SEC_SYS_BASE_2_FSAP_BASE_YEAR	inc/utlmacro.h	283;"	d
+TOLOWER	inc/utlmacro.h	188;"	d
+TOLOWER	inc/utlmacro.h	61;"	d
+TOUPPER	inc/utlmacro.h	189;"	d
+TOUPPER	inc/utlmacro.h	62;"	d
+TRUE	inc/osxstd.h	111;"	d
+TSK_BEFORE_INIT	src/main.c	/^    TSK_BEFORE_INIT = 0,$/;"	e	enum:TaskStatus	file:
+TSK_INIT_FAILURE	src/main.c	/^    TSK_INIT_FAILURE$/;"	e	enum:TaskStatus	file:
+TSK_INIT_SUCCESS	src/main.c	/^    TSK_INIT_SUCCESS,$/;"	e	enum:TaskStatus	file:
+TaskAInit	src/taska.c	/^INT4 TaskAInit(VOID)$/;"	f
+TaskAMain	src/taska.c	/^VOID TaskAMain(VOID)$/;"	f
+TaskAMain	src/taskb.c	/^VOID TaskAMain(VOID)$/;"	f
+TaskBInit	src/taskb.c	/^INT4 TaskBInit(VOID)$/;"	f
+TaskStatus	src/main.c	/^typedef enum TaskStatus$/;"	g	file:
+TestQueMsgHandle	src/taska.c	/^VOID TestQueMsgHandle()$/;"	f
+ThrId	src/osixpth.c	/^    pthread_t           ThrId;$/;"	m	struct:OsixRscTskStruct	file:
+TskId	inc/osix.h	/^    tOsixTaskId         TskId;$/;"	m	struct:OsixRscSemStruct
+TskInitTable	src/main.c	/^typedef struct TskInitTable$/;"	s	file:
+TskMutex	src/osixpth.c	/^    pthread_mutex_t     TskMutex;$/;"	m	struct:OsixRscTskStruct	file:
+UINT1	inc/macro.h	/^typedef unsigned char   UINT1;$/;"	t
+UINT2	inc/macro.h	/^typedef unsigned short  UINT2;$/;"	t
+UINT4	inc/macro.h	/^typedef unsigned int    UINT4;$/;"	t
+UINT8_HI	inc/utlmacro.h	352;"	d
+UINT8_LO	inc/utlmacro.h	353;"	d
+UTL_INET6_ADDRSTRLEN	inc/utlmacro.h	297;"	d
+UTL_INET_ADDRSTRLEN	inc/utlmacro.h	296;"	d
+UTL_MAX_TRC_LEN	inc/utlmacro.h	292;"	d
+UTL_TRACE_DISABLE	inc/utlmacro.h	291;"	d
+UTL_TRACE_ENABLE	inc/utlmacro.h	290;"	d
+UTL_TRACE_TOKEN_DELIMITER	inc/utlmacro.h	288;"	d
+UtilityTest	src/utility.c	/^INT4 UtilityTest(VOID)$/;"	f
+UtlStrCaseCmp	src/osixpth.c	/^UtlStrCaseCmp (const CHR1 * pc1String1, const CHR1 * pc1String2)$/;"	f
+UtlTrcLog	src/osixpth.c	/^UtlTrcLog (UINT4 u4Flag, UINT4 u4Value, const char *pi1Name,$/;"	f
+VAR_STR	inc/srmmem.h	43;"	d
+VINT1	inc/macro.h	/^typedef volatile signed char     VINT1;$/;"	t
+VINT2	inc/macro.h	/^typedef volatile signed short    VINT2;$/;"	t
+VINT4	inc/macro.h	/^typedef volatile signed int      VINT4;$/;"	t
+VOID	inc/macro.h	/^typedef void            VOID;$/;"	t
+VOLATILE	inc/osxstd.h	81;"	d
+VOLATILE	inc/osxstd.h	99;"	d
+VSNPRINTF	inc/utlmacro.h	70;"	d
+VUINT1	inc/macro.h	/^typedef volatile unsigned char   VUINT1;$/;"	t
+VUINT2	inc/macro.h	/^typedef volatile unsigned short  VUINT2;$/;"	t
+VUINT4	inc/macro.h	/^typedef volatile unsigned long   VUINT4;$/;"	t
+_OSIX_H_	inc/osix.h	10;"	d
+_OSIX_STD_H	inc/osxstd.h	27;"	d
+_OSIX_SYS_H	inc/osxsys.h	13;"	d
+_UTLMACRO_H	inc/utlmacro.h	11;"	d
+_tUtlSysPreciseTime	inc/utlmacro.h	/^typedef struct _tUtlSysPreciseTime {$/;"	s
+_tUtlValidTraces	inc/utlmacro.h	/^typedef struct _tUtlValidTraces$/;"	s
+au1Name	inc/osix.h	/^    UINT1               au1Name[OSIX_NAME_LEN + 4];$/;"	m	struct:OsixRscSemStruct
+au1Name	src/osixpth.c	/^    UINT1               au1Name[OSIX_NAME_LEN + 4];$/;"	m	struct:OsixRscQueStruct	file:
+au1Name	src/osixpth.c	/^    UINT1               au1Name[OSIX_NAME_LEN + 4];$/;"	m	struct:OsixRscTskStruct	file:
+au1OwnerTask	inc/srmmemi.h	/^        UINT1  au1OwnerTask[OSIX_NAME_LEN + 4];$/;"	m	struct:MEM_FREE_POOL_REC
+au1Pad	inc/utlmacro.h	/^    UINT1    au1Pad[2];$/;"	m	struct:_tUtlValidTraces
+gCmu4MicroSeconds	src/osixpth.c	/^UINT4        gCmu4MicroSeconds;$/;"	v
+gCurTskStatus	src/main.c	/^static tTskStatus   gCurTskStatus = TSK_BEFORE_INIT;$/;"	v	file:
+gOsixMutex	src/osixpth.c	/^pthread_mutex_t     gOsixMutex;$/;"	v
+gSeqSemId	src/main.c	/^tOsixSemId          gSeqSemId;$/;"	v
+gStartTicks	src/osixpth.c	/^static clock_t      gStartTicks;$/;"	v	file:
+gTaskAId	src/taska.c	/^static tOsixTaskId gTaskAId = 0;$/;"	v	file:
+gTaskBId	src/taskb.c	/^static tOsixTaskId gTaskBId = 0;$/;"	v	file:
+gTestQId	src/taska.c	/^tOsixQId gTestQId = 0;$/;"	v
+gaInitTable	src/main.c	/^tTskInitTable       gaInitTable[] = {$/;"	v
+gaOsixQue	src/osixpth.c	/^tOsixQue            gaOsixQue[OSIX_MAX_QUES + 1];$/;"	v
+gaOsixSem	src/osixpth.c	/^tOsixSem            gaOsixSem[OSIX_MAX_SEMS + 1];$/;"	v
+gaOsixTsk	src/osixpth.c	/^tOsixTsk            gaOsixTsk[OSIX_MAX_TSKS + 1];$/;"	v
+gi4MaxPrio	src/osixpth.c	/^static INT4			gi4MaxPrio;$/;"	v	file:
+gi4MinPrio	src/osixpth.c	/^static INT4			gi4MinPrio;$/;"	v	file:
+gptMemTypeArray	src/srmmem.c	/^static tMemTypeCfg *gptMemTypeArray = NULL;$/;"	v	file:
+gtMemPoolCfg	src/srmmem.c	/^tMemPoolCfg         gtMemPoolCfg;$/;"	v
+gu4CurIndex	src/main.c	/^static UINT4        gu4CurIndex = 0;$/;"	v	file:
+gu4MaxSem	src/osixpth.c	/^UINT4        gu4MaxSem = 0;$/;"	v
+gu4MemDbg	src/srmmem.c	/^UINT4               gu4MemDbg = MEM_DBG_MAJOR | MEM_DBG_CRITICAL |$/;"	v
+gu4MemPoolInitialized	src/srmmem.c	/^static UINT4        gu4MemPoolInitialized = 0;$/;"	v	file:
+gu4OsixTrc	src/osixpth.c	/^UINT4               gu4OsixTrc;$/;"	v
+gu4Seconds	src/osixpth.c	/^UINT4        gu4Seconds;$/;"	v
+gu4Stups	src/osixpth.c	/^UINT4               gu4Stups = OSIX_STUPS;$/;"	v
+gu4Tps	src/osixpth.c	/^UINT4               gu4Tps = OSIX_TPS;$/;"	v
+lrInitComplete	src/main.c	/^lrInitComplete (UINT4 u4Status)$/;"	f
+main	src/main.c	/^int main()$/;"	f
+mem_debug_block_allocated	inc/srmmemi.h	/^enum {mem_debug_block_free = 0, mem_debug_block_allocated};$/;"	e	enum:__anon3
+mem_debug_block_free	inc/srmmemi.h	/^enum {mem_debug_block_free = 0, mem_debug_block_allocated};$/;"	e	enum:__anon3
+pArg	src/osixpth.c	/^    INT1               *pArg;$/;"	m	struct:OsixRscTskStruct	file:
+pMemFreePoolRecList	src/srmmem.c	/^tMemFreePoolRec    *pMemFreePoolRecList = NULL;$/;"	v
+pNext	inc/srmmemi.h	/^        UINT1  *pNext;$/;"	m	struct:CRU_SLL_NODE
+pQBase	src/osixpth.c	/^    UINT1              *pQBase;$/;"	m	struct:__anon9	file:
+pQEnd	src/osixpth.c	/^    UINT1              *pQEnd;$/;"	m	struct:__anon9	file:
+pQRead	src/osixpth.c	/^    UINT1              *pQRead;$/;"	m	struct:__anon9	file:
+pQWrite	src/osixpth.c	/^    UINT1              *pQWrite;$/;"	m	struct:__anon9	file:
+pRscId	src/osixpth.c	/^    VOID               *pRscId;$/;"	m	struct:OsixRscQueStruct	file:
+pTskEntryFn	src/main.c	/^    VOID                (*pTskEntryFn) (INT1 *);$/;"	m	struct:TskInitTable	file:
+pTskShutDnFn	src/main.c	/^    VOID                (*pTskShutDnFn) (VOID);$/;"	m	struct:TskInitTable	file:
+pTskStrtAddr	src/osixpth.c	/^    void                (*pTskStrtAddr) (INT1 *);$/;"	m	struct:OsixRscTskStruct	file:
+pu1ActualBase	inc/srmmemi.h	/^        UINT1  *pu1ActualBase;$/;"	m	struct:MEM_FREE_POOL_REC
+pu1Base	inc/srmmemi.h	/^        UINT1  *pu1Base;$/;"	m	struct:CRU_SLL
+pu1EndAddr	inc/srmmemi.h	/^        UINT1  *pu1EndAddr;$/;"	m	struct:MEM_FREE_POOL_REC
+pu1Func	inc/srmmemi.h	/^		const CHR1 *pu1Func;$/;"	m	struct:MEM_FREE_POOL_REC
+pu1Func	inc/srmmemi.h	/^	const CHR1  *pu1Func;$/;"	m	struct:__anon1
+pu1Head	inc/srmmemi.h	/^        UINT1  *pu1Head;$/;"	m	struct:CRU_SLL
+pu1StartAddr	inc/srmmemi.h	/^        UINT1  *pu1StartAddr;$/;"	m	struct:MEM_FREE_POOL_REC
+pu1TraceStrings	inc/utlmacro.h	/^    UINT1   *pu1TraceStrings;$/;"	m	struct:_tUtlValidTraces
+pu1TskName	src/main.c	/^    char               *pu1TskName;$/;"	m	struct:TskInitTable	file:
+tCRU_SLL	inc/srmmemi.h	/^} tCRU_SLL;$/;"	t	typeref:struct:CRU_SLL
+tCRU_SLL_NODE	inc/srmmemi.h	/^} tCRU_SLL_NODE;$/;"	t	typeref:struct:CRU_SLL_NODE
+tMemBlkDbg	inc/srmmemi.h	/^} tMemBlkDbg;$/;"	t	typeref:struct:__anon1
+tMemChunkCfg	inc/srmmem.h	/^} tMemChunkCfg;$/;"	t	typeref:struct:MemChunkCfg
+tMemDebugInfo	inc/srmmemi.h	/^} tMemDebugInfo;$/;"	t	typeref:struct:__anon2
+tMemFreePoolRec	inc/srmmemi.h	/^} tMemFreePoolRec;$/;"	t	typeref:struct:MEM_FREE_POOL_REC
+tMemPoolCfg	inc/srmmem.h	/^} tMemPoolCfg;$/;"	t	typeref:struct:MemPoolCfg
+tMemPoolId	inc/srmmem.h	/^typedef UINT4 tMemPoolId;$/;"	t
+tMemTypeCfg	inc/srmmem.h	/^} tMemTypeCfg;$/;"	t	typeref:struct:MemTypeCfg
+tOsixCfg	inc/osxsys.h	/^} tOsixCfg;$/;"	t	typeref:struct:OsixCfg
+tOsixQId	inc/osxsys.h	/^typedef VOID *              tOsixQId;$/;"	t
+tOsixQue	src/osixpth.c	/^tOsixQue;$/;"	t	typeref:struct:OsixRscQueStruct	file:
+tOsixSem	inc/osix.h	/^}tOsixSem;$/;"	t	typeref:struct:OsixRscSemStruct
+tOsixSemId	inc/osxsys.h	/^typedef sem_t *             tOsixSemId;$/;"	t
+tOsixSysTime	inc/osxsys.h	/^typedef UINT4               tOsixSysTime;$/;"	t
+tOsixTaskId	inc/osxsys.h	/^typedef UINT4               tOsixTaskId;$/;"	t
+tOsixTsk	src/osixpth.c	/^tOsixTsk;$/;"	t	typeref:struct:OsixRscTskStruct	file:
+tPthreadQ	src/osixpth.c	/^tPthreadQ;$/;"	t	typeref:struct:__anon9	file:
+tPthreadQId	src/osixpth.c	/^typedef tPthreadQ  *tPthreadQId;$/;"	t	file:
+tTskInitTable	src/main.c	/^tTskInitTable;$/;"	t	typeref:struct:TskInitTable	file:
+tTskStatus	src/main.c	/^tTskStatus;$/;"	t	typeref:enum:TaskStatus	file:
+tUtlIn6Addr	inc/utlmacro.h	/^} tUtlIn6Addr;$/;"	t	typeref:struct:__anon6
+tUtlInAddr	inc/utlmacro.h	/^} tUtlInAddr;$/;"	t	typeref:struct:__anon5
+tUtlSysPreciseTime	inc/utlmacro.h	/^} tUtlSysPreciseTime;$/;"	t	typeref:struct:_tUtlSysPreciseTime
+tUtlTm	inc/utlmacro.h	/^} tUtlTm;$/;"	t	typeref:struct:__anon7
+tUtlValidTraces	inc/utlmacro.h	/^}tUtlValidTraces;$/;"	t	typeref:struct:_tUtlValidTraces
+tm_hour	inc/utlmacro.h	/^    UINT4               tm_hour;    \/* hours *\/$/;"	m	struct:__anon7
+tm_isdst	inc/utlmacro.h	/^    UINT4               tm_isdst;   \/* daylight saving time : NOT USED*\/$/;"	m	struct:__anon7
+tm_mday	inc/utlmacro.h	/^    UINT4               tm_mday;    \/* day of the month *\/$/;"	m	struct:__anon7
+tm_min	inc/utlmacro.h	/^    UINT4               tm_min;     \/* minutes *\/$/;"	m	struct:__anon7
+tm_mon	inc/utlmacro.h	/^    UINT4               tm_mon;     \/* month *\/$/;"	m	struct:__anon7
+tm_sec	inc/utlmacro.h	/^    UINT4               tm_sec;     \/* seconds *\/$/;"	m	struct:__anon7
+tm_wday	inc/utlmacro.h	/^    UINT4               tm_wday;    \/* day of the week : NOT USED *\/$/;"	m	struct:__anon7
+tm_yday	inc/utlmacro.h	/^    UINT4               tm_yday;    \/* day in the year *\/$/;"	m	struct:__anon7
+tm_year	inc/utlmacro.h	/^    UINT4               tm_year;    \/* year *\/$/;"	m	struct:__anon7
+u1addr	inc/utlmacro.h	/^    UINT1  u1addr[16];$/;"	m	struct:__anon6
+u2Filler	inc/osix.h	/^    UINT2               u2Filler;$/;"	m	struct:OsixRscSemStruct
+u2Filler	src/osixpth.c	/^    UINT2               u2Filler;$/;"	m	struct:OsixRscQueStruct	file:
+u2Free	inc/osix.h	/^    UINT2               u2Free;$/;"	m	struct:OsixRscSemStruct
+u2Free	src/osixpth.c	/^    UINT2               u2Free;$/;"	m	struct:OsixRscQueStruct	file:
+u2Free	src/osixpth.c	/^    UINT2               u2Free;$/;"	m	struct:OsixRscTskStruct	file:
+u2MaxTrcTypes	inc/utlmacro.h	/^    UINT2    u2MaxTrcTypes;$/;"	m	struct:_tUtlValidTraces
+u2Pad	src/osixpth.c	/^    UINT2               u2Pad;$/;"	m	struct:OsixRscTskStruct	file:
+u4Addr	inc/utlmacro.h	/^    UINT4    u4Addr;$/;"	m	struct:__anon5
+u4AllocCount	inc/srmmemi.h	/^        UINT4  u4AllocCount;$/;"	m	struct:MEM_FREE_POOL_REC
+u4AllocFailCount	inc/srmmemi.h	/^        UINT4  u4AllocFailCount;$/;"	m	struct:MEM_FREE_POOL_REC
+u4Events	src/osixpth.c	/^    UINT4               u4Events;$/;"	m	struct:OsixRscTskStruct	file:
+u4FreeUnitsCount	inc/srmmemi.h	/^        UINT4  u4FreeUnitsCount;$/;"	m	struct:MEM_FREE_POOL_REC
+u4HeapAllocFailCount	inc/srmmemi.h	/^        UINT4  u4HeapAllocFailCount;$/;"	m	struct:MEM_FREE_POOL_REC
+u4Hi	inc/utlmacro.h	/^    UINT4 u4Hi;$/;"	m	struct:__anon8
+u4Length	inc/srmmem.h	/^   UINT4 u4Length;         \/* Length of each chunk *\/$/;"	m	struct:MemChunkCfg
+u4LineNo	inc/srmmemi.h	/^        UINT4  u4LineNo;$/;"	m	struct:MEM_FREE_POOL_REC
+u4LineNo	inc/srmmemi.h	/^    UINT4  u4LineNo;$/;"	m	struct:__anon1
+u4Lo	inc/utlmacro.h	/^    UINT4 u4Lo;$/;"	m	struct:__anon8
+u4MaxMemPools	inc/srmmem.h	/^        UINT4 u4MaxMemPools;$/;"	m	struct:MemPoolCfg
+u4MaxQs	inc/osxsys.h	/^    UINT4 u4MaxQs;$/;"	m	struct:OsixCfg
+u4MaxSems	inc/osxsys.h	/^    UINT4 u4MaxSems;$/;"	m	struct:OsixCfg
+u4MaxTasks	inc/osxsys.h	/^    UINT4 u4MaxTasks;$/;"	m	struct:OsixCfg
+u4MemType	inc/srmmemi.h	/^        UINT4 u4MemType;$/;"	m	struct:MEM_FREE_POOL_REC
+u4MemoryType	inc/srmmem.h	/^        UINT4 u4MemoryType;$/;"	m	struct:MemTypeCfg
+u4MsgLen	src/osixpth.c	/^    UINT4               u4MsgLen;$/;"	m	struct:__anon9	file:
+u4MyNodeId	inc/osxsys.h	/^    UINT4 u4MyNodeId;$/;"	m	struct:OsixCfg
+u4NanoSec	inc/utlmacro.h	/^    UINT4 u4NanoSec;       \/* nanoseconds (000000000..999999999) *\/$/;"	m	struct:_tUtlSysPreciseTime
+u4NumberOfChunks	inc/srmmem.h	/^        UINT4 u4NumberOfChunks;$/;"	m	struct:MemTypeCfg
+u4NumberOfMemTypes	inc/srmmem.h	/^        UINT4 u4NumberOfMemTypes;$/;"	m	struct:MemPoolCfg
+u4OverFlows	src/osixpth.c	/^    UINT4               u4OverFlows;$/;"	m	struct:__anon9	file:
+u4PeakUsageCount	inc/srmmemi.h	/^        UINT4  u4PeakUsageCount;$/;"	m	struct:MEM_FREE_POOL_REC
+u4Pid	src/osixpth.c	/^    UINT4               u4Pid;$/;"	m	struct:OsixRscTskStruct	file:
+u4Prio	src/osixpth.c	/^    UINT4               u4Prio;$/;"	m	struct:OsixRscTskStruct	file:
+u4ReleaseCount	inc/srmmemi.h	/^        UINT4  u4ReleaseCount;$/;"	m	struct:MEM_FREE_POOL_REC
+u4ReleaseFailCount	inc/srmmemi.h	/^        UINT4  u4ReleaseFailCount;$/;"	m	struct:MEM_FREE_POOL_REC
+u4SchedPolicy	src/main.c	/^    UINT4               u4SchedPolicy;$/;"	m	struct:TskInitTable	file:
+u4Sec	inc/utlmacro.h	/^    UINT4 u4Sec;           \/* Numbers of Seconds *\/ $/;"	m	struct:_tUtlSysPreciseTime
+u4Signature	inc/srmmemi.h	/^    UINT4 u4Signature;$/;"	m	struct:__anon2
+u4Size	inc/srmmemi.h	/^        UINT4  u4Size;$/;"	m	struct:MEM_FREE_POOL_REC
+u4StackSize	src/osixpth.c	/^    UINT4               u4StackSize;$/;"	m	struct:OsixRscTskStruct	file:
+u4StartAddr	inc/srmmem.h	/^   UINT4 u4StartAddr;      \/* StartAddr of  chunk *\/$/;"	m	struct:MemChunkCfg
+u4SysTimeUpdate	inc/utlmacro.h	/^    UINT4 u4SysTimeUpdate; \/* If system time update required *\/$/;"	m	struct:_tUtlSysPreciseTime
+u4SystemData	inc/srmmemi.h	/^    UINT4 u4SystemData;$/;"	m	struct:__anon2
+u4SystemTimingUnitsPerSecond	inc/osxsys.h	/^    UINT4 u4SystemTimingUnitsPerSecond;$/;"	m	struct:OsixCfg
+u4TicksPerSecond	inc/osxsys.h	/^    UINT4 u4TicksPerSecond;$/;"	m	struct:OsixCfg
+u4TimeStamp	inc/srmmemi.h	/^    UINT4 u4TimeStamp;$/;"	m	struct:__anon2
+u4TskPriority	src/main.c	/^    UINT4               u4TskPriority;$/;"	m	struct:TskInitTable	file:
+u4TskStack	src/main.c	/^    UINT4               u4TskStack;$/;"	m	struct:TskInitTable	file:
+u4UnitsCount	inc/srmmemi.h	/^        UINT4  u4UnitsCount;$/;"	m	struct:MEM_FREE_POOL_REC

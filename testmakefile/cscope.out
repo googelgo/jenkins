@@ -1,0 +1,19350 @@
+cscope 15 $HOME/Study/testmakefile -q 0000001122 0000110279
+	@inc/macro.h
+
+1 #i‚de‡
+CAMEO_ARCH_MACRO_H
+
+
+2 
+	#CAMEO_ARCH_MACRO_H
+
+
+	)
+
+5 
+	tBOOLEAN
+;
+
+6 
+	tBOOL1
+;
+
+7 
+	tCHR1
+;
+
+8 sig√d 
+	tINT1
+;
+
+9 
+	tUINT1
+;
+
+10 
+UINT1
+ 
+	tBYTE
+;
+
+11 
+	tVOID
+;
+
+12 sig√d 
+	tINT2
+;
+
+13 
+	tUINT2
+;
+
+14 sig√d 
+	tINT4
+;
+
+15 
+	tUINT4
+;
+
+16 
+	tFLT4
+;
+
+17 
+	tDBL8
+;
+
+18 
+	tFS_ULONG
+;
+
+19 sig√d 
+	tFS_LONG
+;
+
+20 
+	tAR_UINT8
+;
+
+24 vﬁ©ûêsig√d 
+	tVINT1
+;
+
+25 vﬁ©ûê
+	tVUINT1
+;
+
+26 vﬁ©ûêsig√d 
+	tVINT2
+;
+
+27 vﬁ©ûê
+	tVUINT2
+;
+
+28 vﬁ©ûêsig√d 
+	tVINT4
+;
+
+29 vﬁ©ûê
+	tVUINT4
+;
+
+31 
+	#CONST
+ c⁄°
+
+	)
+
+33 
+	#SUCCESS
+ 6
+
+	)
+
+34 
+	#FAILURE
+ 4
+
+	)
+
+36 
+	#DEBUG_FLAG
+ 1
+
+	)
+
+37 
+	#DEBUG
+() do\
+
+39 if(
+DEBUG_FLAG
+ == 1) \
+
+40 
+	`PRINTF
+("[%s][%s][%d]\n", 
+__FILE__
+, 
+__FUNCTION__
+, 
+__LINE__
+); \
+
+41 }0)
+
+	)
+
+	@inc/osix.h
+
+9 #i‚de‡
+_OSIX_H_
+
+
+10 
+	#_OSIX_H_
+
+
+	)
+
+12 #i‡
+deföed
+(
+__˝lu•lus
+Ë|| deföed(
+c_∂u•lus
+)
+
+18 
+OSIX_TSK_TRC
+ = 0x01,
+
+19 
+OSIX_QUE_TRC
+ = 0x02,
+
+20 
+OSIX_SEM_TRC
+ = 0x04,
+
+21 
+OSIX_MEM_TRC
+ = 0x08,
+
+22 
+OSIX_BUF_TRC
+ = 0x10,
+
+23 
+OSIX_TMR_TRC
+ = 0x20,
+
+24 
+OSIX_EVT_TRC
+ = 0x40,
+
+25 
+OSIX_ALL_TRC
+ = ~0L
+
+28 
+	#OSIX_MAX_SEMS
+ 11000
+
+	)
+
+29 
+	#OSIX_MAX_TSKS
+ 100
+
+	)
+
+34 
+	#OSIX_PTHREAD_MIN_STACK_SIZE
+ 16000
+
+	)
+
+35 
+	#OSIX_PTHREAD_DEF_STACK_SIZE
+ 2094000
+
+	)
+
+39 
+	#OSIX_NAME_LEN
+ 4
+
+	)
+
+40 
+	#OSIX_DEF_MSG_LEN
+ 4
+
+	)
+
+41 
+	#OSIX_MAX_Q_MSG_LEN
+ (*)
+
+	)
+
+42 
+	#OSIX_TPS
+ 1000000
+
+	)
+
+43 
+	#OSIX_STUPS
+ 1
+
+	)
+
+44 
+	#OSIX_MAX_QUES
+ 200
+
+	)
+
+45 
+	#OSIX_FILE_LOG
+ 0
+
+	)
+
+48 
+	#OSIX_LOG_METHOD
+ 
+CONSOLE_LOG
+
+
+	)
+
+51 
+	#OSIX_TSK
+ 0
+
+	)
+
+52 
+	#OSIX_SEM
+ 1
+
+	)
+
+53 
+	#OSIX_QUE
+ 2
+
+	)
+
+54 
+	#OSIX_TRUE
+ 1
+
+	)
+
+55 
+	#OSIX_FALSE
+ 0
+
+	)
+
+56 
+	#OSIX_RSC_INV
+ 
+NULL
+
+
+	)
+
+63 
+	#FSAP_LOW_PRIO
+ 255
+
+	)
+
+64 
+	#FSAP_HIGH_PRIO
+ 0
+
+	)
+
+67 
+	#OS_LOW_PRIO
+ 
+gi4MöPrio
+
+
+	)
+
+68 
+	#OS_HIGH_PRIO
+ 
+gi4MaxPrio
+
+
+	)
+
+73 
+	#CM_ISS_PRI_TO_OS_PRI
+(
+issPri
+, 
+osPri
+) \
+
+74 
+issPri
+ = issPri & 0x0000ffff; \
+
+76 
+osPri
+ = 
+OS_LOW_PRIO
+ + (((((
+INT4
+Ë(
+issPri
+Ë- 
+FSAP_LOW_PRIO
+) * \
+
+77 (
+OS_HIGH_PRIO
+ -
+OS_LOW_PRIO
+)) / \
+
+78 (
+FSAP_HIGH_PRIO
+ - 
+FSAP_LOW_PRIO
+)));
+
+	)
+
+81 
+	#OSIX_SCHED_RR
+ (1 << 16)
+
+	)
+
+82 
+	#OSIX_SCHED_FIFO
+ (1 << 17)
+
+	)
+
+83 
+	#OSIX_SCHED_OTHER
+ (1 << 18)
+
+	)
+
+87 #unde‡
+OSIX_WAIT
+
+
+88 #unde‡
+OSIX_NO_WAIT
+
+
+89 
+	#OSIX_WAIT
+ (
+UINT4
+Ë(~0UL)
+
+	)
+
+90 
+	#OSIX_NO_WAIT
+ 0
+
+	)
+
+93 
+	#OSIX_FILE_RO
+ 0x01
+
+	)
+
+94 
+	#OSIX_FILE_WO
+ 0x02
+
+	)
+
+95 
+	#OSIX_FILE_RW
+ 0x04
+
+	)
+
+96 
+	#OSIX_FILE_CR
+ 0x08
+
+	)
+
+97 
+	#OSIX_FILE_AP
+ 0x10
+
+	)
+
+98 
+	#OSIX_FILE_SY
+ 0x20
+
+	)
+
+99 
+	#OSIX_FILE_TR
+ 0x40
+
+	)
+
+102 
+	#OSIX_MEM_INFO
+ 10
+
+	)
+
+103 
+	#OSIX_MEM_TOTAL
+ "MemTŸÆ"
+
+	)
+
+104 
+	#OSIX_MEM_FREE
+ "MemFªe"
+
+	)
+
+107 
+	#OSIX_CPU_USAGE_COUNT
+ 4
+
+	)
+
+108 
+	#OSIX_MAX_USAGE_COUNT
+ 4
+
+	)
+
+109 
+	#OSIX_CPU_INF0
+ "˝u"
+
+	)
+
+110 
+	#OSIX_CPU_WAIT_TIME
+ 300
+
+	)
+
+113 
+	#OSIX_SECONDS
+ 1
+
+	)
+
+114 
+	#OSIX_CENTI_SECONDS
+ 2
+
+	)
+
+115 
+	#OSIX_MILLI_SECONDS
+ 3
+
+	)
+
+116 
+	#OSIX_MICRO_SECONDS
+ 4
+
+	)
+
+117 
+	#OSIX_NANO_SECONDS
+ 5
+
+	)
+
+120 
+	#OSIX_MAX_STACK_FRAMES
+ 30
+
+	)
+
+121 
+	#OSIX_STACK_TRACE_FILE
+ "°ackåa˚.txt"
+
+	)
+
+122 
+	#OSIX_MAX_STACK_TRACE_FILE_SIZE
+ 3000
+
+	)
+
+123 
+	#OSIX_STACK_TRACE_MAX_FILE_NAME_LEN
+ 20
+
+	)
+
+127 
+	#SYSTEM
+ 
+CmOsixSy°em
+
+
+	)
+
+130 
+	#ARG_LIST
+(
+a
+Ë
+	)
+a
+
+132 
+	sOsixRscSemSåu˘
+
+
+134 
+£m_t
+ 
+SemId
+;
+
+135 
+UINT2
+ 
+u2Fªe
+;
+
+136 
+UINT2
+ 
+u2FûÀr
+;
+
+137 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+138 
+tOsixTaskId
+ 
+TskId
+;
+
+139 }
+	ttOsixSem
+;
+
+142 
+VOID
+ (*
+	tOsixTskE¡ry
+)(
+	tINT1
+ *);
+
+146 
+UINT4
+ 
+OsixInôülize
+ 
+ARG_LIST
+ ((
+VOID
+));
+
+147 
+UINT4
+ 
+OsixShutDown
+ 
+ARG_LIST
+ ((
+VOID
+));
+
+148 
+UINT4
+ 
+OsixTskCπ
+ 
+ARG_LIST
+ ((
+UINT1
+[], UINT4, UINT4, 
+VOID
+(*)(
+INT1
+ *),
+
+149 
+INT1
+*, 
+tOsixTaskId
+*));
+
+150 
+VOID
+ 
+OsixTskDñ
+ 
+ARG_LIST
+ ((
+tOsixTaskId
+));
+
+151 
+UINT4
+ 
+OsixTskDñay
+ 
+ARG_LIST
+ ((UINT4));
+
+152 
+UINT4
+ 
+CmOsixTskUsDñay
+ 
+ARG_LIST
+ ((UINT4));
+
+153 
+UINT4
+ 
+OsixDñay
+ 
+ARG_LIST
+ ((UINT4, 
+INT4
+));
+
+154 
+UINT4
+ 
+OsixTskIdSñf
+ 
+ARG_LIST
+ ((
+tOsixTaskId
+*));
+
+155 
+UINT4
+ 
+CmOsixTskIdSñfWôhLock
+ 
+ARG_LIST
+ ((
+tOsixTaskId
+*));
+
+156 
+UINT4
+ 
+OsixEvtSíd
+ 
+ARG_LIST
+ ((
+tOsixTaskId
+, UINT4));
+
+157 
+UINT4
+ 
+OsixEvtRecv
+ 
+ARG_LIST
+ ((
+tOsixTaskId
+, UINT4, UINT4, UINT4*));
+
+158 
+UINT4
+
+
+159 
+OsixCª©eSem
+ (
+CONST
+ 
+UINT1
+ 
+au1SemName
+[4], 
+UINT4
+ 
+u4InôülCou¡
+,
+
+160 
+UINT4
+ 
+u4Fœgs
+, 
+tOsixSemId
+ * 
+pSemId
+);
+
+161 
+UINT4
+ 
+OsixSemCπ
+ 
+ARG_LIST
+ ((
+UINT1
+[], 
+tOsixSemId
+*));
+
+162 
+VOID
+ 
+OsixSemDñ
+ 
+ARG_LIST
+ ((
+tOsixSemId
+));
+
+163 
+UINT4
+ 
+OsixSemGive
+ 
+ARG_LIST
+ ((
+tOsixSemId
+));
+
+164 
+UINT4
+ 
+OsixSemTake
+ 
+ARG_LIST
+ ((
+tOsixSemId
+));
+
+165 
+UINT4
+ 
+OsixQueCπ
+ 
+ARG_LIST
+ ((
+UINT1
+[], UINT4, UINT4, 
+tOsixQId
+*));
+
+166 
+VOID
+ 
+OsixQueDñ
+ 
+ARG_LIST
+ ((
+tOsixQId
+));
+
+167 
+UINT4
+ 
+OsixQueSíd
+ 
+ARG_LIST
+ ((
+tOsixQId
+, 
+UINT1
+*, UINT4));
+
+168 
+UINT4
+ 
+OsixQueRecv
+ 
+ARG_LIST
+ ((
+tOsixQId
+, 
+UINT1
+*, UINT4, 
+INT4
+));
+
+169 
+UINT4
+ 
+OsixQueNumMsg
+ 
+ARG_LIST
+ ((
+tOsixQId
+, UINT4*));
+
+170 
+UINT4
+ 
+OsixGëSysUpTime
+ 
+ARG_LIST
+ ((
+VOID
+));
+
+171 
+UINT4
+ 
+CmOsixGëMi¸oTimeTick
+ 
+ARG_LIST
+ ((
+VOID
+));
+
+173 
+UINT4
+ 
+OsixGëTps
+ 
+ARG_LIST
+ ((
+VOID
+));
+
+177 
+UINT4
+ 
+OsixRscFöd
+ 
+ARG_LIST
+((
+UINT1
+[], UINT4, 
+VOID
+ **));
+
+180 
+INT4
+ 
+CmOsixSy°em
+ 
+ARG_LIST
+((
+INT1
+ *));
+
+182 
+INT4
+ 
+CmOsixAc˚ss
+(c⁄° 
+CHR1
+ *
+∑th«me
+, INT4 
+mode
+);
+
+183 
+INT4
+ 
+CmOsixTrunˇã
+(c⁄° 
+CHR1
+ *
+∑th
+, INT4 
+Àngth
+);
+
+185 
+INT4
+ 
+FûeO≥n
+ (c⁄° 
+UINT1
+ *
+pu1FûeName
+, INT4 
+i4Mode
+);
+
+186 
+INT4
+ 
+FûeClo£
+ (INT4 
+i4Fd
+);
+
+187 
+UINT4
+ 
+FûeRód
+ (
+INT4
+ 
+i4Fd
+, 
+CHR1
+ *
+pBuf
+, UINT4 
+i4Cou¡
+);
+
+188 
+UINT4
+ 
+FûeWrôe
+ (
+INT4
+ 
+i4Fd
+, c⁄° 
+CHR1
+ *
+pBuf
+, UINT4 
+i4Cou¡
+);
+
+189 
+INT4
+ 
+FûeDñëe
+ (c⁄° 
+UINT1
+ *
+pu1FûeName
+);
+
+190 
+INT4
+ 
+FûeSize
+ (INT4 
+i4Fd
+);
+
+191 
+INT4
+ 
+CmFûeModifyTime
+ (INT4 
+i4Fd
+);
+
+192 
+INT4
+ 
+FûeTrunˇã
+ (INT4 
+i4Fd
+, INT4 
+i4Size
+);
+
+193 
+INT4
+ 
+FûeSìk
+ (INT4 
+i4Fd
+, INT4 
+i4Off£t
+, INT4 
+i4Whí˚
+);
+
+194 
+INT4
+ 
+FûeSèt
+ (c⁄° 
+CHR1
+ * 
+pc1FûeName
+);
+
+195 
+INT4
+ 
+OsixCª©eDú
+ (c⁄° 
+CHR1
+ * 
+pc1DúName
+);
+
+196 
+UINT4
+ 
+OsixSëLoˇlTime
+ ();
+
+197 
+UINT4
+ 
+FßpShowTCB
+ (
+UINT1
+ *
+pu1Resu…
+);
+
+198 
+VOID
+ 
+CmOsixSemDebug
+(VOID);
+
+200 #i‡
+deföed
+(
+__˝lu•lus
+Ë|| deföed(
+c_∂u•lus
+)
+
+	@inc/osxinc.h
+
+11 
+	~<°dio.h
+>
+
+12 
+	~<°dlib.h
+>
+
+13 
+	~<°rög.h
+>
+
+14 
+	~<±hªad.h
+>
+
+15 
+	~<sched.h
+>
+
+16 
+	~<£m≠h‹e.h
+>
+
+17 
+	~<sig«l.h
+>
+
+18 
+	~<sys/ty≥s.h
+>
+
+19 
+	~<sys/ùc.h
+>
+
+20 
+	~<sys/msg.h
+>
+
+21 
+	~<sys/time.h
+>
+
+22 
+	~<î∫o.h
+>
+
+23 
+	~<as£π.h
+>
+
+25 
+	~"ma¸o.h
+"
+
+26 
+	~"osxsys.h
+"
+
+27 
+	~"osix.h
+"
+
+28 
+	~"uéma¸o.h
+"
+
+29 
+	~"osx¥Ÿ.h
+"
+
+32 
+VOID
+ 
+UéTrcClo£
+ (VOID);
+
+	@inc/osxprot.h
+
+11 #i‚de‡
+OSIX_OSXPROT_H
+
+
+12 
+	#OSIX_OSXPROT_H
+
+
+	)
+
+13 
+	~"uéma¸o.h
+"
+
+14 #i‡
+deföed
+(
+__˝lu•lus
+Ë|| deföed(
+c_∂u•lus
+)
+
+18 
+UINT4
+
+
+19 
+OsixInô
+ (
+tOsixCfg
+ *
+pOsixCfg
+);
+
+22 
+UINT4
+
+
+23 
+OsixCª©eTask
+ (c⁄° 
+UINT1
+ 
+au1TaskName
+[4], 
+UINT4
+ 
+u4TaskPri‹ôy
+,
+
+24 
+UINT4
+ 
+u4SèckSize
+,
+
+25 (*
+TaskSèπAddr
+)(
+INT1
+ *),
+
+26 
+INT1
+ 
+ai1TaskSèπArgs
+ [1],
+
+27 
+UINT4
+ 
+u4TaskMode
+,
+
+28 
+tOsixTaskId
+ *
+pTaskId
+);
+
+30 
+UINT4
+
+
+31 
+OsixDñëeTask
+ (
+UINT4
+ 
+u4NodeId
+,
+
+32 c⁄° 
+UINT1
+ 
+au1TaskName
+[4]);
+
+34 
+	#OsixGëTaskMode
+(
+a
+,
+b
+,
+c
+Ë
+OSIX_FAILURE
+;
+
+	)
+
+35 
+	#OsixGëTaskPri‹ôy
+(
+a
+,
+b
+,
+c
+Ë
+OSIX_FAILURE
+;
+
+	)
+
+36 
+	#OsixSëTaskMode
+(
+a
+Ë
+OSIX_FAILURE
+;
+
+	)
+
+37 
+	#OsixSëTaskPri‹ôy
+(
+a
+,
+b
+,
+c
+Ë
+OSIX_FAILURE
+;
+
+	)
+
+38 
+	#OsixSu•ídTask
+(
+a
+,
+b
+Ë
+OSIX_FAILURE
+;
+
+	)
+
+39 
+	#OsixResumeTask
+(
+a
+,
+b
+Ë
+OSIX_FAILURE
+;
+
+	)
+
+41 
+UINT4
+
+
+42 
+OsixDñayTask
+ (
+UINT4
+ 
+u4Duøti⁄
+);
+
+44 
+UINT4
+
+
+45 
+OsixGëTaskId
+ (
+UINT4
+ 
+u4NodeId
+,
+
+46 c⁄° 
+UINT1
+ 
+au1TaskName
+ [4],
+
+47 
+tOsixTaskId
+ *
+pTaskId
+);
+
+50 
+UINT4
+
+
+51 
+OsixCª©eQ
+ (c⁄° 
+UINT1
+ 
+au1Q«me
+[4],
+
+52 
+UINT4
+ 
+u4QDïth
+,
+
+53 
+UINT4
+ 
+u4Qmode
+,
+
+54 
+tOsixQId
+ *
+pQId
+);
+
+56 
+UINT4
+
+
+57 
+OsixDñëeQ
+ (
+UINT4
+ 
+u4NodeId
+,
+
+58 c⁄° 
+UINT1
+ 
+au1Q«me
+[4]);
+
+74 
+UINT4
+
+
+75 
+OsixGëQId
+ (
+UINT4
+ 
+u4NodeId
+,
+
+76 c⁄° 
+UINT1
+ 
+au1Q«me
+ [4],
+
+77 
+tOsixQId
+ *
+pQid
+);
+
+79 
+UINT4
+
+
+80 
+OsixGëNumMsgsInQ
+ (
+UINT4
+ 
+u4NodeId
+,
+
+81 c⁄° 
+UINT1
+ 
+au1Q«me
+[4],
+
+82 
+UINT4
+* 
+pu4NumbîOfMsgs
+);
+
+84 
+UINT4
+
+
+85 
+OsixCª©eSem
+ (c⁄° 
+UINT1
+ 
+au1SemName
+ [4],
+
+86 
+UINT4
+ 
+u4InôülCou¡
+,
+
+87 
+UINT4
+ 
+u4Fœgs
+,
+
+88 
+tOsixSemId
+ *
+pSemId
+);
+
+90 
+UINT4
+
+
+91 
+OsixDñëeSem
+ (
+UINT4
+ 
+u4NodeId
+,
+
+92 c⁄° 
+UINT1
+ 
+au1SemName
+[4]);
+
+94 
+UINT4
+
+
+95 
+OsixTakeSem
+ (
+UINT4
+ 
+u4NodeId
+,
+
+96 c⁄° 
+UINT1
+ 
+au1SemName
+[4],
+
+97 
+UINT4
+ 
+u4Fœgs
+,
+
+98 
+UINT4
+ 
+u4Timeout
+);
+
+100 
+UINT4
+
+
+101 
+OsixGiveSem
+ (
+UINT4
+ 
+u4NodeId
+,
+
+102 c⁄° 
+UINT1
+ 
+au1SemName
+[4]);
+
+104 
+UINT4
+
+
+105 
+OsixGëSemId
+ (
+UINT4
+ 
+u4NodeId
+,
+
+106 c⁄° 
+UINT1
+ 
+au1SemName
+[4],
+
+107 
+tOsixSemId
+ *
+pSemId
+);
+
+109 
+UINT4
+
+
+110 
+OsixSídEvít
+ (
+UINT4
+ 
+u4NodeId
+,
+
+111 c⁄° 
+UINT1
+ 
+au1TaskName
+[4],
+
+112 
+UINT4
+ 
+u4Evíts
+);
+
+114 
+UINT4
+
+
+115 
+OsixRe˚iveEvít
+ (
+UINT4
+ 
+u4Evíts
+,
+
+116 
+UINT4
+ 
+u4Fœgs
+,
+
+117 
+UINT4
+ 
+u4Timeout
+,
+
+118 
+UINT4
+ *
+pu4EvítsRe˚ived
+);
+
+120 
+UINT4
+
+
+121 
+OsixGëSysTime
+(
+tOsixSysTime
+ *
+pSysTime
+);
+
+123 
+UINT4
+
+
+124 
+OsixGëSysTimeIn64Bô
+ (
+FS_UINT8
+ * 
+pSysTime
+);
+
+126 
+UINT4
+
+
+127 
+OsixI¡Lock
+();
+
+129 
+UINT4
+
+
+130 
+OsixI¡U∆ock
+(
+UINT4
+ 
+u4s
+);
+
+133 
+VOID
+
+
+134 
+OsixSëDbg
+(
+UINT4
+ 
+u4VÆue
+);
+
+136 
+VOID
+
+
+137 
+Fßp2Sèπ
+();
+
+139 
+UINT4
+
+
+140 
+OsixGëCurTaskId
+ ();
+
+142 c⁄° 
+UINT1
+ *
+
+143 
+OsixExGëTaskName
+(
+tOsixTaskId
+ 
+TaskId
+);
+
+145 #i‡
+deföed
+(
+__˝lu•lus
+Ë|| deföed(
+c_∂u•lus
+)
+
+	@inc/osxstd.h
+
+26 #i‚de‡
+_OSIX_STD_H
+
+
+27 
+	#_OSIX_STD_H
+
+
+	)
+
+30 
+	~<±hªad.h
+>
+
+31 
+	~<£m≠h‹e.h
+>
+
+72 #ifde‡
+__64BIT__
+
+
+73 
+	#FSAP_OFFSETOF
+(
+Såu˘Ty≥
+,
+Membî
+Ë((
+UINT4
+)(
+FS_ULONG
+)(&(((Såu˘Ty≥*)0)->Membî)))
+
+	)
+
+75 
+	#FSAP_OFFSETOF
+(
+Såu˘Ty≥
+,
+Membî
+Ë(
+UINT4
+)(&(((Såu˘Ty≥*)0)->Membî))
+
+	)
+
+79 #unde‡
+PRIVATE
+
+
+80 #unde‡
+PUBLIC
+
+
+81 #unde‡
+VOLATILE
+
+
+82 #unde‡
+EXPORT
+
+
+90 #i‚de‡
+NULL
+
+
+91 
+	#NULL
+ (0)
+
+	)
+
+94 #i‡!
+deföed
+(
+PRIVATE
+)
+
+95 
+	#PRIVATE
+ 
+
+	)
+
+98 #i‡!
+deföed
+(
+VOLATILE
+)
+
+99 
+	#VOLATILE
+ vﬁ©ûe
+
+	)
+
+102 #i‡!
+deföed
+(
+PUBLIC
+)
+
+103 
+	#PUBLIC
+ 
+
+	)
+
+106 #i‡!
+deföed
+(
+FALSE
+) || (FALSE != 0)
+
+107 
+	#FALSE
+ (0)
+
+	)
+
+110 #i‡!
+deföed
+(
+TRUE
+) || (TRUE != 1)
+
+111 
+	#TRUE
+ (1)
+
+	)
+
+114 #i‚de‡
+EXPORT
+
+
+115 
+	#EXPORT
+
+
+	)
+
+118 #i‡
+OSIX_HOST
+ =
+OSIX_LITTLE_ENDIAN
+
+
+119 
+	#OSIX_NTOHL
+(
+x
+Ë(
+UINT4
+)(((x & 0xFF000000)>>24) | \
+
+120 ((
+x
+ & 0x00FF0000)>>8) | \
+
+121 ((
+x
+ & 0x0000FF00)<<8 ) | \
+
+122 ((
+x
+ & 0x000000FF)<<24) \
+
+123 )
+
+	)
+
+124 
+	#OSIX_NTOHS
+(
+x
+Ë(
+UINT2
+)(((x & 0xFF00)>>8Ë| ((x & 0x00FF)<<8))
+
+	)
+
+125 
+	#OSIX_HTONL
+(
+x
+Ë(
+UINT4
+)(
+	`OSIX_NTOHL
+(x))
+
+	)
+
+126 
+	#OSIX_HTONS
+(
+x
+Ë(
+UINT2
+)(
+	`OSIX_NTOHS
+(x))
+
+	)
+
+127 
+	#OSIX_NTOHF
+(
+x
+Ë(
+FLT4
+)(
+	`FsNtohf
+ (x))
+
+	)
+
+128 
+	#OSIX_HTONF
+(
+x
+Ë(
+FLT4
+)(
+	`FsNtohf
+(x))
+
+	)
+
+130 
+	#OSIX_NTOHL
+(
+x
+Ë(
+UINT4
+)(x)
+
+	)
+
+131 
+	#OSIX_NTOHS
+(
+x
+Ë(
+UINT2
+)(x)
+
+	)
+
+132 
+	#OSIX_HTONL
+(
+x
+Ë(
+UINT4
+)(x)
+
+	)
+
+133 
+	#OSIX_HTONS
+(
+x
+Ë(
+UINT2
+)(x)
+
+	)
+
+134 
+	#OSIX_NTOHF
+(
+x
+Ë(
+FLT4
+)(x)
+
+	)
+
+135 
+	#OSIX_HTONF
+(
+x
+Ë(
+FLT4
+)(x)
+
+	)
+
+	@inc/osxsys.h
+
+12 #i‚de‡
+_OSIX_SYS_H
+
+
+13 
+	#_OSIX_SYS_H
+
+
+	)
+
+20 
+	#OSIX_GLOBAL
+ 0x0
+
+	)
+
+21 
+	#OSIX_LOCAL
+ 0x1
+
+	)
+
+22 
+	#OSIX_WAIT
+ (
+UINT4
+)(~0UL)
+
+	)
+
+23 
+	#OSIX_NO_WAIT
+ 0
+
+	)
+
+26 
+	#SELF_TASKNAME
+ ((
+UINT1
+ *)
+	`OsixExGëTaskName
+(
+	`OsixGëCurTaskId
+()))
+
+	)
+
+33 
+	#OSIX_TASK_SUPERVISORY_MODE
+ 0x0
+
+	)
+
+34 
+	#OSIX_TASK_USER_MODE
+ 0x8
+
+	)
+
+35 
+	#OSIX_TASK_TIME_SLICING_ENABLED
+ 0x0
+
+	)
+
+36 
+	#OSIX_TASK_TIME_SLICING_DISABLED
+ 0x10
+
+	)
+
+37 
+	#OSIX_TASK_PREEMPTIVE
+ 0x0
+
+	)
+
+38 
+	#OSIX_TASK_NON_PREEMPTIVE
+ 0x20
+
+	)
+
+39 
+	#OSIX_TASK_ISR_ENABLED
+ 0x0
+
+	)
+
+40 
+	#OSIX_TASK_ISR_DISABLED
+ 0x40
+
+	)
+
+42 
+	#OSIX_DEFAULT_STACK_SIZE
+ 10000
+
+	)
+
+47 
+	#CM_OSIX_DEFAULT_LARGE_STACK_SIZE
+ 
+OSIX_DEFAULT_STACK_SIZE
+
+
+	)
+
+49 
+	#OSIX_DEFAULT_TASK_MODE
+ \
+
+50 (
+OSIX_GLOBAL
+|\
+
+51 
+OSIX_TASK_SUPERVISORY_MODE
+|\
+
+52 
+OSIX_TASK_TIME_SLICING_ENABLED
+)
+
+	)
+
+58 
+	#OSIX_MSG_NORMAL
+ 0x0
+
+	)
+
+59 
+	#OSIX_MSG_URGENT
+ 0x80
+
+	)
+
+66 
+	#OSIX_SEM_FIFO
+ 0x0
+
+	)
+
+67 
+	#OSIX_SEM_PRIOR
+ 0x100
+
+	)
+
+69 
+	#OSIX_DEFAULT_SEM_MODE
+ (
+OSIX_SEM_FIFO
+|
+OSIX_GLOBAL
+)
+
+	)
+
+75 
+	#OSIX_EV_ANY
+ 0x0
+
+	)
+
+76 
+	#OSIX_EV_ALL
+ 0x200
+
+	)
+
+83 
+	#OSIX_SUCCESS
+ 0
+
+	)
+
+84 
+	#OSIX_FAILURE
+ 1
+
+	)
+
+86 
+	#OSIX_ERR_NOTSUSP
+ 2
+
+	)
+
+87 
+	#OSIX_ERR_NO_EVENTS
+ 3
+
+	)
+
+88 
+	#OSIX_ERR_NO_MSG
+ 4
+
+	)
+
+89 
+	#OSIX_ERR_NO_RSRC
+ 5
+
+	)
+
+90 
+	#OSIX_ERR_NO_SEM
+ 6
+
+	)
+
+91 
+	#OSIX_ERR_NO_SUCH_Q
+ 7
+
+	)
+
+92 
+	#OSIX_ERR_NO_SUCH_SEM
+ 8
+
+	)
+
+93 
+	#OSIX_ERR_NO_SUCH_TASK
+ 9
+
+	)
+
+94 
+	#OSIX_ERR_PRIORITY
+ 10
+
+	)
+
+95 
+	#OSIX_ERR_QNF
+ 11
+
+	)
+
+96 
+	#OSIX_ERR_Q_DELETED
+ 12
+
+	)
+
+97 
+	#OSIX_ERR_Q_FULL
+ 13
+
+	)
+
+98 
+	#OSIX_ERR_SEM_DELETED
+ 14
+
+	)
+
+99 
+	#OSIX_ERR_STK_SIZE
+ 15
+
+	)
+
+100 
+	#OSIX_ERR_SUSP
+ 16
+
+	)
+
+101 
+	#OSIX_ERR_TASKNF
+ 17
+
+	)
+
+102 
+	#OSIX_ERR_TASK_ACTIVATION
+ 18
+
+	)
+
+103 
+	#OSIX_ERR_TASK_MODE
+ 19
+
+	)
+
+104 
+	#OSIX_ERR_TIMEOUT
+ 20
+
+	)
+
+105 
+	#OSIX_ERR_UNKNOWN
+ 21
+
+	)
+
+106 
+	#OSIX_ERR_OS_DOES_NOT_SUPP
+ 22
+
+	)
+
+107 
+	#OSIX_ERR_NO_SUCH_OBJ
+ 23
+
+	)
+
+110 
+	#OSIX_DBG_MINOR
+ 0x1
+
+	)
+
+111 
+	#OSIX_DBG_MAJOR
+ 0x2
+
+	)
+
+112 
+	#OSIX_DBG_CRITICAL
+ 0x4
+
+	)
+
+113 
+	#OSIX_DBG_FATAL
+ 0x8
+
+	)
+
+132 
+	sOsixCfg
+
+
+134 
+UINT4
+ 
+	mu4MaxTasks
+;
+
+135 
+UINT4
+ 
+	mu4MaxQs
+;
+
+136 
+UINT4
+ 
+	mu4MaxSems
+;
+
+137 
+UINT4
+ 
+	mu4MyNodeId
+;
+
+138 
+UINT4
+ 
+	mu4TicksPîSec⁄d
+;
+
+139 
+UINT4
+ 
+	mu4Sy°emTimögUnôsPîSec⁄d
+;
+
+140 } 
+	ttOsixCfg
+;
+
+142 
+VOID
+ * 
+	ttOsixQId
+;
+
+143 
+£m_t
+ * 
+	ttOsixSemId
+;
+
+144 
+UINT4
+ 
+	ttOsixTaskId
+;
+
+145 
+UINT4
+ 
+	ttOsixSysTime
+;
+
+	@inc/proto.h
+
+1 #i‚de‡
+CAMEO_ARCH_MAIN_H
+
+
+2 
+	#CAMEO_ARCH_MAIN_H
+
+
+	)
+
+10 
+	~<°dlib.h
+>
+
+11 
+	~<°dio.h
+>
+
+13 
+INT4
+ 
+ArchTaskMaö
+(
+VOID
+);
+
+14 
+VOID
+ 
+TaskAMaö
+(VOID);
+
+	@inc/srmmem.h
+
+10 #i‚de‡
+SRM_MEM_H
+
+
+11 
+	#SRM_MEM_H
+
+
+	)
+
+13 
+VOID
+
+
+14 
+DebugShowMemPoﬁDëaûs
+(
+VOID
+);
+
+16 
+	#MEM_FREE_POOL_UNIT_COUNT
+(
+_Id
+Ë
+	`MemGëFªeUnôs
+(_Id)
+
+	)
+
+24 
+	#MEM_SUCCESS
+ 0
+
+	)
+
+25 
+	#MEM_OK_BUT_NOT_ALIGNED
+ 1
+
+	)
+
+26 
+	#MEM_FAILURE
+ (
+UINT4
+Ë(~0UL)
+
+	)
+
+29 
+	#MEM_DBG_MINOR
+ 0x1
+
+	)
+
+30 
+	#MEM_DBG_MAJOR
+ 0x2
+
+	)
+
+31 
+	#MEM_DBG_CRITICAL
+ 0x4
+
+	)
+
+32 
+	#MEM_DBG_FATAL
+ 0x8
+
+	)
+
+33 
+	#MEM_DBG_ALWAYS
+ 0x10
+
+	)
+
+36 
+	#MEM_DEFAULT_MEMORY_TYPE
+ 0x00
+
+	)
+
+37 
+	#MEM_HEAP_MEMORY_TYPE
+ 0x01
+
+	)
+
+39 
+	#INVALID_POOL_ID
+ 0
+
+	)
+
+41 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+43 
+	#VAR_STR
+(
+x
+Ë#x
+
+	)
+
+45 
+	#MemCª©eMemPoﬁ
+(
+size
+,
+u4NumNodes
+,
+MemTy≥
+,
+PoﬁId
+) \
+
+46 
+	`MemCª©eMemPoﬁDbg
+(
+size
+,
+u4NumNodes
+,
+MemTy≥
+,
+PoﬁId
+, \
+
+47 
+__FUNCTION__
+,
+__LINE__
+ )
+
+	)
+
+50 
+	sMemChunkCfg
+
+
+52 
+UINT4
+ 
+	mu4SèπAddr
+;
+
+53 
+UINT4
+ 
+	mu4Lígth
+;
+
+54 } 
+	ttMemChunkCfg
+;
+
+56 
+	sMemTy≥Cfg
+
+
+58 
+UINT4
+ 
+	mu4Mem‹yTy≥
+;
+
+61 
+UINT4
+ 
+	mu4NumbîOfChunks
+;
+
+64 
+tMemChunkCfg
+ 
+	mMemChunkCfg
+[1];
+
+67 } 
+	ttMemTy≥Cfg
+;
+
+69 
+	sMemPoﬁCfg
+
+
+71 
+UINT4
+ 
+	mu4MaxMemPoﬁs
+;
+
+74 
+UINT4
+ 
+	mu4NumbîOfMemTy≥s
+;
+
+77 
+tMemTy≥Cfg
+ 
+	mMemTy≥s
+ [1];
+
+80 } 
+	ttMemPoﬁCfg
+;
+
+82 
+UINT4
+ 
+	ttMemPoﬁId
+;
+
+89 #i‡
+deföed
+(
+__˝lu•lus
+Ë|| deföed(
+c_∂u•lus
+)
+
+93 
+UINT4
+
+
+94 
+MemInôMemPoﬁ
+ (
+tMemPoﬁCfg
+ *
+pMemPoﬁCfg
+);
+
+99 
+UINT4
+
+
+100 
+MemPrötMemPoﬁSèti°ics
+ (
+tMemPoﬁId
+ 
+PoﬁId
+);
+
+101 
+UINT4
+
+
+102 
+MemPrötMemPoﬁC⁄ã¡
+ (
+tMemPoﬁId
+ 
+PoﬁId
+);
+
+104 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+106 
+UINT4
+
+
+107 
+MemCª©eMemPoﬁDbg
+ (
+UINT4
+ 
+u4BlockSize
+, UINT4 
+u4NumbîOfBlocks
+,
+
+108 
+UINT4
+ 
+u4Ty≥OfMem‹y
+, 
+tMemPoﬁId
+ *
+pPoﬁId
+,
+
+109  c⁄° 
+CHR1
+ *
+pu1FuncName
+,
+
+110 
+UINT4
+ 
+u4LiöeNo
+ );
+
+112 
+	#MemAŒoˇãMemBlock
+(
+Id
+,
+µ
+Ë
+	`MemAŒoˇãMemBlockLók
+(Id,Öp, 
+__LINE__
+,
+__PRETTY_FUNCTION__
+)
+
+	)
+
+114 
+	#MemAŒocMemBlk
+(
+Id
+Ë
+	`MemAŒocMemBlkLók
+(Id, 
+__LINE__
+,
+__PRETTY_FUNCTION__
+)
+
+	)
+
+116 
+UINT4
+
+
+117 
+MemAŒoˇãMemBlockLók
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ **
+µu1Block
+, 
+UINT4
+, c⁄° 
+CHR1
+ *);
+
+119 
+VOID
+ *
+
+120 
+MemAŒocMemBlkLók
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT4
+, c⁄° 
+CHR1
+ *);
+
+122 
+VOID
+
+
+123 
+MemLók
+ (
+tMemPoﬁId
+ 
+PoﬁId
+);
+
+125 
+UINT4
+
+
+126 
+MemRñó£MemBlockDbg
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ *
+pu1Block
+,
+
+127 c⁄° 
+CHR1
+ * 
+pFunc
+, 
+UINT4
+ 
+u4LöeNo
+);
+
+129 
+	#MemRñó£MemBlock
+(
+Id
+, 
+pBlock
+) \
+
+130 
+	`MemRñó£MemBlockDbg
+(
+Id
+, 
+pBlock
+, 
+__PRETTY_FUNCTION__
+, 
+__LINE__
+)
+
+	)
+
+132 
+UINT4
+
+
+133 
+MemAŒoˇãMemBlock
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ **
+µu1Block
+);
+
+135 
+VOID
+ * 
+MemAŒocMemBlk
+ (
+tMemPoﬁId
+ 
+PoﬁId
+);
+
+137 
+UINT4
+
+
+138 
+MemCª©eMemPoﬁ
+ (
+UINT4
+ 
+u4BlockSize
+, UINT4 
+u4NumbîOfBlocks
+,
+
+139 
+UINT4
+ 
+u4Ty≥OfMem‹y
+, 
+tMemPoﬁId
+ *
+pPoﬁId
+);
+
+141 
+UINT4
+
+
+142 
+MemRñó£MemBlock
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ *
+pu1Block
+);
+
+145 
+UINT4
+
+
+146 
+MemDñëeMemPoﬁ
+ (
+tMemPoﬁId
+ 
+PoﬁId
+);
+
+148 
+UINT4
+
+
+149 
+MemGëFªeUnôs
+ (
+UINT4
+ 
+u4QueID
+);
+
+151 
+UINT4
+
+
+152 
+MemGëTŸÆUnôs
+ (
+UINT4
+ 
+u4QueID
+);
+
+155 
+UINT4
+
+
+156 
+MemShutDownMemPoﬁ
+ ();
+
+158 
+VOID
+
+
+159 
+MemSëDbg
+(
+UINT4
+ 
+u4VÆ
+);
+
+162 
+BOOL1
+ 
+CmMemIsCruPoﬁOvîLimô
+ (
+UINT1
+ 
+u1Pî˚¡
+);
+
+163 #i‡
+deföed
+(
+__˝lu•lus
+Ë|| deföed(
+c_∂u•lus
+)
+
+	@inc/srmmemi.h
+
+10 #i‚de‡
+SRM_MEMI_H
+
+
+11 
+	#SRM_MEMI_H
+
+
+	)
+
+19 
+	sCRU_SLL_NODE
+ {
+
+20 
+UINT1
+ *
+	mpNext
+;
+
+21 } 
+	ttCRU_SLL_NODE
+;
+
+23 
+	sCRU_SLL
+ {
+
+24 
+UINT1
+ *
+	mpu1Ba£
+;
+
+25 
+UINT1
+ *
+	mpu1Hód
+;
+
+26 } 
+	ttCRU_SLL
+;
+
+28 
+	sMEM_FREE_POOL_REC
+{
+
+29 
+UINT4
+ 
+	mu4Size
+;
+
+32 
+UINT4
+ 
+	mu4UnôsCou¡
+;
+
+35 
+UINT4
+ 
+	mu4FªeUnôsCou¡
+;
+
+38 
+UINT4
+ 
+	mu4MemTy≥
+;
+
+41 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+42 
+	#MEM_DBG_INFO_SZ
+ (52)
+
+	)
+
+43 
+	#MEM_DBG_INFO_LEN
+ (50)
+
+	)
+
+44 
+UINT4
+ 
+	mu4AŒocCou¡
+;
+
+47 
+UINT4
+ 
+	mu4Rñó£Cou¡
+;
+
+50 
+UINT4
+ 
+	mu4AŒocFaûCou¡
+;
+
+53 
+UINT4
+ 
+	mu4HópAŒocFaûCou¡
+;
+
+56 
+UINT4
+ 
+	mu4Rñó£FaûCou¡
+;
+
+59 
+UINT4
+ 
+	mu4PókUßgeCou¡
+;
+
+60 
+UINT1
+ 
+	mau1Ow√rTask
+[
+OSIX_NAME_LEN
+ + 4];
+
+61 
+UINT4
+ 
+	mu4LöeNo
+;
+
+65 c⁄° 
+CHR1
+ *
+	mpu1Func
+;
+
+69 
+UINT1
+ *
+	mpu1A˘uÆBa£
+;
+
+72 
+UINT1
+ *
+	mpu1SèπAddr
+;
+
+75 
+UINT1
+ *
+	mpu1EndAddr
+;
+
+78 
+tCRU_SLL
+ 
+	mBufLi°
+;
+
+81 
+tOsixSemId
+ 
+	mSemId
+;
+
+83 } 
+	ttMemFªePoﬁRec
+;
+
+85 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+90 c⁄° 
+CHR1
+ *
+	mpu1Func
+;
+
+93 #i‚de‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+94 
+UINT4
+ 
+	mu4LöeNo
+;
+
+96 } 
+	ttMemBlkDbg
+;
+
+99 #i‚de‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+100 
+UINT4
+ 
+	mu4Sig«tuª
+;
+
+101 
+UINT4
+ 
+	mu4Sy°emD©a
+;
+
+102 
+UINT4
+ 
+	mu4TimeSèmp
+;
+
+104 
+tMemBlkDbg
+ 
+	mBlkDbg
+;
+
+105 } 
+	ttMemDebugInfo
+;
+
+107 
+	#MEM_DEBUG_SIGNATURE_VAL
+ 0x7db12997
+
+	)
+
+108 
+	#MEM_THRESHOLD_VAL
+ 0.01
+
+	)
+
+116 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+117 íum {
+	mmem_debug_block_‰ì
+ = 0, 
+	mmem_debug_block_Æloˇãd
+};
+
+119 
+	#MEM_DEBUG_SYSTEM_DATA
+(
+pBlock
+)\
+
+120 (((
+tMemDebugInfo
+ *)(
+VOID
+ *)((
+UINT1
+ *)(
+pBlock
+)+
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4Size
+))->
+u4Sy°emD©a
+)
+
+	)
+
+122 
+	#MEM_DEBUG_TIMESTAMP
+(
+pBlock
+)\
+
+123 (((
+tMemDebugInfo
+ *)(
+VOID
+ *)((
+UINT1
+ *)(
+pBlock
+)+
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4Size
+))->
+u4TimeSèmp
+)
+
+	)
+
+125 
+	#MEM_DEBUG_SIGNATURE
+(
+pBlock
+)\
+
+126 (((
+tMemDebugInfo
+ *)(
+VOID
+ *)((
+UINT1
+ *)(
+pBlock
+)+
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4Size
+))->
+u4Sig«tuª
+)
+
+	)
+
+132 
+	#MEM_DEBUG_FUNC
+(
+pBlock
+)\
+
+133 (((
+tMemDebugInfo
+ *)(
+VOID
+ *)((
+UINT1
+ *)(
+pBlock
+)+
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4Size
+))->
+BlkDbg
+.
+pu1Func
+)
+
+	)
+
+135 #i‚de‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+136 
+	#MEM_DEBUG_LINE
+(
+pBlock
+)\
+
+137 (((
+tMemDebugInfo
+ *)(
+VOID
+ *)((
+UINT1
+ *)(
+pBlock
+)+
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4Size
+))->
+BlkDbg
+.
+u4LöeNo
+)
+
+	)
+
+141 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+143 
+	#MEM_DEBUG_INFO_SIZE
+ (((
+tMemDebugInfo
+Ë+ 
+MEM_ALIGN_BYTE
+Ë& 
+MEM_ALIGN
+)
+
+	)
+
+145 
+	#MEM_DEBUG_INFO_SIZE
+ 0
+
+	)
+
+148 
+	#MEM_POOL_GET_BLOCK_SIZE
+(
+pMemFªePoﬁRec
+Ë’MemFªePoﬁRec->
+u4Size
+)
+
+	)
+
+149 
+	#MEM_POOL_GET_NUM_BLOCKS
+(
+pMemFªePoﬁRec
+Ë’MemFªePoﬁRec->
+u4UnôsCou¡
+)
+
+	)
+
+150 
+	#MEM_POOL_GET_START_ADDR
+(
+pMemFªePoﬁRec
+Ë’MemFªePoﬁRec->
+pu1SèπAddr
+)
+
+	)
+
+151 
+	#MEM_POOL_GET_END_ADDR
+(
+pMemFªePoﬁRec
+Ë’MemFªePoﬁRec->
+pu1EndAddr
+)
+
+	)
+
+153 
+	#MEM_ENTER_CS
+(
+Id
+Ë
+	`OsixSemTake
+(
+pMemFªePoﬁRecLi°
+[Id].
+SemId
+)
+
+	)
+
+155 
+	#MEM_LEAVE_CS
+(
+Id
+Ë
+	`OsixSemGive
+(
+pMemFªePoﬁRecLi°
+[Id].
+SemId
+)
+
+	)
+
+160 
+	#MEM_MUTEX_NAME
+ (c⁄° 
+UINT1
+ *)"MEMU"
+
+	)
+
+162 
+	#MEM_DBG_FLAG
+ 
+gu4MemDbg
+
+
+	)
+
+163 
+	#MEM_MODNAME
+ "MEM"
+
+	)
+
+165 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+166 
+	#MEM_DBG
+(
+x
+Ë
+UéTrcLog
+ 
+	)
+x
+
+168 
+	#MEM_DBG
+(
+x
+)
+
+	)
+
+170 
+	#MEM_PRNT
+ 
+UéTrcPröt
+
+
+	)
+
+171 
+	#MEM_ALIGN
+ ((~0ULË& ~(
+FS_ULONG
+)((FS_ULONGË- 1))
+
+	)
+
+172 
+	#MEM_ALIGN_BYTE
+ ((
+FS_ULONG
+Ë- 1)
+
+	)
+
+174 
+UINT4
+ 
+MemIsVÆidMem‹yTy≥
+(UINT4);
+
+175 
+INT4
+ 
+MemP¨£S≥c
+ (
+UINT1
+ *
+s
+, UINT1 *
+pu1Sign
+, 
+UINT4
+ *
+pu4Duøti⁄
+,
+
+176 
+UINT1
+ *
+pu1HMS
+);
+
+177 
+UINT4
+ 
+MemM©ch
+ (UINT4 
+u4TimeSèmp
+, 
+UINT1
+ 
+u1Sign
+, UINT4 
+u4Duøti⁄
+,
+
+178 
+UINT1
+ 
+u1HMS
+);
+
+	@inc/utlmacro.h
+
+10 #i‚de‡
+_UTLMACRO_H
+
+
+11 
+	#_UTLMACRO_H
+
+
+	)
+
+19 #unde‡
+ATOI
+
+
+20 #unde‡
+ATOL
+
+
+21 #unde‡
+INET_ADDR
+
+
+22 #unde‡
+INET_NTOA
+
+
+23 #unde‡
+INET_NTOP
+
+
+24 #unde‡
+INET_PTON
+
+
+25 #unde‡
+ISDIGIT
+
+
+26 #unde‡
+ISALPHA
+
+
+27 #unde‡
+ISSPACE
+
+
+28 #unde‡
+ISXDIGIT
+
+
+29 #unde‡
+MEM_CALLOC
+
+
+30 #unde‡
+MEMCMP
+
+
+31 #unde‡
+MEMCPY
+
+
+32 #unde‡
+MEM_FREE
+
+
+33 #unde‡
+MEM_MALLOC
+
+
+34 #unde‡
+MEM_REALLOC
+
+
+35 #unde‡
+MEMSET
+
+
+36 #unde‡
+OSIX_RAND
+
+
+37 #unde‡
+OSIX_RAND_MAX
+
+
+38 #unde‡
+OSIX_SEED
+
+
+39 #unde‡
+OSIX_SRAND
+
+
+40 #unde‡
+PRINTF
+
+
+41 #unde‡
+RAND
+
+
+42 #unde‡
+SCANF
+
+
+43 #unde‡
+SNPRINTF
+
+
+44 #unde‡
+SPRINTF
+
+
+45 #unde‡
+SRAND
+
+
+46 #unde‡
+SSCANF
+
+
+47 #unde‡
+STRCASECMP
+
+
+48 #unde‡
+STRNCASECMP
+
+
+49 #unde‡
+STRCAT
+
+
+50 #unde‡
+STRNCAT
+
+
+51 #unde‡
+STRCHR
+
+
+52 #unde‡
+STRCMP
+
+
+53 #unde‡
+STRCPY
+
+
+54 #unde‡
+STRLEN
+
+
+55 #unde‡
+STRNLEN
+
+
+56 #unde‡
+STRNCMP
+
+
+57 #unde‡
+STRNCPY
+
+
+58 #unde‡
+STRRCHR
+
+
+59 #unde‡
+STRSTR
+
+
+60 #unde‡
+STRTOK
+
+
+61 #unde‡
+TOLOWER
+
+
+62 #unde‡
+TOUPPER
+
+
+63 #unde‡
+AF_INET
+
+
+64 #unde‡
+AF_INET6
+
+
+67 
+	#FSAP_ASSERT
+(
+x
+Ë
+	`as£π
+(x)
+
+	)
+
+68 
+	#SPRINTF
+ 
+•rötf
+
+
+	)
+
+69 
+	#SNPRINTF
+ 
+UéS≈rötf
+
+
+	)
+
+70 
+	#VSNPRINTF
+ 
+UéV¢¥ötf
+
+
+	)
+
+71 #i‚de‡
+LINUX_KERN
+
+
+72 
+	#PRINTF
+ 
+¥ötf
+
+
+	)
+
+74 
+	#PRINTF
+ 
+¥ötk
+
+
+	)
+
+77 
+	#FOPEN
+ 
+f›í
+
+
+	)
+
+78 
+	#FCLOSE
+ 
+f˛o£
+
+
+	)
+
+79 
+	#FWRITE
+ 
+fwrôe
+
+
+	)
+
+80 
+	#FREAD
+ 
+‰ód
+
+
+	)
+
+82 
+	#SCANF
+ 
+sˇnf
+
+
+	)
+
+83 
+	#SSCANF
+ 
+ssˇnf
+
+
+	)
+
+85 
+	#ISDIGIT
+(
+c
+Ë
+	`isdigô
+(()c)
+
+	)
+
+86 
+	#ISALPHA
+(
+c
+Ë
+	`ißÕha
+(()c)
+
+	)
+
+87 
+	#ISALNUM
+(
+c
+Ë
+	`iß um
+(()c)
+
+	)
+
+88 
+	#ISSPACE
+(
+ch
+Ë
+	`is•a˚
+(ch)
+
+	)
+
+90 
+	#STRCPY
+(
+d
+,
+s
+Ë
+	`°r˝y
+ ((*)(d),(c⁄° *)(s))
+
+	)
+
+91 
+	#STRNCPY
+(
+d
+,
+s
+,
+n
+Ë
+	`°∫˝y
+ ((*)(d), (c⁄° *)(s),Ç)
+
+	)
+
+93 
+	#STRCAT
+(
+d
+,
+s
+Ë
+	`°rˇt
+((*)(d),(c⁄° *)(s))
+
+	)
+
+94 
+	#STRNCAT
+(
+d
+,
+s
+,
+n
+Ë
+	`°∫ˇt
+((*)(d),(c⁄° *)(s),Ç)
+
+	)
+
+96 
+	#STRCMP
+(
+s1
+,
+s2
+Ë
+	`°rcmp
+ ((c⁄° *)(s1), (c⁄° *)(s2))
+
+	)
+
+97 
+	#STRNCMP
+(
+s1
+,
+s2
+,
+n
+Ë
+	`°∫cmp
+ ((c⁄° *)(s1), (c⁄° *)(s2),Ç)
+
+	)
+
+99 
+	#STRCHR
+(
+s
+,
+c
+Ë
+	`°rchr
+((c⁄° *)(s), ()c)
+
+	)
+
+100 
+	#STRRCHR
+(
+s
+,
+c
+Ë
+	`°ºchr
+((c⁄° *)(s), ()c)
+
+	)
+
+102 
+	#STRLEN
+(
+s
+Ë
+	`°æí
+((c⁄° *)(s))
+
+	)
+
+103 
+	#STRNLEN
+(
+s
+, 
+n
+Ë
+	`UéSå∆í
+((c⁄° *)(s),Ç)
+
+	)
+
+105 
+	#STRTOK
+(
+s
+,
+d
+Ë
+	`°πok
+ ((*)(s), (c⁄° *)(d))
+
+	)
+
+106 
+	#STRTOK_R
+(
+s
+,
+d
+,
+p
+Ë
+	`°πok_r
+ ((*)(s), (c⁄° *)(d), (**)’))
+
+	)
+
+107 
+	#STRTOUL
+(
+s
+,
+e
+,
+b
+Ë
+	`UtûSåtoul
+ ((*)(s), (**)”), ()(b))
+
+	)
+
+108 
+	#STRCSPN
+(
+s
+,
+r
+Ë
+	`UtûSåc•n
+ ((*)(s), (*)‘))
+
+	)
+
+112 #ifde‡
+LINUX_KERN
+
+
+113 
+	gØ
+
+
+114 
+	#KMALLOC_ALLOC_LIMIT
+ 131072
+
+	)
+
+115 
+	#MEM_MALLOC
+(
+s
+,
+t
+Ë— *)
+	`LkMÆloc
+(s)
+
+	)
+
+116 
+	#MEM_CALLOC
+(
+s
+,
+c
+,
+t
+Ë— *)
+	`LkCÆloc
+(s,c)
+
+	)
+
+117 
+	#MEM_FREE
+(
+p
+Ë
+	`LkFªe
+’)
+
+	)
+
+119 #ifde‡
+CAMEO_DEBUG_WANTED
+
+
+121 
+	#MEM_MALLOC
+(
+s
+,
+t
+Ë— *)
+	`CmAPIDbgMemMÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_SYSALLOC
+, s)
+
+	)
+
+122 
+	#MEM_CALLOC
+(
+s
+,
+c
+,
+t
+Ë— *)
+	`CmAPIDbgMemCÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_SYSALLOC
+, s, c)
+
+	)
+
+123 
+	#MEM_REALLOC
+(
+p
+,
+s
+,
+t
+Ë— *)
+	`CmAPIDbgMemRÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_SYSALLOC
+,Ö, s)
+
+	)
+
+124 
+	#MEM_FREE
+(
+p
+Ë
+	`CmAPIDbgMemFªe
+’,
+CM_MEM_SYSALLOC
+)
+
+	)
+
+127 
+	#POOL_MEM_MALLOC
+(
+s
+,
+t
+Ë— *)
+	`CmAPIDbgMemMÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_POOLALLOC
+, s)
+
+	)
+
+128 
+	#POOL_MEM_CALLOC
+(
+s
+,
+c
+,
+t
+Ë— *)
+	`CmAPIDbgMemCÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_POOLALLOC
+, s, c)
+
+	)
+
+129 
+	#POOL_MEM_REALLOC
+(
+p
+,
+s
+,
+t
+Ë— *)
+	`CmAPIDbgMemRÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_POOLALLOC
+,Ö, s)
+
+	)
+
+130 
+	#POOL_MEM_FREE
+(
+p
+Ë
+	`CmAPIDbgMemFªe
+’,
+CM_MEM_POOLALLOC
+)
+
+	)
+
+132 
+	#BUDDY_MEM_MALLOC
+(
+s
+,
+t
+Ë— *)
+	`CmAPIDbgMemMÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_BUDDYALLOC
+, s)
+
+	)
+
+133 
+	#BUDDY_MEM_CALLOC
+(
+s
+,
+c
+,
+t
+Ë— *)
+	`CmAPIDbgMemCÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_BUDDYALLOC
+, s, c)
+
+	)
+
+134 
+	#BUDDY_MEM_REALLOC
+(
+p
+,
+s
+,
+t
+Ë— *)
+	`CmAPIDbgMemRÆloc
+(
+__LINE__
+, 
+__PRETTY_FUNCTION__
+, 
+CM_MEM_BUDDYALLOC
+,Ö, s)
+
+	)
+
+135 
+	#BUDDY_MEM_FREE
+(
+p
+Ë
+	`CmAPIDbgMemFªe
+’,
+CM_MEM_BUDDYALLOC
+)
+
+	)
+
+137 
+	#OSS_MEM_MALLOC
+(
+s
+,
+t
+,
+fun
+,
+löe
+Ë— *)
+	`CmAPIDbgMemMÆloc
+÷öe, fun, 
+CM_MEM_OSSALLOC
+, s)
+
+	)
+
+138 
+	#OSS_MEM_CALLOC
+(
+s
+,
+c
+,
+t
+,
+fun
+,
+löe
+Ë— *)
+	`CmAPIDbgMemCÆloc
+÷öe, fun, 
+CM_MEM_OSSALLOC
+, s, c)
+
+	)
+
+139 
+	#OSS_MEM_REALLOC
+(
+p
+,
+s
+,
+t
+,
+fun
+,
+löe
+Ë— *)
+	`CmAPIDbgMemRÆloc
+÷öe, fun, 
+CM_MEM_OSSALLOC
+,Ö, s)
+
+	)
+
+140 
+	#OSS_MEM_FREE
+(
+p
+,
+fun
+,
+löe
+Ë
+	`CmAPIDbgMemFªe
+’,
+CM_MEM_OSSALLOC
+)
+
+	)
+
+144 
+	#MEM_MALLOC
+(
+s
+,
+t
+Ë— *)
+	`mÆloc
+(s)
+
+	)
+
+145 
+	#MEM_CALLOC
+(
+s
+,
+c
+,
+t
+Ë— *)
+	`ˇŒoc
+(s, c)
+
+	)
+
+146 
+	#MEM_FREE
+(
+p
+Ë
+	`‰ì
+’)
+
+	)
+
+147 
+	#MEM_REALLOC
+(
+p
+,
+s
+,
+t
+Ë— *)
+	`ªÆloc
+’, s)
+
+	)
+
+149 
+	#POOL_MEM_MALLOC
+(
+s
+,
+t
+Ë— *)
+	`mÆloc
+(s)
+
+	)
+
+150 
+	#POOL_MEM_CALLOC
+(
+s
+,
+c
+,
+t
+Ë— *)
+	`ˇŒoc
+(s, c)
+
+	)
+
+151 
+	#POOL_MEM_FREE
+(
+p
+Ë
+	`‰ì
+’)
+
+	)
+
+152 
+	#POOL_MEM_REALLOC
+(
+p
+,
+s
+,
+t
+Ë— *)
+	`ªÆloc
+’, s)
+
+	)
+
+154 
+	#BUDDY_MEM_MALLOC
+(
+s
+,
+t
+Ë— *)
+	`mÆloc
+(s)
+
+	)
+
+155 
+	#BUDDY_MEM_CALLOC
+(
+s
+,
+c
+,
+t
+Ë— *)
+	`ˇŒoc
+(s, c)
+
+	)
+
+156 
+	#BUDDY_MEM_FREE
+(
+p
+Ë
+	`‰ì
+’)
+
+	)
+
+157 
+	#BUDDY_MEM_REALLOC
+(
+p
+,
+s
+,
+t
+Ë— *)
+	`ªÆloc
+’, s)
+
+	)
+
+159 
+	#OSS_MEM_MALLOC
+(
+s
+,
+t
+,
+f
+,
+l
+Ë— *)
+	`mÆloc
+(s)
+
+	)
+
+160 
+	#OSS_MEM_CALLOC
+(
+s
+,
+c
+,
+t
+,
+f
+,
+l
+Ë— *)
+	`ˇŒoc
+(s, c)
+
+	)
+
+161 
+	#OSS_MEM_FREE
+(
+p
+,
+f
+,
+l
+Ë
+	`‰ì
+’)
+
+	)
+
+162 
+	#OSS_MEM_REALLOC
+(
+p
+,
+s
+,
+t
+,
+f
+,
+l
+Ë— *)
+	`ªÆloc
+’, s)
+
+	)
+
+168 
+	#MEMCPY
+(
+d
+,
+s
+,
+n
+Ë
+	`mem˝y
+((*)(d), (c⁄° *)(s),Ç)
+
+	)
+
+169 
+	#MEMCMP
+(
+s1
+,
+s2
+,
+n
+Ë
+	`memcmp
+((c⁄° *)(s1), (c⁄° *)(s2),Ç)
+
+	)
+
+170 
+	#MEMSET
+(
+s
+,
+c
+,
+n
+Ë
+	`mem£t
+((*)(s), ()c,Ç)
+
+	)
+
+171 
+	#MEMMOVE
+(
+d
+,
+s
+,
+n
+Ë
+	`UtûMemMove
+((*)(d), (c⁄° *Ë(s), (n))
+
+	)
+
+172 
+	#ATOI
+(
+p
+Ë
+	`UéAtoi
+((c⁄° *)’))
+
+	)
+
+173 
+	#RAND
+ 
+UtûR™d
+
+
+	)
+
+174 
+	#SRAND
+ 
+§™d
+
+
+	)
+
+176 
+	#OSIX_RAND_MAX
+ 
+RAND_MAX
+
+
+	)
+
+177 
+	#OSIX_SEED
+(
+£ed
+Ë
+	`OsixGëSysTime
+((
+tOsixSysTime
+ *)&(£ed))
+
+	)
+
+178 
+	#OSIX_SRAND
+(
+£ed
+Ë
+	`§™d
+(£ed)
+
+	)
+
+179 
+	#OSIX_RAND
+(
+m
+, 
+M
+Ë(m+(Ë((()(M-m+1))*
+	`RAND
+()/(
+OSIX_RAND_MAX
++1.0)))
+
+	)
+
+181 
+	#STRSTR
+(
+S
+,
+s
+Ë
+	`°r°r
+((c⁄° *)(S), (c⁄° *)(s))
+
+	)
+
+182 
+	#STRCASECMP
+(
+s1
+, 
+s2
+Ë
+	`UéSåCa£Cmp
+((c⁄° *)(s1), (c⁄° *)(s2))
+
+	)
+
+183 
+	#STRNCASECMP
+(
+s1
+, 
+s2
+, 
+n
+)\
+
+184 
+	`UéSånCa£Cmp
+((c⁄° *)(
+s1
+), (c⁄° *)(
+s2
+), (
+UINT4
+)(
+n
+))
+
+	)
+
+185 
+	#ATOL
+(
+s
+Ë
+	`©ﬁ
+((c⁄° *)(s))
+
+	)
+
+186 
+	#ISXDIGIT
+(
+i
+Ë
+	`isxdigô
+(()(i))
+
+	)
+
+187 
+	#IS_ASCII
+(
+c
+Ë((
+UINT4
+)(c)<=0177)
+
+	)
+
+188 
+	#TOLOWER
+(
+c
+Ë
+	`tﬁowî
+(c)
+
+	)
+
+189 
+	#TOUPPER
+(
+c
+Ë
+	`touµî
+(c)
+
+	)
+
+190 
+	#ISUPPER
+(
+c
+Ë
+	`isuµî
+(c)
+
+	)
+
+192 
+	#INET_ADDR
+(
+s
+Ë
+	`UéI√tAddr
+((c⁄° *)s)
+
+	)
+
+193 
+	#INET_NTOA
+(
+ö
+Ë
+	`UéI√tNtﬂ
+(ö)
+
+	)
+
+195 
+	#INET_NTOP
+(
+af
+, 
+s
+, 
+d
+, 
+n
+)\
+
+196 
+	`öë_¡›
+(()
+af
+, (c⁄° *)(
+s
+), (*)
+d
+, 
+n
+)
+
+	)
+
+197 
+	#INET_PTON
+(
+af
+, 
+s
+, 
+d
+)\
+
+198 
+	`öë_±⁄
+(
+af
+, (c⁄° *)(
+s
+), (*)(
+d
+))
+
+	)
+
+200 
+	#INET_NTOA6
+(
+ö
+Ë
+	`UéI√tNtﬂ6
+(ö)
+
+	)
+
+201 
+	#INET_ATON6
+(
+s
+, 
+pö
+Ë
+	`UéI√tAt⁄6
+((c⁄° 
+CHR1
+ *)s, (
+tUéIn6Addr
+ *Ìö)
+
+	)
+
+203 
+	#FLOOR
+(
+x
+Ë
+	`UtûFlo‹
+(x)
+
+	)
+
+204 
+	#CEIL
+(
+x
+Ë
+	`UtûCeû
+(x)
+
+	)
+
+205 
+	#LOG
+(
+x
+Ë
+	`UtûLog
+(x)
+
+	)
+
+206 
+	#POW
+(
+x
+,
+y
+Ë
+	`UtûPow
+(x,y)
+
+	)
+
+207 
+	#EXP
+(
+x
+Ë
+	`UtûExp
+(x)
+
+	)
+
+210 
+	#FS_DBL_MIN
+ 4.94065645841246544e-324
+
+	)
+
+211 
+	#FS_FLT_MIN
+ ((
+FLT4
+)1.40129846432481707e-45)
+
+	)
+
+212 
+	#FS_DBL_MAX
+ 1.79769313486231470e+308
+
+	)
+
+213 
+	#FS_FLT_MAX
+ ((
+FLT4
+)3.40282346638528860e+38)
+
+	)
+
+229 #i‡(
+ALIGN_SAFE
+ =
+FSAP_ON
+)
+
+230 
+	#PTR_FETCH2
+(
+v
+,
+p
+Ë(v = (
+UINT2
+)(((*(
+UINT1
+ *ÌË<< 8Ë| (*((UINT1 *Ì+1))))
+
+	)
+
+231 
+	#PTR_FETCH4
+(
+v
+,
+p
+Ë(v = (((*(
+UINT1
+ *ÌË<< 24Ë| (*((UINT1 *Ì+1Ë<< 16Ë| (*((UINT1 *Ì+2Ë<< 8Ë| *((UINT1 *Ì+3)))
+
+	)
+
+233 
+	#PTR_ASSIGN2
+(
+p
+,
+v
+) \
+
+234 *((
+UINT1
+ *)
+p
++1Ë(UINT1)(
+v
+); \
+
+235 *((
+UINT1
+ *)
+p
+Ë(UINT1)((
+v
+) >> 8); \
+
+236 
+
+	)
+
+237 
+	#PTR_ASSIGN4
+(
+p
+,
+v
+) \
+
+238 
+	`PTR_ASSIGN2
+((
+p
+), (
+v
+) >> 16); \
+
+239 
+	`PTR_ASSIGN2
+(
+p
++2, 
+v
+);
+
+	)
+
+242 
+	#PTR_ASSIGN2
+(
+p
+,
+v
+) \
+
+244 
+UINT2
+ 
+u2VÆToPå
+;\
+
+245 
+u2VÆToPå
+ = 
+	`OSIX_HTONS
+(
+v
+);\
+
+246 
+	`MEMCPY
+–(
+CHR1
+ *Ë
+p
+, (CHR1 *Ë&
+u2VÆToPå
+, (
+UINT2
+));\
+
+247 }
+
+	)
+
+249 
+	#PTR_ASSIGN4
+(
+p
+,
+v
+) \
+
+251 
+UINT4
+ 
+u4VÆToPå
+;\
+
+252 
+u4VÆToPå
+ = 
+	`OSIX_HTONL
+(
+v
+);\
+
+253 
+	`MEMCPY
+–(
+CHR1
+ *Ë
+p
+, (CHR1 *Ë&
+u4VÆToPå
+, (
+UINT4
+)); \
+
+254 }
+
+	)
+
+257 
+	#PTR_FETCH2
+(
+v
+,
+p
+) \
+
+259 
+UINT2
+ 
+u2PåToVÆ
+; \
+
+260 
+	`MEMCPY
+–(
+CHR1
+ *Ë&
+u2PåToVÆ
+, (CHR1 *Ë
+p
+, (
+UINT2
+)); \
+
+261 
+v
+ = (
+UINT2
+)
+	`OSIX_HTONS
+(
+u2PåToVÆ
+); \
+
+262 }
+
+	)
+
+264 
+	#PTR_FETCH4
+(
+v
+,
+p
+) \
+
+266 
+UINT4
+ 
+u4PåToVÆ
+; \
+
+267 
+	`MEMCPY
+–(
+CHR1
+ *Ë&
+u4PåToVÆ
+, (CHR1 *Ë
+p
+, (
+UINT4
+)); \
+
+268 
+v
+ = 
+	`OSIX_HTONL
+(
+u4PåToVÆ
+); \
+
+269 }
+
+	)
+
+273 
+	#IS_LEAP
+(
+yr
+Ë((yrË% 4 =0 && ((yrË% 100 !0 || (yrË% 400 =0))
+
+	)
+
+274 
+	#DAYS_IN_YEAR
+(
+yr
+Ë(
+	`IS_LEAP
+((yr)Ë? 366 : 365)
+
+	)
+
+275 
+	#SECS_IN_YEAR
+(
+yr
+Ë(
+	`IS_LEAP
+((yr)Ë? 31622400 : 31536000);
+
+	)
+
+276 
+	#SECS_IN_DAY
+ 86400
+
+	)
+
+277 
+	#SECS_IN_HOUR
+ 3600
+
+	)
+
+278 
+	#SECS_IN_MINUTE
+ 60
+
+	)
+
+279 
+	#HOURS_IN_DAY
+ 24
+
+	)
+
+280 
+	#MINUTES_IN_HOUR
+ 60
+
+	)
+
+281 
+	#TM_BASE_YEAR
+ 2000
+
+	)
+
+282 
+	#TIME_STR_BUF_SIZE
+ 30
+
+	)
+
+283 
+	#TM_SEC_SYS_BASE_2_FSAP_BASE_YEAR
+ (946665000)
+
+	)
+
+286 
+	#MEM_MAX_BYTES
+(
+NoByãs
+,
+MAX
+Ë(((NoByãsË<(MAX)Ë? (NoByãsË: (MAX))
+
+	)
+
+288 
+	#UTL_TRACE_TOKEN_DELIMITER
+ ' '
+
+	)
+
+290 
+	#UTL_TRACE_ENABLE
+ 1
+
+	)
+
+291 
+	#UTL_TRACE_DISABLE
+ 2
+
+	)
+
+292 
+	#UTL_MAX_TRC_LEN
+ 15
+
+	)
+
+294 
+	#AF_INET
+ 2
+
+	)
+
+295 
+	#AF_INET6
+ 10
+
+	)
+
+296 
+	#UTL_INET_ADDRSTRLEN
+ 16
+
+	)
+
+297 
+	#UTL_INET6_ADDRSTRLEN
+ 46
+
+	)
+
+299 
+	s_tUéVÆidTø˚s
+
+
+301 
+UINT1
+ *
+	mpu1Tø˚Såögs
+;
+
+302 
+UINT2
+ 
+	mu2MaxTrcTy≥s
+;
+
+303 
+UINT1
+ 
+	mau1Pad
+[2];
+
+304 }
+	ttUéVÆidTø˚s
+;
+
+309 
+UINT4
+ 
+	mu4Addr
+;
+
+310 } 
+	ttUéInAddr
+;
+
+315 
+UINT1
+ 
+	mu1addr
+[16];
+
+316 } 
+	ttUéIn6Addr
+;
+
+323 
+UINT4
+ 
+	mtm_£c
+;
+
+324 
+UINT4
+ 
+	mtm_mö
+;
+
+325 
+UINT4
+ 
+	mtm_hour
+;
+
+326 
+UINT4
+ 
+	mtm_mday
+;
+
+327 
+UINT4
+ 
+	mtm_m⁄
+;
+
+328 
+UINT4
+ 
+	mtm_yór
+;
+
+329 
+UINT4
+ 
+	mtm_wday
+;
+
+330 
+UINT4
+ 
+	mtm_yday
+;
+
+331 
+UINT4
+ 
+	mtm_isd°
+;
+
+332 } 
+	ttUéTm
+;
+
+337 
+	s_tUéSysPªci£Time
+ {
+
+339 
+UINT4
+ 
+	mu4Sec
+;
+
+340 
+UINT4
+ 
+	mu4N™oSec
+;
+
+341 
+UINT4
+ 
+	mu4SysTimeUpd©e
+;
+
+344 } 
+	ttUéSysPªci£Time
+;
+
+348 
+UINT4
+ 
+	mu4Hi
+;
+
+349 
+UINT4
+ 
+	mu4Lo
+;
+
+350 } 
+	tFS_UINT8
+;
+
+352 
+	#UINT8_HI
+(
+pVÆ
+Ë’VÆ)->
+u4Hi
+
+
+	)
+
+353 
+	#UINT8_LO
+(
+pVÆ
+Ë’VÆ)->
+u4Lo
+
+
+	)
+
+355 
+	#FSAP_U8_INC
+(
+pu8VÆ
+) \
+
+357 
+UINT4
+ 
+u4Lo
+ = 
+	`UINT8_LO
+(
+pu8VÆ
+); \
+
+358 
+	`UINT8_LO
+(
+pu8VÆ
+) += 1; \
+
+359 i‡(
+	`UINT8_LO
+(
+pu8VÆ
+Ë< 
+u4Lo
+) { \
+
+360 
+	`UINT8_HI
+(
+pu8VÆ
+) += 1; \
+
+362 } 0)
+
+	)
+
+364 
+	#FSAP_U8_DEC
+(
+pu8VÆ
+) \
+
+366 
+UINT4
+ 
+u4Lo
+ = 
+	`UINT8_LO
+(
+pu8VÆ
+); \
+
+367 
+	`UINT8_LO
+(
+pu8VÆ
+) -= 1; \
+
+368 i‡(
+	`UINT8_LO
+(
+pu8VÆ
+Ë> 
+u4Lo
+) { \
+
+369 
+	`UINT8_HI
+(
+pu8VÆ
+) -= 1; \
+
+371 } 0)
+
+	)
+
+373 
+	#FSAP_U8_ADD
+(
+pu8Resu…
+, 
+pu8VÆ1
+, 
+pu8VÆ2
+) \
+
+375 
+UINT4
+ 
+u4V1Lo
+ = 
+	`UINT8_LO
+(
+pu8VÆ1
+); \
+
+376 
+	`UINT8_LO
+(
+pu8Resu…
+ËUINT8_LO(
+pu8VÆ1
+Ë+ UINT8_LO(
+pu8VÆ2
+); \
+
+377 i‡(
+	`UINT8_LO
+(
+pu8Resu…
+Ë< 
+u4V1Lo
+) { \
+
+378 
+	`UINT8_HI
+(
+pu8Resu…
+ËUINT8_HI(
+pu8VÆ1
+Ë+ UINT8_HI(
+pu8VÆ2
+) + 1; \
+
+380 
+	`UINT8_HI
+(
+pu8Resu…
+ËUINT8_HI(
+pu8VÆ1
+Ë+ UINT8_HI(
+pu8VÆ2
+); \
+
+382 } 0)
+
+	)
+
+384 
+	#FSAP_U8_SUB
+(
+pu8Resu…
+, 
+pu8VÆ1
+, 
+pu8VÆ2
+) \
+
+386 
+UINT4
+ 
+u4V1Lo
+ = 
+	`UINT8_LO
+(
+pu8VÆ1
+); \
+
+387 
+	`UINT8_LO
+(
+pu8Resu…
+ËUINT8_LO(
+pu8VÆ1
+Ë- UINT8_LO(
+pu8VÆ2
+); \
+
+388 i‡(
+	`UINT8_LO
+(
+pu8Resu…
+Ë> 
+u4V1Lo
+) { \
+
+389 
+	`UINT8_HI
+(
+pu8Resu…
+ËUINT8_HI(
+pu8VÆ1
+Ë- UINT8_HI(
+pu8VÆ2
+) + 1; \
+
+391 
+	`UINT8_HI
+(
+pu8Resu…
+ËUINT8_HI(
+pu8VÆ1
+Ë- UINT8_HI(
+pu8VÆ2
+); \
+
+393 } 0)
+
+	)
+
+395 
+	#FSAP_U8_MUL
+(
+pResu…
+, 
+pVÆ1
+, 
+pVÆ2
+) \
+
+396 
+	`UéU8Mul
+ (
+pResu…
+, 
+pVÆ1
+, 
+pVÆ2
+)
+
+	)
+
+398 
+	#FSAP_U8_DIV
+(
+pResu…
+, 
+pRemödî
+, 
+pVÆ1
+, 
+pVÆ2
+) \
+
+399 
+	`UéU8Div
+ (
+pResu…
+, 
+pRemödî
+, 
+pVÆ1
+, 
+pVÆ2
+)
+
+	)
+
+401 
+	#FSAP_STR2_U8
+(
+pSå
+,
+pu8VÆ
+) \
+
+402 
+	`UéSå2U8
+ (
+pSå
+, 
+pu8VÆ
+)
+
+	)
+
+404 
+	#FSAP_U8_2STR
+(
+pu8VÆ
+,
+pSå
+) \
+
+405 
+	`UéU82Så
+(
+pu8VÆ
+, 
+pSå
+)
+
+	)
+
+407 
+	#FSAP_U8_FETCH_LO
+(
+pu8VÆ
+Ë(’u8VÆ)->
+u4Lo
+)
+
+	)
+
+408 
+	#FSAP_U8_FETCH_HI
+(
+pu8VÆ
+Ë(’u8VÆ)->
+u4Hi
+)
+
+	)
+
+410 
+	#FSAP_U8_CLR
+(
+pu8VÆ
+Ë’u8VÆ)->
+u4Hi
+ = (pu8VÆ)->
+u4Lo
+ = 0
+
+	)
+
+411 
+	#FSAP_U8_ASSIGN_LO
+(
+pu8VÆ
+,
+u4VÆ
+Ë(’u8VÆ)->
+u4Lo
+ = u4VÆ)
+
+	)
+
+412 
+	#FSAP_U8_ASSIGN_HI
+(
+pu8VÆ
+,
+u4VÆ
+Ë(’u8VÆ)->
+u4Hi
+ = u4VÆ)
+
+	)
+
+414 
+	#FSAP_U8_CMP
+(
+p1
+,
+p2
+Ë(’1)->
+u4Hi
+ > (p2)->u4Hi ? 1 : \
+
+415 ((
+p1
+)->
+u4Hi
+ < (
+p2
+)->u4Hi ? -1 : \
+
+416 ((
+p1
+)->
+u4Lo
+ > (
+p2
+)->u4Lo ? 1 : \
+
+417 ((
+p1
+)->
+u4Lo
+ < (
+p2
+)->u4Lo ? -1 :\
+
+418 0))))
+
+	)
+
+420 
+	#FSAP_U8_ASSIGN
+(
+pu8To
+,
+pu8From
+Ë’u8To)->
+u4Hi
+ = (pu8From)->u4Hi;\
+
+421 (
+pu8To
+)->
+u4Lo
+ = (
+pu8From
+)->
+	)
+u4Lo
+
+423 
+	#CM_SNMP_COUNTER64_TO_UINT8
+(
+u8VÆ
+) \
+
+424 ((((
+AR_UINT8
+)
+u8VÆ
+.
+m¢
+Ë<<32Ë| u8VÆ.
+l¢
+)
+
+	)
+
+	@make.h
+
+1 #!/
+bö
+/
+csh
+
+
+3 #Së 
+cuºít
+ 
+dúe˘‹y
+ 
+to
+ 
+PROJ_DIR
+
+
+4 
+	gObjSuffix
+ = 
+o
+
+
+5 
+PROJ_NAME
+ = 
+ã°
+
+
+6 
+PROJ_DIR
+ = .
+
+7 
+PROJ_SRC_DIR
+ = ./
+§c
+
+
+8 
+PROJ_INC_DIR
+ = ./
+öc
+
+
+9 
+PROJ_OBJ_DIR
+ = ./
+obj
+
+
+10 #¥oje˘ 
+ö˛ude
+ 
+fûes
+ 
+dúe˘‹y
+
+
+11 
+PROJ_INCS
+ = -
+	$I$
+(
+PROJ_INC_DIR
+)
+
+13 
+PROJ_H_FLIES
+ = 
+	`$
+(
+PROJ_INC_DIR
+)/
+¥Ÿo
+.
+h
+ \
+
+14 
+	`$
+(
+PROJ_INC_DIR
+)/
+ma¸o
+.
+h
+ \
+
+15 
+	`$
+(
+PROJ_INC_DIR
+)/
+uéma¸o
+.
+h
+ \
+
+16 
+	`$
+(
+PROJ_INC_DIR
+)/
+osix
+.
+h
+ \
+
+17 
+	`$
+(
+PROJ_INC_DIR
+)/
+osxöc
+.
+h
+ \
+
+18 
+	`$
+(
+PROJ_INC_DIR
+)/
+§mmem
+.
+h
+ \
+
+19 
+	`$
+(
+PROJ_INC_DIR
+)/
+osx°d
+.
+h
+ \
+
+22 
+PROJ_DEPENDS
+ = 
+	`$
+(
+PROJ_DIR
+)/
+make
+.
+h
+ \
+
+23 
+	`$
+(
+PROJ_DIR
+)/
+Makefûe
+ \
+
+24 
+	`$
+(
+PROJ_H_FLIES
+)
+
+	@src/main.c
+
+2 #i‚de‡
+ARCH_WATCHDOG_TIMER_C
+
+
+3 
+	#ARCH_WATCHDOG_TIMER_C
+
+
+	)
+
+5 
+	~"ma¸o.h
+"
+
+6 
+	~"¥Ÿo.h
+"
+
+7 
+	~"osxöc.h
+"
+
+8 
+	~"osix.h
+"
+
+10 
+	eTaskSètus
+
+
+12 
+	mTSK_BEFORE_INIT
+ = 0,
+
+13 
+	mTSK_INIT_SUCCESS
+,
+
+14 
+	mTSK_INIT_FAILURE
+
+
+16 
+	ttTskSètus
+;
+
+18 
+	sTskInôTabÀ
+
+
+20 *
+	mpu1TskName
+;
+
+21 
+UINT4
+ 
+	mu4TskPri‹ôy
+;
+
+22 
+UINT4
+ 
+	mu4SchedPﬁicy
+;
+
+23 
+UINT4
+ 
+	mu4TskSèck
+;
+
+24 
+VOID
+ (*
+pTskE¡ryFn
+Ë(
+	mINT1
+ *);
+
+25 
+VOID
+ (*
+pTskShutDnFn
+Ë(
+	mVOID
+);
+
+27 
+	ttTskInôTabÀ
+;
+
+29 
+tTskInôTabÀ
+ 
+	ggaInôTabÀ
+[] = {
+
+30 {"TASKA", 10, 
+OSIX_SCHED_RR
+, 
+OSIX_DEFAULT_STACK_SIZE
+, (
+VOID
+ *)
+TaskAMaö
+, 
+NULL
+},
+
+31 {
+NULL
+, 0, 0, 0, NULL, NULL}
+
+34 
+	#ENTRY_FN
+(
+gu4CurIndex
+Ë(
+gaInôTabÀ
+[gu4CurIndex].
+pTskE¡ryFn
+)
+
+	)
+
+35 
+	#SHUTDN_FN
+(
+gu4CurIndex
+Ë(
+gaInôTabÀ
+[gu4CurIndex].
+pTskShutDnFn
+)
+
+	)
+
+37 
+UINT4
+ 
+	ggu4CurIndex
+ = 0;
+
+38 
+tOsixSemId
+ 
+	ggSeqSemId
+;
+
+39 
+tTskSètus
+ 
+	ggCurTskSètus
+ = 
+TSK_BEFORE_INIT
+;
+
+41 
+VOID
+
+
+42 
+	$ÃInôCom∂ëe
+ (
+UINT4
+ 
+u4Sètus
+)
+
+47 i‡(
+u4Sètus
+ =
+OSIX_SUCCESS
+)
+
+49 
+	`DEBUG
+();
+
+50 
+gCurTskSètus
+ = 
+TSK_INIT_SUCCESS
+;
+
+54 
+	`DEBUG
+();
+
+55 
+gCurTskSètus
+ = 
+TSK_INIT_FAILURE
+;
+
+59 i‡(
+	`OsixSemGive
+ (
+gSeqSemId
+Ë!
+OSIX_SUCCESS
+)
+
+61 
+	`DEBUG
+();
+
+64 
+	`DEBUG
+();
+
+65 
+	}
+}
+
+80 
+	$maö
+()
+
+82 
+INT4
+ 
+i4RëVÆ
+ = 0;
+
+83 
+tOsixTaskId
+ 
+TskId
+ = 0;
+
+84 
+	`INT4
+ (*
+pModE¡Fn
+Ë(
+INT1
+ *Ë
+NULL
+;
+
+85 
+INT1
+ 
+i1P¨am
+ = 0;
+
+87 
+	`¥ötf
+("maö sèπ:%d \n", 
+SUCCESS
+);
+
+88 
+	`UtûôyTe°
+();
+
+89 
+	`OsixInôülize
+ ();
+
+91 
+	`DEBUG
+();
+
+97 i‡(
+	`OsixCª©eSem
+ ((c⁄° 
+UINT1
+ *Ë"SEQ", 0, 0, &
+gSeqSemId
+Ë!
+OSIX_SUCCESS
+)
+
+101 
+	`DEBUG
+();
+
+103 
+	`ENTRY_FN
+ (
+gu4CurIndex
+Ë!
+NULL
+)
+
+105 
+gCurTskSètus
+ = 
+TSK_BEFORE_INIT
+;
+
+111 i‡(
+gaInôTabÀ
+[
+gu4CurIndex
+].
+pu1TskName
+ =
+NULL
+)
+
+113 
+pModE¡Fn
+ = (
+	`INT4
+ (*)(
+INT1
+ *)Ë(
+	`ENTRY_FN
+ (
+gu4CurIndex
+));
+
+114 
+	`pModE¡Fn
+ (&
+i1P¨am
+);
+
+117 
+i4RëVÆ
+ = 
+OSIX_SUCCESS
+;
+
+121 
+	`DEBUG
+();
+
+122 
+i4RëVÆ
+ =
+
+123 (
+INT4
+Ë
+	`OsixTskCπ
+ ((
+UINT1
+ *Ë
+gaInôTabÀ
+[
+gu4CurIndex
+].
+pu1TskName
+,
+
+124 (
+gaInôTabÀ
+[
+gu4CurIndex
+].
+u4TskPri‹ôy
+ |
+
+125 
+gaInôTabÀ
+[
+gu4CurIndex
+].
+u4SchedPﬁicy
+),
+
+126 
+gaInôTabÀ
+[
+gu4CurIndex
+].
+u4TskSèck
+,
+
+127 (
+OsixTskE¡ry
+Ë
+	`ENTRY_FN
+ (
+gu4CurIndex
+),
+
+128 0, &
+TskId
+);
+
+129 
+	`DEBUG
+();
+
+132 
+	`DEBUG
+();
+
+134 i‡(
+i4RëVÆ
+ =
+OSIX_FAILURE
+)
+
+136 
+	`PRINTF
+ ("ERROR: %s - Task failed,Éxiting!!\n",
+
+137 
+gaInôTabÀ
+[
+gu4CurIndex
+].
+pu1TskName
+);
+
+145 
+	`DEBUG
+();
+
+146 i‡((
+	`OsixSemTake
+ (
+gSeqSemId
+Ë!
+OSIX_SUCCESS
+) ||
+
+147 (
+gCurTskSètus
+ !
+TSK_INIT_SUCCESS
+))
+
+149 
+	`DEBUG
+();
+
+150 
+	`PRINTF
+ ("Task Init Failed for <%s> \n",
+
+151 
+gaInôTabÀ
+[
+gu4CurIndex
+].
+pu1TskName
+);
+
+152 
+i4RëVÆ
+ = 
+OSIX_FAILURE
+;
+
+156 
+	`¥ötf
+("maö sèπÅask:%†\n", 
+gaInôTabÀ
+[
+gu4CurIndex
+].
+pu1TskName
+);
+
+158 
+gu4CurIndex
+++;
+
+161 
+	`Evít2TaskASíd
+();
+
+163 
+	`DEBUG
+();
+
+166 
+	`Fßp2Sèπ
+ ();
+
+167 
+	}
+}
+
+	@src/osixpth.c
+
+11 
+	~"osxöc.h
+"
+
+12 
+	~"osix.h
+"
+
+14 
+	~<sys/°©fs.h
+>
+
+15 
+	~<sys/ty≥s.h
+>
+
+16 
+	~<sys/°©.h
+>
+
+17 
+	~<f˙é.h
+>
+
+18 
+	~<uni°d.h
+>
+
+19 
+	~<sys/times.h
+>
+
+25 
+˛ock_t
+ 
+	ggSèπTicks
+;
+
+28 
+INT4
+ 
+	ggi4MöPrio
+;
+
+29 
+INT4
+ 
+	ggi4MaxPrio
+;
+
+33 
+UINT4
+ 
+	ggu4MaxSem
+ = 0;
+
+56 
+	sOsixRscTskSåu˘
+
+
+58 
+±hªad_t
+ 
+	mThrId
+;
+
+59 
+UINT4
+ 
+	mu4Pid
+;
+
+60 
+UINT4
+ 
+	mu4Evíts
+;
+
+61 
+INT1
+ *
+	mpArg
+;
+
+62 
+UINT4
+ 
+	mu4Prio
+;
+
+63 
+UINT4
+ 
+	mu4SèckSize
+;
+
+64 
+±hªad_muãx_t
+ 
+	mTskMuãx
+;
+
+65 
+±hªad_c⁄d_t
+ 
+	mEvtC⁄d
+;
+
+66 
+±hªad_muãx_t
+ 
+	mEvtMuãx
+;
+
+67 (*
+	mpTskSåtAddr
+Ë(
+	mINT1
+ *);
+
+68 
+UINT2
+ 
+	mu2Fªe
+;
+
+69 
+UINT2
+ 
+	mu2Pad
+;
+
+70 
+UINT1
+ 
+	mau1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+72 
+	ttOsixTsk
+;
+
+73 
+	sOsixRscQueSåu˘
+
+
+75 
+VOID
+ *
+	mpRscId
+;
+
+76 
+UINT2
+ 
+	mu2Fªe
+;
+
+77 
+UINT2
+ 
+	mu2FûÀr
+;
+
+78 
+UINT1
+ 
+	mau1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+80 
+	ttOsixQue
+;
+
+98 
+UINT1
+ *
+	mpQBa£
+;
+
+99 
+UINT1
+ *
+	mpQEnd
+;
+
+100 
+UINT1
+ *
+	mpQRód
+;
+
+101 
+UINT1
+ *
+	mpQWrôe
+;
+
+102 
+UINT4
+ 
+	mu4MsgLí
+;
+
+103 
+UINT4
+ 
+	mu4OvîFlows
+;
+
+104 
+±hªad_c⁄d_t
+ 
+	mQueC⁄d
+;
+
+105 
+±hªad_muãx_t
+ *
+	mQueMuãx
+;
+
+107 
+	ttPthªadQ
+;
+
+108 
+tPthªadQ
+ *
+	ttPthªadQId
+;
+
+110 
+tOsixTsk
+ 
+	ggaOsixTsk
+[
+OSIX_MAX_TSKS
+ + 1];
+
+113 
+tOsixSem
+ 
+	ggaOsixSem
+[
+OSIX_MAX_SEMS
+ + 1];
+
+116 
+tOsixQue
+ 
+	ggaOsixQue
+[
+OSIX_MAX_QUES
+ + 1];
+
+119 
+±hªad_muãx_t
+ 
+	ggOsixMuãx
+;
+
+120 
+UINT4
+ 
+	ggu4OsixTrc
+;
+
+121 
+	#OSIX_TRC_FLAG
+ 
+gu4OsixTrc
+
+
+	)
+
+123 
+UINT4
+ 
+OsixSTUPS2Ticks
+ 
+ARG_LIST
+ ((UINT4));
+
+124 
+UINT4
+ 
+OsixTicks2STUPS
+ 
+ARG_LIST
+ ((UINT4));
+
+125 
+UINT4
+ 
+	ggu4Sec⁄ds
+;
+
+126 
+UINT4
+ 
+	ggCmu4Mi¸oSec⁄ds
+;
+
+129 
+UINT4
+ 
+OsixRscAdd
+ 
+ARG_LIST
+ ((
+UINT1
+[], UINT4, UINT4 *));
+
+130 
+VOID
+ 
+OsixRscDñ
+ 
+ARG_LIST
+ ((
+UINT4
+, VOID *));
+
+131 
+VOID
+ *
+OsixTskWøµî
+ 
+ARG_LIST
+ ((VOID *));
+
+132 
+UINT4
+ 
+FßpShowQueD©a
+
+
+133 
+ARG_LIST
+ ((
+tPthªadQ
+ * 
+pPthªadQ
+, 
+UINT1
+ *
+pu1Resu…
+));
+
+136 
+tPthªadQId
+ 
+PTHREAD_Cª©e_MsgQ
+ 
+ARG_LIST
+ ((
+UINT4
+, UINT4));
+
+137 
+VOID
+ 
+PTHREAD_Dñëe_MsgQ
+ 
+ARG_LIST
+ ((
+tPthªadQId
+));
+
+138 
+INT4
+ 
+PTHREAD_Síd_MsgQ
+ 
+ARG_LIST
+ ((
+tPthªadQId
+, 
+UINT1
+ *));
+
+139 
+INT4
+ 
+PTHREAD_Re˚ive_MsgQ
+ 
+ARG_LIST
+ ((
+tPthªadQId
+, 
+UINT1
+ *, INT4));
+
+140 
+UINT4
+ 
+PTHREAD_MsgQ_NumMsgs
+ 
+ARG_LIST
+ ((
+tPthªadQId
+));
+
+142 
+UINT4
+ 
+	ggu4Tps
+ = 
+OSIX_TPS
+;
+
+143 
+UINT4
+ 
+	ggu4Stups
+ = 
+OSIX_STUPS
+;
+
+146 
+VOID
+
+
+147 
+	$UéTrcLog
+ (
+UINT4
+ 
+u4Fœg
+, UINT4 
+u4VÆue
+, c⁄° *
+pi1Name
+,
+
+148 c⁄° *
+pi1Fmt
+, ...)
+
+151 
+	}
+}
+
+158 
+UINT4
+
+
+159 
+	$OsixSTUPS2Ticks
+ (
+UINT4
+ 
+u4Time
+)
+
+161  (
+u4Time
+ * (1000000 / 
+gu4Stups
+));
+
+162 
+	}
+}
+
+181 
+INT4
+
+
+182 
+	$UéSåCa£Cmp
+ (c⁄° 
+CHR1
+ * 
+pc1Såög1
+, c⁄° CHR1 * 
+pc1Såög2
+)
+
+184 *
+pc1Såög1
+ != '\0'
+
+185 && 
+	`tﬁowî
+ (*
+pc1Såög1
+Ë=tﬁowî (*
+pc1Såög2
+))
+
+187 
+pc1Såög1
+++;
+
+188 
+pc1Såög2
+++;
+
+191  (
+	`tﬁowî
+ (*
+pc1Såög1
+Ë-Åﬁowî (*
+pc1Såög2
+));
+
+192 
+	}
+}
+
+209 
+UINT4
+
+
+210 
+	$OsixTskCπ
+ (
+UINT1
+ 
+au1TskName
+[], 
+UINT4
+ 
+u4TskPrio
+, UINT4 
+u4SèckSize
+,
+
+211 
+	$VOID
+ (*
+TskSèπAddr
+Ë(
+INT1
+ *), INT1 *
+pArg
+, 
+tOsixTaskId
+ * 
+pTskId
+)
+
+213 
+sched_∑øm
+ 
+SchedP¨am
+;
+
+214 
+±hªad_©å_t
+ 
+Aâr
+;
+
+215 
+tOsixTsk
+ *
+pTsk
+ = 0;
+
+216 
+VOID
+ *
+pId
+ = 
+NULL
+;
+
+217 
+UINT4
+ 
+u4Idx
+;
+
+218 
+INT4
+ 
+i4OsPrio
+;
+
+219 
+UINT4
+ 
+u4SchedPﬁicy
+;
+
+220 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+222 
+	`MEMSET
+ ((
+UINT1
+ *Ë
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+223 
+	`MEMCPY
+ (
+au1Name
+, 
+au1TskName
+, 
+OSIX_NAME_LEN
+);
+
+225 
+pId
+ = (
+VOID
+ *Ë
+pTskId
+;
+
+227 i‡(
+	`OsixRscFöd
+ (
+au1Name
+, 
+OSIX_TSK
+, &
+pId
+Ë=
+OSIX_SUCCESS
+)
+
+230 #ifde‡
+CAMEO_CLI_DBG_CMD_WANTED
+
+
+231 
+	`PRINTF
+("RïóàèskÇame=%s\n",
+au1Name
+);
+
+233 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_TSK_TRC
+, "",
+
+234 "OsixTskCπ, RïóàèskÇamê%†\r\n", 
+au1Name
+);
+
+235 
+	`DEBUG
+();
+
+236  (
+OSIX_FAILURE
+);
+
+240 i‡(
+	`OsixRscAdd
+ (
+au1Name
+, 
+OSIX_TSK
+, 
+NULL
+Ë=
+OSIX_FAILURE
+)
+
+241 {
+	`DEBUG
+();
+
+242  (
+OSIX_FAILURE
+);
+
+245 
+u4SchedPﬁicy
+ = 
+u4TskPrio
+ & 0xffff0000;
+
+250 
+u4TskPrio
+ = u4TskPrio & 0x0000ffff;
+
+253 
+i4OsPrio
+ = 
+OS_LOW_PRIO
+ + (((((
+INT4
+Ë(
+u4TskPrio
+Ë- 
+FSAP_LOW_PRIO
+) *
+
+254 (
+OS_HIGH_PRIO
+ -
+
+255 
+OS_LOW_PRIO
+)Ë/ (
+FSAP_HIGH_PRIO
+ -
+
+256 
+FSAP_LOW_PRIO
+)));
+
+259 
+	`CM_ISS_PRI_TO_OS_PRI
+(
+u4TskPrio
+, 
+i4OsPrio
+);
+
+261 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_TSK_TRC
+, "",
+
+262 "OsixTskCπ (%s, %d, %d)\r\n", 
+au1Name
+, 
+u4TskPrio
+, 
+u4SèckSize
+);
+
+264 i‡(
+u4SèckSize
+ < 
+OSIX_PTHREAD_MIN_STACK_SIZE
+)
+
+266 
+u4SèckSize
+ = 
+OSIX_PTHREAD_DEF_STACK_SIZE
+;
+
+269 
+SchedP¨am
+.
+sched_¥i‹ôy
+ = (
+UINT4
+Ë
+i4OsPrio
+;
+
+270 
+	`±hªad_©å_öô
+ (&
+Aâr
+);
+
+271 
+	`±hªad_©å_£t°acksize
+ (&
+Aâr
+, 
+u4SèckSize
+);
+
+273 
+u4SchedPﬁicy
+)
+
+275 
+OSIX_SCHED_RR
+:
+
+276 
+	`±hªad_©å_£töhîôsched
+ (&
+Aâr
+, 
+PTHREAD_EXPLICIT_SCHED
+);
+
+277 
+	`±hªad_©å_£tschedpﬁicy
+ (&
+Aâr
+, 
+SCHED_RR
+);
+
+278 
+u4SchedPﬁicy
+ = 
+SCHED_RR
+;
+
+281 
+OSIX_SCHED_FIFO
+:
+
+282 
+	`±hªad_©å_£töhîôsched
+ (&
+Aâr
+, 
+PTHREAD_EXPLICIT_SCHED
+);
+
+283 
+	`±hªad_©å_£tschedpﬁicy
+ (&
+Aâr
+, 
+SCHED_FIFO
+);
+
+284 
+u4SchedPﬁicy
+ = 
+SCHED_FIFO
+;
+
+287 
+OSIX_SCHED_OTHER
+:
+
+289 
+u4SchedPﬁicy
+ = 
+SCHED_OTHER
+;
+
+290 
+	`±hªad_©å_£tschedpﬁicy
+ (&
+Aâr
+, 
+SCHED_OTHER
+);
+
+295 
+	`±hªad_©å_£tsched∑øm
+ (&
+Aâr
+, &
+SchedP¨am
+);
+
+299 
+	`OsixRscFöd
+ (
+au1Name
+, 
+OSIX_TSK
+, &
+pId
+);
+
+300 
+u4Idx
+ = *
+pTskId
+;
+
+302 
+pTsk
+ = &
+gaOsixTsk
+[
+u4Idx
+];
+
+303 
+pTsk
+->
+u4Prio
+ = (
+UINT4
+Ë
+i4OsPrio
+;
+
+304 
+pTsk
+->
+u4SèckSize
+ = u4StackSize;
+
+311 
+	`±hªad_c⁄d_öô
+ (&((&
+gaOsixTsk
+[
+u4Idx
+])->
+EvtC⁄d
+), 
+NULL
+);
+
+312 
+	`±hªad_muãx_öô
+ (&((&
+gaOsixTsk
+[
+u4Idx
+])->
+TskMuãx
+), 
+NULL
+);
+
+313 
+	`±hªad_muãx_öô
+ (&((&
+gaOsixTsk
+[
+u4Idx
+])->
+EvtMuãx
+), 
+NULL
+);
+
+316 
+pTsk
+->
+pTskSåtAddr
+ = 
+TskSèπAddr
+;
+
+317 
+pTsk
+->
+pArg
+ =ÖArg;
+
+323 
+	`±hªad_muãx_lock
+ (&(
+pTsk
+->
+TskMuãx
+));
+
+325 
+îr
+;
+
+327 i‡(
+îr
+ = 
+	`±hªad_¸óã
+ (&(
+pTsk
+->
+ThrId
+), &
+Aâr
+, 
+OsixTskWøµî
+, (*)ÖTsk))
+
+329 
+	`±hªad_muãx_u∆ock
+ (&(
+pTsk
+->
+TskMuãx
+));
+
+331 
+	`±hªad_muãx_de°roy
+ (&(
+pTsk
+->
+TskMuãx
+));
+
+332 
+	`±hªad_muãx_de°roy
+ (&(
+pTsk
+->
+EvtMuãx
+));
+
+333 
+	`±hªad_c⁄d_de°roy
+ (&(
+pTsk
+->
+EvtC⁄d
+));
+
+334 
+	`±hªad_©å_de°roy
+ (&
+Aâr
+);
+
+335 
+	`OsixRscDñ
+ (
+OSIX_TSK
+, (
+VOID
+ *Ë&
+u4Idx
+);
+
+336 i‡(
+îr
+ != 0)
+
+337 
+	`¥ötf
+("ˇn'à¸óãÅhªad: %s\n", 
+	`°ªº‹
+(
+îr
+));
+
+338 
+	`DEBUG
+();
+
+339  (
+OSIX_FAILURE
+);
+
+348 
+SchedP¨am
+.
+sched_¥i‹ôy
+ = 0;
+
+350 i‡(
+u4SchedPﬁicy
+ !
+SCHED_OTHER
+)
+
+352 
+SchedP¨am
+.
+sched_¥i‹ôy
+ = 
+i4OsPrio
+;
+
+355 
+	`±hªad_£tsched∑øm
+ (
+pTsk
+->
+ThrId
+, 
+u4SchedPﬁicy
+, &
+SchedP¨am
+);
+
+357 
+	`±hªad_muãx_u∆ock
+ (&(
+pTsk
+->
+TskMuãx
+));
+
+358 
+	`±hªad_©å_de°roy
+ (&
+Aâr
+);
+
+359 
+	`DEBUG
+();
+
+360  (
+OSIX_SUCCESS
+);
+
+361 
+	}
+}
+
+370 
+VOID
+
+
+371 
+	$OsixTskDñ
+ (
+tOsixTaskId
+ 
+TskId
+)
+
+373 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_TSK_TRC
+, "", "OsixTskDñ (0x%x)\r\n", 
+TskId
+);
+
+374 
+	`±hªad_muãx_de°roy
+ (&(
+gaOsixTsk
+[
+TskId
+].
+TskMuãx
+));
+
+375 
+	`±hªad_muãx_de°roy
+ (&(
+gaOsixTsk
+[
+TskId
+].
+EvtMuãx
+));
+
+376 
+	`±hªad_c⁄d_de°roy
+ (&(
+gaOsixTsk
+[
+TskId
+].
+EvtC⁄d
+));
+
+377 i‡(
+	`±hªad_£lf
+ (Ë=
+gaOsixTsk
+[
+TskId
+].
+ThrId
+)
+
+379 
+	`±hªad_dëach
+ (
+gaOsixTsk
+[
+TskId
+].
+ThrId
+);
+
+380 
+	`OsixRscDñ
+ (
+OSIX_TSK
+, (
+VOID
+ *Ë&
+TskId
+);
+
+381 
+	`±hªad_exô
+ (
+NULL
+);
+
+385 
+	`±hªad_ˇn˚l
+ (
+gaOsixTsk
+[
+TskId
+].
+ThrId
+);
+
+386 
+	`±hªad_joö
+ (
+gaOsixTsk
+[
+TskId
+].
+ThrId
+, (**Ë
+NULL
+);
+
+387 
+	`OsixRscDñ
+ (
+OSIX_TSK
+, (
+VOID
+ *Ë&
+TskId
+);
+
+389 
+	}
+}
+
+398 
+UINT4
+
+
+399 
+	$OsixTskDñay
+ (
+UINT4
+ 
+u4Duøti⁄
+)
+
+401 
+UINT4
+ 
+u4Sec
+;
+
+402 
+time•ec
+ 
+timeout
+;
+
+404 
+u4Duøti⁄
+ = 
+	`OsixSTUPS2Ticks
+ (u4Duration);
+
+412 
+u4Sec
+ = 
+u4Duøti⁄
+ / 1000000;
+
+413 
+timeout
+.
+tv_£c
+ = 
+u4Sec
+;
+
+414 
+timeout
+.
+tv_n£c
+ = ((
+u4Duøti⁄
+ - 
+u4Sec
+ * 1000000) * 1000);
+
+415 
+	`«no¶ìp
+ (&
+timeout
+, 
+NULL
+);
+
+416  (
+OSIX_SUCCESS
+);
+
+417 
+	}
+}
+
+427 
+UINT4
+
+
+428 
+	$CmOsixTskUsDñay
+ (
+UINT4
+ 
+u4Duøti⁄
+)
+
+430 
+	`u¶ìp
+(
+u4Duøti⁄
+);
+
+431  (
+OSIX_SUCCESS
+);
+
+432 
+	}
+}
+
+443 
+UINT4
+
+
+444 
+	$OsixDñay
+ (
+UINT4
+ 
+u4Duøti⁄
+, 
+INT4
+ 
+i4Unô
+)
+
+446 
+time•ec
+ 
+timeout
+;
+
+447 
+UINT4
+ 
+u4Sec
+ = 0;
+
+448 
+UINT4
+ 
+u4NSec
+ = 0;
+
+450 
+i4Unô
+)
+
+452 
+OSIX_SECONDS
+:
+
+453 
+u4Sec
+ = 
+u4Duøti⁄
+;
+
+456 
+OSIX_CENTI_SECONDS
+:
+
+457 
+u4NSec
+ = 
+u4Duøti⁄
+ * 10000000;
+
+460 
+OSIX_MILLI_SECONDS
+:
+
+461 
+u4NSec
+ = 
+u4Duøti⁄
+ * 1000000;
+
+464 
+OSIX_MICRO_SECONDS
+:
+
+465 
+u4NSec
+ = 
+u4Duøti⁄
+ * 1000;
+
+468 
+OSIX_NANO_SECONDS
+:
+
+469 
+u4NSec
+ = 
+u4Duøti⁄
+;
+
+476 
+timeout
+.
+tv_£c
+ = 
+u4Sec
+;
+
+477 
+timeout
+.
+tv_n£c
+ = 
+u4NSec
+;
+
+478 
+	`«no¶ìp
+ (&
+timeout
+, 
+NULL
+);
+
+479  (
+OSIX_SUCCESS
+);
+
+480 
+	}
+}
+
+489 
+UINT4
+
+
+490 
+	$OsixTskIdSñf
+ (
+tOsixTaskId
+ * 
+pTskId
+)
+
+492 
+UINT4
+ 
+u4Cou¡
+;
+
+493 
+±hªad_t
+ 
+ThrId
+;
+
+497 
+ThrId
+ = 
+	`±hªad_£lf
+ ();
+
+499 
+u4Cou¡
+ = 1; u4Cou¡ <
+OSIX_MAX_TSKS
+; u4Count++)
+
+501 i‡((
+gaOsixTsk
+[
+u4Cou¡
+].
+ThrId
+) == ThrId)
+
+503 if(
+gaOsixTsk
+[
+u4Cou¡
+].
+u2Fªe
+ =
+OSIX_FALSE
+)
+
+505 *
+pTskId
+ = (
+tOsixTaskId
+Ë
+u4Cou¡
+;
+
+506 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_TSK_TRC
+, "",
+
+507 "OsixTskIdSñ‡(%s)(%d)\r\n", 
+gaOsixTsk
+[
+u4Cou¡
+].
+au1Name
+, *
+pTskId
+);
+
+508  (
+OSIX_SUCCESS
+);
+
+512 
+	`PRINTF
+("found buànŸ u£dÅaskid=%d\n", 
+u4Cou¡
+);
+
+519  (
+OSIX_FAILURE
+);
+
+520 
+	}
+}
+
+531 
+UINT4
+
+
+532 
+	$CmOsixTskIdSñfWôhLock
+ (
+tOsixTaskId
+ * 
+pTskId
+)
+
+534 
+UINT4
+ 
+u4Cou¡
+;
+
+535 
+±hªad_t
+ 
+ThrId
+;
+
+542 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+544  (
+OSIX_FAILURE
+);
+
+547 
+ThrId
+ = 
+	`±hªad_£lf
+ ();
+
+549 
+u4Cou¡
+ = 1; u4Cou¡ <
+OSIX_MAX_TSKS
+; u4Count++)
+
+551 i‡((
+gaOsixTsk
+[
+u4Cou¡
+].
+ThrId
+) == ThrId)
+
+553 if(
+gaOsixTsk
+[
+u4Cou¡
+].
+u2Fªe
+ =
+OSIX_FALSE
+)
+
+555 *
+pTskId
+ = (
+tOsixTaskId
+Ë
+u4Cou¡
+;
+
+556 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_TSK_TRC
+, "",
+
+557 "OsixTskIdSñ‡(%s)(%d)\r\n", 
+gaOsixTsk
+[
+u4Cou¡
+].
+au1Name
+, *
+pTskId
+);
+
+558 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+559  (
+OSIX_SUCCESS
+);
+
+563 
+	`PRINTF
+("shouldÇŸ h≠≥n:Åask found buànŸ u£dÅaskid=%d\n", 
+u4Cou¡
+);
+
+568 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+569  (
+OSIX_FAILURE
+);
+
+570 
+	}
+}
+
+584 
+UINT4
+
+
+585 
+	$OsixEvtSíd
+ (
+tOsixTaskId
+ 
+TskId
+, 
+UINT4
+ 
+u4Evíts
+)
+
+587 
+UINT4
+ 
+u4Idx
+ = (UINT4Ë
+TskId
+;
+
+589 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_EVT_TRC
+, "",
+
+590 "OsixEvtSíd (%d, 0x%x)\r\n", (
+UINT4
+Ë
+TskId
+, 
+u4Evíts
+);
+
+596 if(
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ =
+OSIX_TRUE
+)
+
+598 
+	`DEBUG
+();
+
+599  (
+OSIX_FAILURE
+);
+
+602 
+	`±hªad_muãx_lock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+603 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ |= u4Events;
+
+607 
+	`±hªad_c⁄d_sig«l
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtC⁄d
+);
+
+608 
+	`±hªad_muãx_u∆ock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+610  (
+OSIX_SUCCESS
+);
+
+611 
+	}
+}
+
+613 
+UINT4
+
+
+614 
+	$OsixEvtSídV1
+ (
+tOsixTaskId
+ 
+TskId
+, 
+UINT4
+ 
+u4Evíts
+)
+
+617 
+UINT4
+ 
+u4Idx
+ = (UINT4Ë
+TskId
+;
+
+618 
+	`±hªad_muãx_lock
+(&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+619 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ |= u4Events;
+
+620 
+	`±hªad_c⁄d_sig«l
+(&
+gaOsixTsk
+[
+u4Idx
+].
+EvtC⁄d
+);
+
+621 
+	`±hªad_muãx_u∆ock
+(&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+623  (
+OSIX_SUCCESS
+);
+
+628 
+UINT4
+ 
+u4Idx
+ = (UINT4Ë
+TskId
+;
+
+630 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_EVT_TRC
+, "",
+
+631 "OsixEvtSíd (%d, 0x%x)\r\n", (
+UINT4
+Ë
+TskId
+, 
+u4Evíts
+);
+
+637 if(
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ =
+OSIX_TRUE
+)
+
+639 
+	`DEBUG
+();
+
+640  (
+OSIX_FAILURE
+);
+
+643 
+	`±hªad_muãx_lock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+644 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ |= u4Events;
+
+648 
+	`±hªad_c⁄d_sig«l
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtC⁄d
+);
+
+649 
+	`±hªad_muãx_u∆ock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+651  (
+OSIX_SUCCESS
+);
+
+653 
+	}
+}
+
+663 
+UINT4
+
+
+664 
+	$OsixEvtRecv
+ (
+tOsixTaskId
+ 
+TskId
+, 
+UINT4
+ 
+u4Evíts
+, UINT4 
+u4Flg
+,
+
+665 
+UINT4
+ *
+pu4RcvEvíts
+)
+
+667 
+UINT4
+ 
+u4Idx
+ = (UINT4Ë
+TskId
+;
+
+669 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_EVT_TRC
+, "",
+
+670 "OsixEvtRecv (%d, 0x%x, %d, 0x%x)\r\n", (
+UINT4
+Ë
+TskId
+,
+
+671 
+u4Evíts
+, 
+u4Flg
+, 
+pu4RcvEvíts
+);
+
+676 if(
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ =
+OSIX_TRUE
+)
+
+677  (
+OSIX_SUCCESS
+);
+
+679 *
+pu4RcvEvíts
+ = 0;
+
+681 
+	`±hªad_muãx_lock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+683 i‡((
+u4Flg
+ =
+OSIX_NO_WAIT
+) &&
+
+684 (((
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events) == 0))
+
+686 
+	`±hªad_muãx_u∆ock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+687  (
+OSIX_FAILURE
+);
+
+693 i‡(((
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events) != 0)
+
+696 *
+pu4RcvEvíts
+ = (
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events;
+
+697 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ &~(*
+pu4RcvEvíts
+);
+
+698 
+	`±hªad_muãx_u∆ock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+699  (
+OSIX_SUCCESS
+);
+
+706 
+	`±hªad_c⁄d_waô
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtC⁄d
+,
+
+707 &
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+709 
+	}
+}
+
+711 
+UINT4
+
+
+712 
+	$OsixEvtRecvV1
+ (
+tOsixTaskId
+ 
+TskId
+, 
+UINT4
+ 
+u4Evíts
+, UINT4 
+u4Flg
+,
+
+713 
+UINT4
+ *
+pu4RcvEvíts
+)
+
+716 
+UINT4
+ 
+u4Idx
+ = (UINT4Ë
+TskId
+;
+
+717 *
+pu4RcvEvíts
+ = 0;
+
+719 
+	`±hªad_muãx_lock
+(&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+722 if(((
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events) != 0)
+
+724 *
+pu4RcvEvíts
+ = (
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events;
+
+725 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ &~(*
+pu4RcvEvíts
+);
+
+726 
+	`±hªad_muãx_u∆ock
+(&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+727  (
+OSIX_SUCCESS
+);
+
+729 
+	`±hªad_c⁄d_waô
+(&
+gaOsixTsk
+[
+u4Idx
+].
+EvtC⁄d
+, &gaOsixTsk[u4Idx].
+EvtMuãx
+);
+
+733 
+UINT4
+ 
+u4Idx
+ = (UINT4Ë
+TskId
+;
+
+735 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_EVT_TRC
+, "",
+
+736 "OsixEvtRecv (%d, 0x%x, %d, 0x%x)\r\n", (
+UINT4
+Ë
+TskId
+,
+
+737 
+u4Evíts
+, 
+u4Flg
+, 
+pu4RcvEvíts
+);
+
+742 if(
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ =
+OSIX_TRUE
+)
+
+743  (
+OSIX_SUCCESS
+);
+
+745 *
+pu4RcvEvíts
+ = 0;
+
+747 
+	`±hªad_muãx_lock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+749 i‡((
+u4Flg
+ =
+OSIX_NO_WAIT
+) &&
+
+750 (((
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events) == 0))
+
+752 
+	`±hªad_muãx_u∆ock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+753  (
+OSIX_FAILURE
+);
+
+759 i‡(((
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events) != 0)
+
+762 *
+pu4RcvEvíts
+ = (
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+) & u4Events;
+
+763 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ &~(*
+pu4RcvEvíts
+);
+
+764 
+	`±hªad_muãx_u∆ock
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+765  (
+OSIX_SUCCESS
+);
+
+772 
+	`±hªad_c⁄d_waô
+ (&
+gaOsixTsk
+[
+u4Idx
+].
+EvtC⁄d
+,
+
+773 &
+gaOsixTsk
+[
+u4Idx
+].
+EvtMuãx
+);
+
+777 
+	}
+}
+
+788 
+UINT4
+
+
+789 
+	$OsixInôülize
+ ()
+
+791 
+UINT4
+ 
+u4Idx
+;
+
+792 
+tms
+ 
+buf
+;
+
+799 i‡(
+	`±hªad_muãx_öô
+ (&
+gOsixMuãx
+, 
+NULL
+))
+
+801  (
+OSIX_FAILURE
+);
+
+805 
+u4Idx
+ = 0; u4Idx <
+OSIX_MAX_TSKS
+; u4Idx++)
+
+807 
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_TRUE
+;
+
+808 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ = 0;
+
+809 
+	`MEMSET
+ (
+gaOsixTsk
+[
+u4Idx
+].
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+811 
+u4Idx
+ = 0; u4Idx <
+OSIX_MAX_SEMS
+; u4Idx++)
+
+813 
+gaOsixSem
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_TRUE
+;
+
+814 
+gaOsixSem
+[
+u4Idx
+].
+u2FûÀr
+ = 0;
+
+815 
+	`MEMSET
+ (
+gaOsixSem
+[
+u4Idx
+].
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+817 
+u4Idx
+ = 0; u4Idx <
+OSIX_MAX_QUES
+; u4Idx++)
+
+819 
+gaOsixQue
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_TRUE
+;
+
+820 
+gaOsixQue
+[
+u4Idx
+].
+u2FûÀr
+ = 0;
+
+821 
+	`MEMSET
+ (
+gaOsixQue
+[
+u4Idx
+].
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+824 
+gSèπTicks
+ = 
+	`times
+ (&
+buf
+);
+
+829 
+gi4MöPrio
+ = 
+	`sched_gë_¥i‹ôy_mö
+(
+SCHED_RR
+);
+
+830 
+gi4MaxPrio
+ = 
+	`sched_gë_¥i‹ôy_max
+(
+SCHED_RR
+);
+
+833 if–
+gi4MöPrio
+ =-1 || 
+gi4MaxPrio
+ == -1 )
+
+835 
+	`±hªad_muãx_de°roy
+(&
+gOsixMuãx
+);
+
+836  (
+OSIX_FAILURE
+);
+
+839  (
+OSIX_SUCCESS
+);
+
+840 
+	}
+}
+
+849 
+UINT4
+
+
+850 
+	$OsixShutDown
+ ()
+
+853 
+	`kûl
+ (
+	`gëpid
+ (), 
+SIGKILL
+);
+
+854  (
+OSIX_SUCCESS
+);
+
+855 
+	}
+}
+
+873 
+UINT4
+
+
+874 
+	$OsixCª©eSem
+ (c⁄° 
+UINT1
+ 
+au1SemName
+[4], 
+UINT4
+ 
+u4InôülCou¡
+,
+
+875 
+UINT4
+ 
+u4Fœgs
+, 
+tOsixSemId
+ * 
+pSemId
+)
+
+877 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4], 
+u1Index
+;
+
+879 
+	`MEMSET
+ ((
+UINT1
+ *Ë
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+880 
+u1Index
+ = 0;
+
+881 ((
+u1Index
+ < 
+OSIX_NAME_LEN
+Ë&& (
+au1SemName
+[u1Index] != '\0'));
+
+882 
+u1Index
+++)
+
+884 
+au1Name
+[
+u1Index
+] = 
+au1SemName
+[u1Index];
+
+887 ((
+VOID
+Ë
+u4Fœgs
+);
+
+889 i‡(
+	`OsixRscFöd
+ (
+au1Name
+, 
+OSIX_SEM
+, (
+VOID
+ **Ë
+pSemId
+Ë=
+OSIX_SUCCESS
+)
+
+892 *(
+tOsixSemId
+ *)
+pSemId
+ = 
+NULL
+;
+
+894  (
+OSIX_FAILURE
+);
+
+896 i‡(
+	`OsixSemCπ
+ (
+au1Name
+, 
+pSemId
+Ë=
+OSIX_FAILURE
+)
+
+899 *(
+tOsixSemId
+ *)
+pSemId
+ = 
+NULL
+;
+
+900  (
+OSIX_FAILURE
+);
+
+905 i‡(
+u4InôülCou¡
+ == 1)
+
+907 
+	`OsixSemGive
+ (*
+pSemId
+);
+
+909  (
+OSIX_SUCCESS
+);
+
+910 
+	}
+}
+
+919 
+UINT4
+
+
+920 
+	$OsixSemCπ
+ (
+UINT1
+ 
+au1SemName
+[], 
+tOsixSemId
+ * 
+pSemId
+)
+
+922 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+923 
+VOID
+ *
+pId
+ = 
+NULL
+;
+
+924 
+tOsixTaskId
+ 
+tskId
+;
+
+925 
+UINT4
+ *
+pu4RscId
+ = 
+NULL
+;
+
+927 
+	`MEMSET
+ ((
+UINT1
+ *Ë
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+928 
+	`MEMCPY
+ (
+au1Name
+, 
+au1SemName
+, 
+OSIX_NAME_LEN
+);
+
+932 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_SEM_TRC
+, "", "OsixSemCπ (%s)\r\n", 
+au1Name
+);
+
+934 
+pId
+ = 
+pSemId
+;
+
+935 i‡(
+	`OsixRscFöd
+ (
+au1Name
+, 
+OSIX_SEM
+, 
+pId
+Ë=
+OSIX_SUCCESS
+)
+
+940 *(
+tOsixSemId
+ *)
+pSemId
+ = 
+NULL
+;
+
+942  (
+OSIX_FAILURE
+);
+
+946 if(
+	`OsixTskIdSñf
+(&
+tskId
+Ë=
+OSIX_SUCCESS
+)
+
+948 
+pu4RscId
+ = (
+UINT4
+*Ë&
+tskId
+;
+
+951 i‡(
+	`OsixRscAdd
+ (
+au1Name
+, 
+OSIX_SEM
+, 
+pu4RscId
+Ë=
+OSIX_FAILURE
+)
+
+956 *(
+tOsixSemId
+ *)
+pSemId
+ = 
+NULL
+;
+
+957  (
+OSIX_FAILURE
+);
+
+963 
+pId
+ = 
+pSemId
+;
+
+964 
+	`OsixRscFöd
+ (
+au1Name
+, 
+OSIX_SEM
+, 
+pId
+);
+
+965 i‡(
+	`£m_öô
+ (*
+pSemId
+, 0, 0))
+
+967 
+	`OsixRscDñ
+ (
+OSIX_SEM
+, (
+VOID
+ *Ë*
+pSemId
+);
+
+971 *(
+tOsixSemId
+ *)
+pSemId
+ = 
+NULL
+;
+
+972  (
+OSIX_FAILURE
+);
+
+976  (
+OSIX_SUCCESS
+);
+
+977 
+	}
+}
+
+986 
+VOID
+
+
+987 
+	$OsixSemDñ
+ (
+tOsixSemId
+ 
+SemId
+)
+
+989 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_SEM_TRC
+, "", "OsixSemDñ (0x%x)\r\n", 
+SemId
+);
+
+990 
+	`OsixRscDñ
+ (
+OSIX_SEM
+, (
+VOID
+ *Ë
+SemId
+);
+
+991 
+	`£m_de°roy
+ (
+SemId
+);
+
+992 
+	}
+}
+
+1001 
+UINT4
+
+
+1002 
+	$OsixSemGive
+ (
+tOsixSemId
+ 
+SemId
+)
+
+1005 if(
+SemId
+ == 0)
+
+1007  
+OSIX_FAILURE
+;
+
+1009 i‡(
+	`£m_po°
+ ((
+£m_t
+ *Ë
+SemId
+) < 0)
+
+1011 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_TSK_TRC
+, "", "OsixSemGivê(0x%xËÁûed\r\n", 
+SemId
+);
+
+1012  (
+OSIX_FAILURE
+);
+
+1014  (
+OSIX_SUCCESS
+);
+
+1015 
+	}
+}
+
+1024 
+UINT4
+
+
+1025 
+	$OsixSemTake
+ (
+tOsixSemId
+ 
+SemId
+)
+
+1027 
+UINT4
+ 
+u4RëVÆ
+ = 
+OSIX_SUCCESS
+;
+
+1029 if(
+SemId
+ == 0)
+
+1031 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_TSK_TRC
+, "", "OsixSemTakê(0x%xËÁûed\r\n", 
+SemId
+);
+
+1032  
+OSIX_FAILURE
+;
+
+1034 
+	`£m_waô
+ ((
+£m_t
+ *Ë
+SemId
+) != 0)
+
+1036 i‡(
+î∫o
+ !
+EINTR
+)
+
+1038 
+u4RëVÆ
+ = 
+OSIX_FAILURE
+;
+
+1039 
+	`as£π
+ (0);
+
+1042  (
+u4RëVÆ
+);
+
+1043 
+	}
+}
+
+1053 
+VOID
+ 
+	$CmOsixSemDebug
+(
+VOID
+)
+
+1055 
+UINT4
+ 
+u4Idx
+ = 0;
+
+1056 
+INT4
+ 
+vÆ
+ = 0;
+
+1058 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+1064 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_SEMS
+; u4Idx++)
+
+1066 if((
+gaOsixSem
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_FALSE
+)
+
+1071 
+	`£m_gëvÆue
+((
+£m_t
+ *Ë&(
+gaOsixSem
+[
+u4Idx
+].
+SemId
+),&
+vÆ
+);
+
+1072 if(
+vÆ
+ <= 0)
+
+1074 
+	`¥ötf
+("Task [%d:%s]'†£m≠h‹ê[%d]Üocked \n",
+gaOsixSem
+[
+u4Idx
+].
+TskId
+, 
+	`OsixExGëTaskName
+(gaOsixSem[u4Idx].TskId), u4Idx);
+
+1079 i‡(
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+) != 0)
+
+1084 
+	}
+}
+
+1098 
+UINT4
+
+
+1099 
+	$OsixQueCπ
+ (
+UINT1
+ 
+au1QName
+[], 
+UINT4
+ 
+u4MaxMsgLí
+,
+
+1100 
+UINT4
+ 
+u4MaxMsgs
+, 
+tOsixQId
+ * 
+pQueId
+)
+
+1102 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+1103 
+VOID
+ *
+pId
+ = 
+NULL
+;
+
+1105 
+	`MEMSET
+ ((
+UINT1
+ *Ë
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+1106 
+	`MEMCPY
+ (
+au1Name
+, 
+au1QName
+, 
+OSIX_NAME_LEN
+);
+
+1108 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_QUE_TRC
+, "", "OsixQueCrt (%s, %d, %d)\r\n",
+
+1109 
+au1Name
+, 
+u4MaxMsgLí
+, 
+u4MaxMsgs
+);
+
+1114 
+pId
+ = 
+pQueId
+;
+
+1115 i‡(
+	`OsixRscFöd
+ (
+au1Name
+, 
+OSIX_QUE
+, 
+pId
+Ë=
+OSIX_SUCCESS
+)
+
+1117  (
+OSIX_FAILURE
+);
+
+1120 *
+pQueId
+ = (
+tOsixQId
+Ë
+	`PTHREAD_Cª©e_MsgQ
+ (
+u4MaxMsgs
+, 
+u4MaxMsgLí
+);
+
+1121 i‡(*
+pQueId
+ =
+NULL
+)
+
+1123  (
+OSIX_FAILURE
+);
+
+1125 i‡(
+	`OsixRscAdd
+ (
+au1Name
+, 
+OSIX_QUE
+, (
+UINT4
+ *Ë*
+pQueId
+Ë=
+OSIX_FAILURE
+)
+
+1127 
+	`PTHREAD_Dñëe_MsgQ
+ ((
+tPthªadQId
+Ë(*
+pQueId
+));
+
+1128  (
+OSIX_FAILURE
+);
+
+1130  (
+OSIX_SUCCESS
+);
+
+1131 
+	}
+}
+
+1141 
+	$OsixQueDñ
+ (
+tOsixQId
+ 
+QueId
+)
+
+1143 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_QUE_TRC
+, "", "OsixQueDñ (%d)\r\n", 
+QueId
+);
+
+1144 
+	`OsixRscDñ
+ (
+OSIX_QUE
+, 
+QueId
+);
+
+1145 
+	`PTHREAD_Dñëe_MsgQ
+ ((
+tPthªadQId
+Ë
+QueId
+);
+
+1147 
+	}
+}
+
+1158 
+UINT4
+
+
+1159 
+	$OsixQueSíd
+ (
+tOsixQId
+ 
+QueId
+, 
+UINT1
+ *
+pu1Msg
+, 
+UINT4
+ 
+u4MsgLí
+)
+
+1161 
+u4MsgLí
+ = 0;
+
+1163 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_QUE_TRC
+, "",
+
+1164 "OsixQueSíd (%d, 0x%x, %d)\r\n", 
+QueId
+, 
+pu1Msg
+, 
+u4MsgLí
+);
+
+1170 i‡(
+	`PTHREAD_Síd_MsgQ
+ ((
+tPthªadQId
+Ë
+QueId
+, 
+pu1Msg
+) != 0)
+
+1172  (
+OSIX_FAILURE
+);
+
+1174  (
+OSIX_SUCCESS
+);
+
+1175 
+	}
+}
+
+1186 
+UINT4
+
+
+1187 
+	$OsixQueRecv
+ (
+tOsixQId
+ 
+QueId
+, 
+UINT1
+ *
+pu1Msg
+, 
+UINT4
+ 
+u4MsgLí
+, 
+INT4
+ 
+i4Timeout
+)
+
+1189 
+u4MsgLí
+ = 0;
+
+1190 
+	`DEBUG
+();
+
+1192 
+	`PRINTF
+("[%s][%d] Recv Så:%p.\n", 
+__FUNCTION__
+, 
+__LINE__
+, 
+pu1Msg
+);
+
+1194 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_QUE_TRC
+, "", "OsixQueRecv (%d)\r\n", 
+QueId
+);
+
+1200 i‡(
+i4Timeout
+ > 0)
+
+1202 
+i4Timeout
+ = (
+INT4
+Ë
+	`OsixSTUPS2Ticks
+ ((
+UINT4
+) i4Timeout);
+
+1204 
+	`DEBUG
+();
+
+1205 i‡(
+	`PTHREAD_Re˚ive_MsgQ
+ ((
+tPthªadQId
+Ë
+QueId
+, 
+pu1Msg
+, 
+i4Timeout
+) != 0)
+
+1207  (
+OSIX_FAILURE
+);
+
+1209  (
+OSIX_SUCCESS
+);
+
+1210 
+	}
+}
+
+1219 
+UINT4
+
+
+1220 
+	$OsixQueNumMsg
+ (
+tOsixQId
+ 
+QueId
+, 
+UINT4
+ *
+pu4NumMsg
+)
+
+1222 
+tPthªadQ
+ *
+pPthªadQ
+ = (—PthªadQ *Ë
+QueId
+);
+
+1223 
+	`UéTrcLog
+ (
+OSIX_TRC_FLAG
+, 
+OSIX_QUE_TRC
+, "", "OsixQueNumMsg (%d)\r\n",
+
+1224 
+QueId
+);
+
+1225 i‡(
+	`±hªad_muãx_lock
+ (
+pPthªadQ
+->
+QueMuãx
+))
+
+1227  (
+OSIX_FAILURE
+);
+
+1230 *
+pu4NumMsg
+ = (
+UINT4
+Ë(
+	`PTHREAD_MsgQ_NumMsgs
+ ((
+tPthªadQId
+Ë
+QueId
+));
+
+1231 
+	`±hªad_muãx_u∆ock
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1233  (
+OSIX_SUCCESS
+);
+
+1234 
+	}
+}
+
+1249 
+UINT4
+
+
+1250 
+	$OsixRscAdd
+ (
+UINT1
+ 
+au1Name
+[], 
+UINT4
+ 
+u4RscTy≥
+, UINT4 *
+pu4RscId
+)
+
+1252 
+UINT4
+ 
+u4Idx
+;
+
+1253 
+UINT4
+ 
+u4SemIdx
+ = 1;
+
+1255 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+1257  (
+OSIX_FAILURE
+);
+
+1260 
+u4RscTy≥
+)
+
+1262 
+OSIX_TSK
+:
+
+1264 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_TSKS
+; u4Idx++)
+
+1266 i‡((
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_TRUE
+)
+
+1268 
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_FALSE
+;
+
+1269 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+ = 0;
+
+1270 
+	`MEMCPY
+ (
+gaOsixTsk
+[
+u4Idx
+].
+au1Name
+,áu1Name,
+
+1271 (
+OSIX_NAME_LEN
+ + 4));
+
+1272 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1273  (
+OSIX_SUCCESS
+);
+
+1278 
+OSIX_SEM
+:
+
+1289 
+u4Idx
+ = 
+u4SemIdx
+; u4Idx <
+OSIX_MAX_SEMS
+; u4Idx++)
+
+1291 i‡((
+gaOsixSem
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_TRUE
+)
+
+1293 
+gaOsixSem
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_FALSE
+;
+
+1294 
+gaOsixSem
+[
+u4Idx
+].
+u2FûÀr
+ = 0;
+
+1299 if(
+pu4RscId
+)
+
+1301 
+gaOsixSem
+[
+u4Idx
+].
+TskId
+ = *((
+tOsixTaskId
+*)
+pu4RscId
+);
+
+1303 
+	`MEMCPY
+ (
+gaOsixSem
+[
+u4Idx
+].
+au1Name
+,áu1Name,
+
+1304 (
+OSIX_NAME_LEN
+ + 4));
+
+1305 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1306 
+u4SemIdx
+ = 
+u4Idx
+;
+
+1307  (
+OSIX_SUCCESS
+);
+
+1313 
+u4Idx
+ = 1; u4Idx < 
+u4SemIdx
+; u4Idx++)
+
+1315 i‡((
+gaOsixSem
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_TRUE
+)
+
+1317 
+gaOsixSem
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_FALSE
+;
+
+1318 
+gaOsixSem
+[
+u4Idx
+].
+u2FûÀr
+ = 0;
+
+1319 
+	`MEMCPY
+ (
+gaOsixSem
+[
+u4Idx
+].
+au1Name
+,áu1Name,
+
+1320 (
+OSIX_NAME_LEN
+ + 4));
+
+1321 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1322 
+u4SemIdx
+ = 
+u4Idx
+;
+
+1323  (
+OSIX_SUCCESS
+);
+
+1328 
+OSIX_QUE
+:
+
+1330 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_QUES
+; u4Idx++)
+
+1332 i‡((
+gaOsixQue
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_TRUE
+)
+
+1334 
+gaOsixQue
+[
+u4Idx
+].
+pRscId
+ = 
+pu4RscId
+;
+
+1335 
+gaOsixQue
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_FALSE
+;
+
+1336 
+gaOsixQue
+[
+u4Idx
+].
+u2FûÀr
+ = 0;
+
+1337 
+	`MEMCPY
+ (
+gaOsixQue
+[
+u4Idx
+].
+au1Name
+,áu1Name,
+
+1338 (
+OSIX_NAME_LEN
+ + 4));
+
+1339 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1340  (
+OSIX_SUCCESS
+);
+
+1349 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1350  (
+OSIX_FAILURE
+);
+
+1351 
+	}
+}
+
+1361 
+VOID
+
+
+1362 
+	$OsixRscDñ
+ (
+UINT4
+ 
+u4RscTy≥
+, 
+VOID
+ *
+pRscId
+)
+
+1364 
+UINT4
+ 
+u4Idx
+;
+
+1366 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+1371 
+u4RscTy≥
+)
+
+1373 
+OSIX_TSK
+:
+
+1374 
+u4Idx
+ = *((
+UINT4
+ *Ë
+pRscId
+);
+
+1375 
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_TRUE
+;
+
+1376 
+	`MEMSET
+ (
+gaOsixTsk
+[
+u4Idx
+].
+au1Name
+, '\0', (
+OSIX_NAME_LEN
+ + 4));
+
+1379 
+OSIX_SEM
+:
+
+1381 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_SEMS
+; u4Idx++)
+
+1383 i‡(&(
+gaOsixSem
+[
+u4Idx
+].
+SemId
+Ë=(
+£m_t
+ *Ë
+pRscId
+)
+
+1385 
+gaOsixSem
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_TRUE
+;
+
+1386 
+	`MEMSET
+ (
+gaOsixSem
+[
+u4Idx
+].
+au1Name
+, '\0',
+
+1387 (
+OSIX_NAME_LEN
+ + 4));
+
+1393 
+OSIX_QUE
+:
+
+1395 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_QUES
+; u4Idx++)
+
+1397 i‡((
+gaOsixQue
+[
+u4Idx
+].
+pRscId
+) ==ÖRscId)
+
+1399 
+gaOsixQue
+[
+u4Idx
+].
+u2Fªe
+ = 
+OSIX_TRUE
+;
+
+1400 
+	`MEMSET
+ (
+gaOsixQue
+[
+u4Idx
+].
+au1Name
+, '\0',
+
+1401 (
+OSIX_NAME_LEN
+ + 4));
+
+1410 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1411 
+	}
+}
+
+1421 
+UINT4
+
+
+1422 
+	$OsixRscFöd
+ (
+UINT1
+ 
+au1Name
+[], 
+UINT4
+ 
+u4RscTy≥
+, 
+VOID
+ **
+pRscId
+)
+
+1424 
+UINT4
+ 
+u4Idx
+;
+
+1425 
+UINT4
+ *
+pu4Id
+ = 
+NULL
+;
+
+1427 i‡(
+	`STRCMP
+ (
+au1Name
+, "") == 0)
+
+1429  (
+OSIX_FAILURE
+);
+
+1431 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+1433  (
+OSIX_FAILURE
+);
+
+1436 
+u4RscTy≥
+)
+
+1438 
+OSIX_TSK
+:
+
+1440 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_TSKS
+; u4Idx++)
+
+1442 i‡(
+MEMCMP
+
+
+1443 (
+au1Name
+, 
+gaOsixTsk
+[
+u4Idx
+].au1Name,
+
+1444 (
+OSIX_NAME_LEN
+ + 4)) == 0)
+
+1450 i‡(
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ =
+OSIX_TRUE
+)
+
+1458 
+pu4Id
+ = *
+pRscId
+;
+
+1459 *
+pu4Id
+ = 
+u4Idx
+;
+
+1460 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1461  (
+OSIX_SUCCESS
+);
+
+1466 
+OSIX_SEM
+:
+
+1468 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_SEMS
+; u4Idx++)
+
+1470 i‡(
+MEMCMP
+
+
+1471 (
+au1Name
+, 
+gaOsixSem
+[
+u4Idx
+].au1Name,
+
+1472 (
+OSIX_NAME_LEN
+ + 4)) == 0)
+
+1475 *
+pRscId
+ = (*Ë&
+gaOsixSem
+[
+u4Idx
+].
+SemId
+;
+
+1476 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1480 i‡(
+gu4MaxSem
+ < 
+u4Idx
+)
+
+1483 
+gu4MaxSem
+ = 
+u4Idx
+;
+
+1485  (
+OSIX_SUCCESS
+);
+
+1490 
+OSIX_QUE
+:
+
+1492 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_QUES
+; u4Idx++)
+
+1494 i‡(
+MEMCMP
+
+
+1495 (
+au1Name
+, 
+gaOsixQue
+[
+u4Idx
+].au1Name,
+
+1496 (
+OSIX_NAME_LEN
+ + 4)) == 0)
+
+1498 *
+pRscId
+ = (*Ë
+gaOsixQue
+[
+u4Idx
+].pRscId;
+
+1499 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1500  (
+OSIX_SUCCESS
+);
+
+1508 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+1509  (
+OSIX_FAILURE
+);
+
+1510 
+	}
+}
+
+1520 
+VOID
+
+
+1521 
+	$Fßp2Sèπ
+ ()
+
+1525 
+	`¶ìp
+ (1);
+
+1527 
+	}
+}
+
+1536 
+UINT4
+
+
+1537 
+	$OsixGëSysTime
+ (
+tOsixSysTime
+ * 
+pSysTime
+)
+
+1540 
+˛ock_t
+ 
+CurTicks
+;
+
+1541 
+UINT4
+ 
+u4TicksPîStup
+;
+
+1542 
+tms
+ 
+buf
+;
+
+1544 
+u4TicksPîStup
+ = 
+	`sysc⁄f
+ (
+_SC_CLK_TCK
+Ë/ 
+gu4Stups
+;
+
+1546 
+CurTicks
+ = 
+	`times
+ (&
+buf
+);
+
+1547 *
+pSysTime
+ = (
+CurTicks
+ - 
+gSèπTicks
+Ë/ 
+u4TicksPîStup
+;
+
+1549  (
+OSIX_SUCCESS
+);
+
+1550 
+	}
+}
+
+1559 
+UINT4
+
+
+1560 
+	$OsixGëSysTimeIn64Bô
+ (
+FS_UINT8
+ * 
+pSysTime
+)
+
+1563 
+pSysTime
+->
+u4Hi
+ = 0;
+
+1564 
+	`OsixGëSysTime
+ (&
+pSysTime
+->
+u4Lo
+);
+
+1566  (
+OSIX_SUCCESS
+);
+
+1567 
+	}
+}
+
+1576 
+UINT4
+
+
+1577 
+	$OsixGëSysUpTime
+ (
+VOID
+)
+
+1579  (
+gu4Sec⁄ds
+);
+
+1580 
+	}
+}
+
+1589 
+UINT4
+
+
+1590 
+	$CmOsixGëMi¸oTimeTick
+ (
+VOID
+)
+
+1593  (
+gCmu4Mi¸oSec⁄ds
+);
+
+1594 
+	}
+}
+
+1604 c⁄° 
+UINT1
+ *
+
+1605 
+	$OsixExGëTaskName
+ (
+tOsixTaskId
+ 
+TskId
+)
+
+1612 i‡(
+TskId
+)
+
+1614  ((
+UINT1
+ *Ë(
+gaOsixTsk
+[(
+UINT4
+Ë
+TskId
+].
+au1Name
+));
+
+1616  ((c⁄° 
+UINT1
+ *) "");
+
+1617 
+	}
+}
+
+1632 
+VOID
+ *
+
+1633 
+	$OsixTskWøµî
+ (*
+pArg
+)
+
+1635 (*
+TaskPå
+Ë(
+INT1
+ *);
+
+1636 
+tOsixTsk
+ *
+pTsk
+ = (tOsixTsk *Ë
+pArg
+;
+
+1637 
+tOsixTaskId
+ 
+TskId
+;
+
+1638 
+INT1
+ *
+pFuncArg
+ = 
+NULL
+;
+
+1641 
+	`±hªad_muãx_lock
+ (&(
+pTsk
+->
+TskMuãx
+));
+
+1644 
+	`±hªad_muãx_u∆ock
+ (&(
+pTsk
+->
+TskMuãx
+));
+
+1646 
+TaskPå
+ = 
+pTsk
+->
+pTskSåtAddr
+;
+
+1647 
+pFuncArg
+ = 
+pTsk
+->
+pArg
+;
+
+1657 
+pTsk
+->
+u4Pid
+ = (
+UINT4
+Ë
+	`gëpid
+ ();
+
+1659 (*
+TaskPå
+Ë(
+pFuncArg
+);
+
+1661 
+	`OsixTskIdSñf
+ (&
+TskId
+);
+
+1662 
+	`OsixTskDñ
+ (
+TskId
+);
+
+1664  ((*Ë
+NULL
+);
+
+1665 
+	}
+}
+
+1675 
+tPthªadQId
+
+
+1676 
+	$PTHREAD_Cª©e_MsgQ
+ (
+UINT4
+ 
+u4MaxMsgs
+, UINT4 
+u4MsgLí
+)
+
+1678 
+±hªad_muãx_t
+ *
+qSem
+;
+
+1679 
+tPthªadQ
+ *
+pPthªadQ
+;
+
+1685 
+u4MsgLí
+ =  (*);
+
+1687 
+pPthªadQ
+ = 
+	`MEM_MALLOC
+ ((((
+u4MaxMsgs
+ + 1Ë* 
+u4MsgLí
+) +
+
+1688  (
+tPthªadQ
+)),ÅPthreadQ);
+
+1689 i‡(
+pPthªadQ
+ =
+NULL
+)
+
+1691  (
+NULL
+);
+
+1693 
+pPthªadQ
+->
+pQBa£
+ = (
+UINT1
+ *Ë((UINT1 *ËpPthªadQ +  (
+tPthªadQ
+));
+
+1695 
+qSem
+ = 
+	`MEM_MALLOC
+ ( (
+±hªad_muãx_t
+),Öthread_mutex_t);
+
+1696 i‡(
+qSem
+ =
+NULL
+)
+
+1698 
+	`MEM_FREE
+ (
+pPthªadQ
+);
+
+1699  (
+NULL
+);
+
+1701 
+	`±hªad_muãx_öô
+ (
+qSem
+, 0);
+
+1702 
+pPthªadQ
+->
+QueMuãx
+ = 
+qSem
+;
+
+1704 
+	`±hªad_c⁄d_öô
+ (&(
+pPthªadQ
+->
+QueC⁄d
+), 
+NULL
+);
+
+1706 
+pPthªadQ
+->
+pQEnd
+ = (pPthªadQ->
+pQBa£
+Ë+ ((
+u4MaxMsgs
+ + 1Ë* 
+u4MsgLí
+);
+
+1707 
+pPthªadQ
+->
+pQRód
+ =ÖPthªadQ->
+pQBa£
+;
+
+1708 
+pPthªadQ
+->
+pQWrôe
+ =ÖPthªadQ->
+pQBa£
+;
+
+1709 
+pPthªadQ
+->
+u4MsgLí
+ = u4MsgLen;
+
+1711 
+pPthªadQ
+->
+u4OvîFlows
+ = 0;
+
+1713  (
+pPthªadQ
+);
+
+1714 
+	}
+}
+
+1723 
+VOID
+
+
+1724 
+	$PTHREAD_Dñëe_MsgQ
+ (
+tPthªadQId
+ 
+QId
+)
+
+1726 
+tPthªadQ
+ *
+pPthªadQ
+ = (tPthªadQ *Ë
+QId
+;
+
+1730 i‡(
+	`±hªad_muãx_lock
+ (
+pPthªadQ
+->
+QueMuãx
+))
+
+1734 
+	`±hªad_c⁄d_de°roy
+ (&(
+pPthªadQ
+->
+QueC⁄d
+));
+
+1735 
+	`±hªad_muãx_de°roy
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1736 
+	`MEM_FREE
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1737 
+	`MEM_FREE
+ ((
+VOID
+ *Ë
+pPthªadQ
+);
+
+1738 
+	}
+}
+
+1748 
+INT4
+
+
+1749 
+	$PTHREAD_Síd_MsgQ
+ (
+tPthªadQId
+ 
+QId
+, 
+UINT1
+ *
+pMsg
+)
+
+1751 
+tPthªadQ
+ *
+pPthªadQ
+ = (tPthªadQ *Ë
+QId
+;
+
+1752 
+UINT1
+ *
+pWrôe
+, *
+pRód
+, *
+pBa£
+, *
+pEnd
+;
+
+1753 
+UINT4
+ 
+u4MsgLí
+;
+
+1763 i‡(
+	`±hªad_muãx_lock
+ (
+pPthªadQ
+->
+QueMuãx
+))
+
+1768 
+pWrôe
+ = 
+pPthªadQ
+->
+pQWrôe
+;
+
+1769 
+pRód
+ = 
+pPthªadQ
+->
+pQRód
+;
+
+1770 
+pBa£
+ = 
+pPthªadQ
+->
+pQBa£
+;
+
+1771 
+pEnd
+ = 
+pPthªadQ
+->
+pQEnd
+;
+
+1772 
+u4MsgLí
+ = 
+pPthªadQ
+->u4MsgLen;
+
+1774 i‡(((
+pWrôe
+ + 
+u4MsgLí
+Ë=
+pEnd
+Ë&& (
+pRód
+ =
+pBa£
+))
+
+1776 
+	`±hªad_muãx_u∆ock
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1777 
+pPthªadQ
+->
+u4OvîFlows
+++;
+
+1780 i‡((
+pWrôe
+ + 
+u4MsgLí
+Ë=
+pRód
+)
+
+1782 
+	`±hªad_muãx_u∆ock
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1783 
+pPthªadQ
+->
+u4OvîFlows
+++;
+
+1786 
+	`mem˝y
+ (
+pWrôe
+, 
+pMsg
+, 
+u4MsgLí
+);
+
+1787 (
+pPthªadQ
+->
+pQWrôe
+Ë+
+u4MsgLí
+;
+
+1789 i‡((
+pPthªadQ
+->
+pQWrôe
+Ë=
+pEnd
+)
+
+1791 (
+pPthªadQ
+->
+pQWrôe
+Ë
+pBa£
+;
+
+1795 
+	`±hªad_c⁄d_sig«l
+ (&
+pPthªadQ
+->
+QueC⁄d
+);
+
+1798 
+	`±hªad_muãx_u∆ock
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1801 
+	}
+}
+
+1811 
+INT4
+
+
+1812 
+	$PTHREAD_Re˚ive_MsgQ
+ (
+tPthªadQId
+ 
+QId
+, 
+UINT1
+ *
+pMsg
+, 
+INT4
+ 
+i4Timeout
+)
+
+1814 
+tPthªadQ
+ *
+pPthªadQ
+ = (tPthªadQ *Ë
+QId
+;
+
+1815 
+time•ec
+ 
+ts
+;
+
+1816 
+timevÆ
+ 
+now
+;
+
+1817 
+UINT4
+ 
+u4Sec
+;
+
+1818 
+INT4
+ 
+i4rc
+;
+
+1819 
+UINT4
+ 
+u4Mi¸oSec
+;
+
+1820 
+	`DEBUG
+();
+
+1821 i‡(
+	`±hªad_muãx_lock
+ (
+pPthªadQ
+->
+QueMuãx
+))
+
+1825 
+	`DEBUG
+();
+
+1826 i‡(
+i4Timeout
+ =
+OSIX_NO_WAIT
+)
+
+1828 i‡(
+pPthªadQ
+->
+pQWrôe
+ =pPthªadQ->
+pQRód
+)
+
+1830 
+	`±hªad_muãx_u∆ock
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1834 i‡(
+i4Timeout
+ =(
+INT4
+Ë
+OSIX_WAIT
+)
+
+1835 {
+	`DEBUG
+();
+
+1836 (
+pPthªadQ
+->
+pQWrôe
+Ë=’PthªadQ->
+pQRód
+))
+
+1837 {
+	`DEBUG
+();
+
+1838 
+	`±hªad_c⁄d_waô
+ (&
+pPthªadQ
+->
+QueC⁄d
+,ÖPthªadQ->
+QueMuãx
+);
+
+1843 
+	`gëtimeofday
+ (&
+now
+, 
+NULL
+);
+
+1845 
+u4Sec
+ = 0;
+
+1846 
+u4Mi¸oSec
+ = 
+now
+.
+tv_u£c
+ + 
+i4Timeout
+;
+
+1847 i‡(
+u4Mi¸oSec
+ > 1000000)
+
+1849 
+u4Sec
+ = 
+u4Mi¸oSec
+ / 1000000;
+
+1850 
+u4Mi¸oSec
+ = u4MicroSec % 1000000;
+
+1853 
+ts
+.
+tv_£c
+ = 
+now
+.tv_£¯+ 
+u4Sec
+;
+
+1854 
+ts
+.
+tv_n£c
+ = 
+u4Mi¸oSec
+ * 1000;
+
+1856 
+i4rc
+ = 
+	`±hªad_c⁄d_timedwaô
+ (&
+pPthªadQ
+->
+QueC⁄d
+,ÖPthªadQ->
+QueMuãx
+,
+
+1857 &
+ts
+);
+
+1858 i‡(
+i4rc
+ =
+ETIMEDOUT
+)
+
+1860 
+	`±hªad_muãx_u∆ock
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1861  
+OSIX_FAILURE
+;
+
+1864 
+	`DEBUG
+();
+
+1868 
+	`PRINTF
+("[%s][%d] Recv Så:%p.\n", 
+__FUNCTION__
+, 
+__LINE__
+, 
+pMsg
+);
+
+1870 
+	`mem˝y
+ (
+pMsg
+, 
+pPthªadQ
+->
+pQRód
+,ÖPthªadQ->
+u4MsgLí
+);
+
+1872 
+	`PRINTF
+("[%s][%d] Recv Så:%p,ÖRód:%p, msg:%x.\n", 
+__FUNCTION__
+, 
+__LINE__
+, 
+pMsg
+, 
+pPthªadQ
+->
+pQRód
+, *pMsg);
+
+1874 (
+pPthªadQ
+->
+pQRód
+Ë+’PthªadQ->
+u4MsgLí
+);
+
+1875 
+	`DEBUG
+();
+
+1876 i‡((
+pPthªadQ
+->
+pQRód
+Ë=’PthªadQ->
+pQEnd
+))
+
+1878 (
+pPthªadQ
+->
+pQRód
+Ë’PthªadQ->
+pQBa£
+);
+
+1880 
+	`±hªad_muãx_u∆ock
+ (
+pPthªadQ
+->
+QueMuãx
+);
+
+1882 
+	}
+}
+
+1891 
+UINT4
+
+
+1892 
+	$PTHREAD_MsgQ_NumMsgs
+ (
+tPthªadQId
+ 
+QId
+)
+
+1894 
+tPthªadQ
+ 
+PthªadQ
+ = *(—PthªadQ *Ë
+QId
+);
+
+1895 
+UINT4
+ 
+u4Msgs
+;
+
+1897 i‡((
+PthªadQ
+.
+pQWrôe
+Ë< (PthªadQ.
+pQRód
+))
+
+1899 
+u4Msgs
+ =
+
+1900 (
+PthªadQ
+.
+pQWrôe
+Ë- (PthªadQ.
+pQBa£
+Ë+ (PthªadQ.
+pQEnd
+) -
+
+1901 (
+PthªadQ
+.
+pQRód
+);
+
+1902  (
+u4Msgs
+ / (
+PthªadQ
+.
+u4MsgLí
+));
+
+1906  (((
+PthªadQ
+.
+pQWrôe
+Ë- (PthªadQ.
+pQRód
+)Ë/ (PthªadQ.
+u4MsgLí
+));
+
+1908 
+	}
+}
+
+1919 
+INT4
+
+
+1920 
+	$FûeO≥n
+ (c⁄° 
+UINT1
+ *
+pu1FûeName
+, 
+INT4
+ 
+i4InMode
+)
+
+1922 
+INT4
+ 
+i4Mode
+ = 0;
+
+1924 i‡(
+i4InMode
+ & 
+OSIX_FILE_CR
+)
+
+1926 
+i4Mode
+ |
+O_CREAT
+;
+
+1928 i‡(
+i4InMode
+ & 
+OSIX_FILE_TR
+)
+
+1930 
+i4Mode
+ |
+O_TRUNC
+;
+
+1932 i‡(
+i4InMode
+ & 
+OSIX_FILE_SY
+)
+
+1934 
+i4Mode
+ |
+O_SYNC
+;
+
+1936 i‡(
+i4InMode
+ & 
+OSIX_FILE_RO
+)
+
+1938 
+i4Mode
+ |
+O_RDONLY
+;
+
+1940 i‡(
+i4InMode
+ & 
+OSIX_FILE_WO
+)
+
+1942 
+i4Mode
+ |
+O_WRONLY
+;
+
+1944 i‡(
+i4InMode
+ & 
+OSIX_FILE_AP
+)
+
+1946 
+i4Mode
+ |
+O_APPEND
+;
+
+1949 i‡(
+i4InMode
+ & 
+OSIX_FILE_RW
+)
+
+1951 
+i4Mode
+ |
+O_RDWR
+;
+
+1953 i‡(
+i4InMode
+ & 
+OSIX_FILE_AP
+)
+
+1955 
+i4Mode
+ |
+O_APPEND
+;
+
+1959  
+	`›í
+ ((c⁄° 
+CHR1
+ *Ë
+pu1FûeName
+, 
+i4Mode
+, 0644);
+
+1960 
+	}
+}
+
+1969 
+INT4
+
+
+1970 
+	$FûeClo£
+ (
+INT4
+ 
+i4Fd
+)
+
+1972 
+INT4
+ 
+i4RëVÆ
+;
+
+1973 
+i4RëVÆ
+ = 
+	`˛o£
+ (
+i4Fd
+);
+
+1974 
+	`sync
+ ();
+
+1975  
+i4RëVÆ
+;
+
+1976 
+	}
+}
+
+1987 
+UINT4
+
+
+1988 
+	$FûeRód
+ (
+INT4
+ 
+i4Fd
+, 
+CHR1
+ * 
+pBuf
+, 
+UINT4
+ 
+i4Cou¡
+)
+
+1990  
+	`ªad
+ (
+i4Fd
+, 
+pBuf
+, 
+i4Cou¡
+);
+
+1991 
+	}
+}
+
+2002 
+UINT4
+
+
+2003 
+	$FûeWrôe
+ (
+INT4
+ 
+i4Fd
+, c⁄° 
+CHR1
+ * 
+pBuf
+, 
+UINT4
+ 
+i4Cou¡
+)
+
+2005  
+	`wrôe
+ (
+i4Fd
+, 
+pBuf
+, 
+i4Cou¡
+);
+
+2006 
+	}
+}
+
+2015 
+INT4
+
+
+2016 
+	$FûeDñëe
+ (c⁄° 
+UINT1
+ *
+pu1FûeName
+)
+
+2018 
+INT4
+ 
+i4RëVÆ
+;
+
+2019 
+i4RëVÆ
+ = 
+	`u∆ök
+ ((c⁄° 
+CHR1
+ *Ë
+pu1FûeName
+);
+
+2020 
+	`sync
+ ();
+
+2021  
+i4RëVÆ
+;
+
+2022 
+	}
+}
+
+2031 
+INT4
+
+
+2032 
+	$FûeSize
+ (
+INT4
+ 
+i4Fd
+)
+
+2034 
+°©
+ 
+buf„r
+;
+
+2035 i‡(
+	`f°©
+ (
+i4Fd
+, &
+buf„r
+) < 0)
+
+2039  
+buf„r
+.
+°_size
+;
+
+2041 
+	}
+}
+
+2051 
+INT4
+
+
+2052 
+	$CmFûeModifyTime
+ (
+INT4
+ 
+i4Fd
+)
+
+2054 
+°©
+ 
+buf„r
+;
+
+2055 i‡(
+	`f°©
+ (
+i4Fd
+, &
+buf„r
+) < 0)
+
+2059  
+buf„r
+.
+°_mtime
+;
+
+2061 
+	}
+}
+
+2072 
+INT4
+
+
+2073 
+	$FûeTrunˇã
+ (
+INT4
+ 
+i4Fd
+, INT4 
+i4Size
+)
+
+2075  
+	`·runˇã
+ (
+i4Fd
+, 
+i4Size
+);
+
+2076 
+	}
+}
+
+2093 
+INT4
+
+
+2094 
+	$FûeSìk
+ (
+INT4
+ 
+i4Fd
+, INT4 
+i4Off£t
+, INT4 
+i4Whí˚
+)
+
+2096  (
+	`l£ek
+ (
+i4Fd
+, 
+i4Off£t
+, 
+i4Whí˚
+));
+
+2097 
+	}
+}
+
+2106 
+INT4
+
+
+2107 
+	$FûeSèt
+ (c⁄° 
+CHR1
+ * 
+pc1FûeName
+)
+
+2109 
+°©
+ 
+FûeInfo
+;
+
+2110 
+INT4
+ 
+i4FûeExi°s
+ = -1;
+
+2112 i‡(
+pc1FûeName
+ !
+NULL
+)
+
+2115 
+i4FûeExi°s
+ = 
+	`°©
+ (
+pc1FûeName
+, &
+FûeInfo
+);
+
+2116 i‡(
+i4FûeExi°s
+ == 0)
+
+2118  
+OSIX_SUCCESS
+;
+
+2122  
+OSIX_FAILURE
+;
+
+2123 
+	}
+}
+
+2131 
+INT4
+
+
+2132 
+	$OsixCª©eDú
+ (c⁄° 
+CHR1
+ * 
+pc1DúName
+)
+
+2134 i‡(
+	`mkdú
+ (
+pc1DúName
+, 
+S_IRWXU
+) == -1)
+
+2136  
+OSIX_FAILURE
+;
+
+2139  
+OSIX_SUCCESS
+;
+
+2140 
+	}
+}
+
+2152 
+UINT4
+
+
+2153 
+	$FßpShowTask
+ (
+UINT1
+ 
+au1TskName
+[], UINT1 *
+pu1Resu…
+)
+
+2155 
+UINT4
+ 
+u4Idx
+;
+
+2156 
+UINT4
+ 
+u4Pos
+ = 0;
+
+2157 
+UINT4
+ 
+u4NumM©ches
+ = 0;
+
+2158 
+UINT1
+ *
+pu1Resu…Sèπ
+ = 
+pu1Resu…
+;
+
+2159 c⁄° 
+CHR1
+ *
+pc1Hódög
+ =
+
+2164 
+u4Pos
+ = 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+, "%s", 
+pc1Hódög
+);
+
+2165 
+pu1Resu…
+ +
+u4Pos
+;
+
+2166 
+u4Pos
+ = 0;
+
+2168 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+2170  (
+OSIX_FAILURE
+);
+
+2173 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_TSKS
+; u4Idx++)
+
+2175 i‡((
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_FALSE
+)
+
+2177 i‡(
+au1TskName
+ &&
+
+2178 (
+	`UéSåCa£Cmp
+ ((
+CHR1
+ *Ë
+au1TskName
+,
+
+2179 (
+CHR1
+ *Ë
+gaOsixTsk
+[
+u4Idx
+].
+au1Name
+)))
+
+2182 
+u4NumM©ches
+++;
+
+2183 
+u4Pos
+ +=
+
+2184 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+ + 
+u4Pos
+,
+
+2186 
+gaOsixTsk
+[
+u4Idx
+].
+au1Name
+,
+
+2187 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+,
+
+2188 
+gaOsixTsk
+[
+u4Idx
+].
+u4Prio
+,
+
+2189 
+gaOsixTsk
+[
+u4Idx
+].
+u4SèckSize
+ / 1024);
+
+2193 i‡(!
+u4NumM©ches
+)
+
+2197 
+pu1Resu…
+ = 
+pu1Resu…Sèπ
+;
+
+2198 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+, "No suchÅask.\r\n");
+
+2202 
+pu1Resu…
+ = 
+pu1Resu…Sèπ
+;
+
+2205 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+2206  (
+OSIX_SUCCESS
+);
+
+2207 
+	}
+}
+
+2217 
+INT4
+
+
+2218 
+	$CmFßpSëTaskPRI
+ (
+UINT4
+ 
+u4Id
+, UINT4 
+u4Pri
+)
+
+2220 
+INT4
+ 
+i4Pﬁicy
+ =0;
+
+2221 
+INT4
+ 
+i4Rë
+, 
+i4Resu…
+;
+
+2222 
+sched_∑øm
+ 
+∑øm
+;
+
+2224 
+i4Resu…
+ = 
+OSIX_FAILURE
+;
+
+2225 i‡((
+gaOsixTsk
+[
+u4Id
+].
+u2Fªe
+Ë=
+OSIX_TRUE
+)
+
+2227 
+	`PRINTF
+("Task isÇotÉxist.\r\n");
+
+2230 
+i4Rë
+ = 
+	`±hªad_gësched∑øm
+(
+gaOsixTsk
+[
+u4Id
+].
+ThrId
+, &
+i4Pﬁicy
+, &
+∑øm
+);
+
+2231 i‡(
+i4Rë
+ != 0)
+
+2233 
+	`PRINTF
+("FAILED while get\r\n");
+
+2237 
+∑øm
+.
+sched_¥i‹ôy
+ = (
+INT4
+)
+u4Pri
+;
+
+2238 
+i4Rë
+ = 
+	`±hªad_£tsched∑øm
+(
+gaOsixTsk
+[
+u4Id
+].
+ThrId
+, 
+i4Pﬁicy
+, &
+∑øm
+);
+
+2239 i‡(
+i4Rë
+ != 0)
+
+2241 
+	`PRINTF
+("FAILED while set\r\n");
+
+2244 
+gaOsixTsk
+[
+u4Id
+].
+u4Prio
+ = 
+u4Pri
+;
+
+2245 
+i4Resu…
+ = 
+OSIX_SUCCESS
+;
+
+2249  
+i4Resu…
+;
+
+2250 
+	}
+}
+
+2260 
+INT4
+
+
+2261 
+	$CmFßpSëTaskPRIByName
+ (
+UINT1
+ *
+pu1Name
+, 
+UINT4
+ 
+u4Pri
+)
+
+2263 
+UINT4
+ 
+u4Id
+ = 0;
+
+2264 
+UINT4
+ 
+u4OSPrio
+ = 0;
+
+2265 
+VOID
+ * 
+pId
+ = 
+NULL
+;
+
+2266 
+pId
+ = &
+u4Id
+;
+
+2268 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+2271 if(
+pu1Name
+ =
+NULL
+)
+
+2272  
+OSIX_FAILURE
+;
+
+2274 
+	`MEMSET
+ ((
+UINT1
+ *Ë
+au1Name
+, 0, (
+OSIX_NAME_LEN
+ + 4));
+
+2275 
+	`MEMCPY
+ (
+au1Name
+, 
+pu1Name
+, 
+OSIX_NAME_LEN
+);
+
+2277 i‡(
+	`OsixRscFöd
+ (
+au1Name
+, 
+OSIX_TSK
+, &
+pId
+Ë!
+OSIX_SUCCESS
+)
+
+2279 
+	`PRINTF
+("C™ÇŸ födÅhêèskÇame=<%s>\n",
+au1Name
+);
+
+2280  
+OSIX_FAILURE
+;
+
+2283 
+	`CM_ISS_PRI_TO_OS_PRI
+(
+u4Pri
+, 
+u4OSPrio
+);
+
+2285  
+	`CmFßpSëTaskPRI
+(
+u4Id
+, 
+u4OSPrio
+);
+
+2286 
+	}
+}
+
+2294 
+INT4
+ 
+	$CmFßpDumpTask
+ (
+UINT4
+ 
+u4Id
+)
+
+2296 
+UINT4
+ 
+u4Idx
+;
+
+2297 
+UINT4
+ 
+u4NumM©ches
+ = 0;
+
+2299 c⁄° 
+CHR1
+ *
+pc1Hódög
+ =
+
+2303 
+	`PRINTF
+("%s", 
+pc1Hódög
+);
+
+2305 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+2307  (
+OSIX_FAILURE
+);
+
+2311 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_TSKS
+; u4Idx++)
+
+2314 i‡((
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_FALSE
+)
+
+2316 if(
+u4Id
+ != 0)
+
+2317 
+u4Idx
+ = 
+u4Id
+;
+
+2319 
+u4NumM©ches
+++;
+
+2321 
+	`PRINTF
+ ("%4u%4d%6s%9d%10d%10d\r\n",
+u4Idx
+,
+
+2322 (
+INT4
+)
+gaOsixTsk
+[
+u4Idx
+].
+ThrId
+,
+
+2323 
+gaOsixTsk
+[
+u4Idx
+].
+au1Name
+,
+
+2324 
+gaOsixTsk
+[
+u4Idx
+].
+u4Evíts
+,
+
+2325 
+gaOsixTsk
+[
+u4Idx
+].
+u4Prio
+,
+
+2326 
+gaOsixTsk
+[
+u4Idx
+].
+u4SèckSize
+ / 1024);
+
+2328 if(
+u4Id
+ != 0)
+
+2333 
+	`PRINTF
+("T©Æ %u\r\n",
+u4NumM©ches
+);
+
+2334 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+2335  (
+OSIX_SUCCESS
+);
+
+2336 
+	}
+}
+
+2345 
+UINT4
+
+
+2346 
+	$FßpShowQueD©a
+ (
+tPthªadQ
+ * 
+pPthªadQ
+, 
+UINT1
+ *
+pu1Resu…
+)
+
+2348 
+UINT4
+ 
+u4Pos
+ = 0;
+
+2349 
+UINT4
+ 
+u4Queued
+;
+
+2350 
+UINT4
+ 
+u4Cou¡
+;
+
+2351 
+UINT4
+ 
+u4MsgLí
+;
+
+2352 
+UINT4
+ 
+u4Byã
+;
+
+2353 
+UINT1
+ *
+pMsg
+;
+
+2354 
+UINT1
+ *
+pD©um
+;
+
+2356 
+u4MsgLí
+ = 
+pPthªadQ
+->u4MsgLen;
+
+2357 
+u4Queued
+ = (
+pPthªadQ
+->
+pQWrôe
+ -ÖPthªadQ->
+pQRód
+Ë/ 
+u4MsgLí
+;
+
+2358 
+pMsg
+ = 
+pPthªadQ
+->
+pQRód
+;
+
+2359 
+pD©um
+ = 
+	`MEM_MALLOC
+ (
+u4MsgLí
+, 
+UINT1
+);
+
+2361 i‡(
+pD©um
+ =
+NULL
+)
+
+2363  
+u4Pos
+;
+
+2366 
+u4Pos
+ +
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+ + u4Pos, "\r\nMessages in Q:\r\n");
+
+2368 
+u4Cou¡
+ = 0; u4Cou¡ < 
+u4Queued
+; u4Count++)
+
+2370 
+	`MEMCPY
+ (
+pD©um
+, 
+pMsg
+, 
+u4MsgLí
+);
+
+2375 i‡(
+u4MsgLí
+ == 4)
+
+2377 
+u4Pos
+ +=
+
+2378 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+ + 
+u4Pos
+, " 0x%lx\r\n",
+
+2379 (
+FS_ULONG
+Ë
+pMsg
+);
+
+2383 
+u4Byã
+ = 0; u4Byã < 
+u4MsgLí
+; u4Byte++)
+
+2385 
+u4Pos
+ +=
+
+2386 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+ + 
+u4Pos
+, " %x",
+
+2387 *(
+CHR1
+ *Ë(
+pMsg
+ + 
+u4Byã
+));
+
+2389 
+u4Pos
+ +
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+ + u4Pos, "\r\n");
+
+2391 
+pMsg
+ +
+u4MsgLí
+;
+
+2394 
+	`MEM_FREE
+ (
+pD©um
+);
+
+2396  (
+u4Pos
+);
+
+2397 
+	}
+}
+
+2407 
+UINT4
+
+
+2408 
+	$FßpShowQue
+ (
+UINT1
+ 
+au1QName
+[], UINT1 *
+pu1Resu…
+)
+
+2410 
+tOsixQId
+ 
+QueId
+;
+
+2411 
+tPthªadQ
+ *
+pPthªadQ
+;
+
+2412 
+UINT4
+ 
+u4Idx
+;
+
+2413 
+UINT4
+ 
+u4Queued
+;
+
+2414 
+UINT4
+ 
+u4MsgLí
+;
+
+2415 
+UINT4
+ 
+u4Iãr
+ = 0;
+
+2416 
+UINT4
+ 
+u4Pos
+ = 0;
+
+2417 
+UINT4
+ 
+u4TmpPos
+ = 0;
+
+2418 
+UINT4
+ 
+u4NumM©ches
+ = 0;
+
+2419 
+UINT4
+ 
+u4S≥cificQ
+ = (
+au1QName
+ ? 1 : 0);
+
+2420 
+UINT1
+ *
+pu1Resu…Sèπ
+ = 
+pu1Resu…
+;
+
+2421 c⁄° 
+CHR1
+ *
+pc1Hódög
+ =
+
+2425 
+u4Pos
+ = 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+, "%s", 
+pc1Hódög
+);
+
+2426 
+pu1Resu…
+ +
+u4Pos
+;
+
+2427 
+u4Pos
+ = 0;
+
+2429 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+2431  (
+OSIX_FAILURE
+);
+
+2444 
+u4Iãr
+++;
+
+2445 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_QUES
+; u4Idx++)
+
+2447 i‡((
+gaOsixQue
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_FALSE
+)
+
+2449 i‡(
+au1QName
+ &&
+
+2450 (
+	`UéSåCa£Cmp
+ ((
+CHR1
+ *Ë
+au1QName
+,
+
+2451 (
+CHR1
+ *Ë
+gaOsixQue
+[
+u4Idx
+].
+au1Name
+)))
+
+2454 
+u4NumM©ches
+++;
+
+2456 
+QueId
+ = &
+gaOsixQue
+[
+u4Idx
+];
+
+2457 
+pPthªadQ
+ = (
+tPthªadQ
+ *Ë
+gaOsixQue
+[
+u4Idx
+].
+pRscId
+;
+
+2459 
+u4MsgLí
+ = 
+pPthªadQ
+->u4MsgLen;
+
+2460 
+u4Queued
+ = (
+pPthªadQ
+->
+pQWrôe
+ -ÖPthªadQ->
+pQRód
+Ë/ 
+u4MsgLí
+;
+
+2461 i‡(
+u4Iãr
+ == 1)
+
+2463 
+u4Pos
+ +
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+ + u4Pos,
+
+2465 
+gaOsixQue
+[
+u4Idx
+].
+au1Name
+,
+
+2466 (
+FS_ULONG
+Ë
+QueId
+,
+
+2467 (
+FS_ULONG
+Ë((
+pPthªadQ
+->
+pQEnd
+ -
+
+2468 
+pPthªadQ
+->
+pQBa£
+ - 1) /
+
+2469 (
+pPthªadQ
+->
+u4MsgLí
+)),
+
+2470 
+u4MsgLí
+, 
+u4Queued
+,
+
+2471 
+pPthªadQ
+->
+u4OvîFlows
+);
+
+2475 i‡(
+u4S≥cificQ
+)
+
+2477 
+u4TmpPos
+ =
+
+2478 
+	`FßpShowQueD©a
+ (
+pPthªadQ
+, 
+pu1Resu…
+ + 
+u4Pos
+);
+
+2479 i‡(
+u4TmpPos
+ == 0)
+
+2481  
+OSIX_FAILURE
+;
+
+2483 
+u4Pos
+ +
+u4TmpPos
+;
+
+2490 
+u4Iãr
+ < 2);
+
+2492 i‡(!
+u4NumM©ches
+)
+
+2496 
+pu1Resu…
+ = 
+pu1Resu…Sèπ
+;
+
+2497 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+, "No such queue.\r\n");
+
+2501 
+pu1Resu…
+ = 
+pu1Resu…Sèπ
+;
+
+2503 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+2506 
+	}
+}
+
+2517 
+UINT4
+
+
+2518 
+	$CmFßpShowMsgQue
+ (
+UINT1
+ 
+au1QName
+[])
+
+2520 
+tOsixQId
+ 
+QueId
+;
+
+2521 
+tPthªadQ
+ *
+pPthªadQ
+;
+
+2522 
+UINT4
+ 
+u4Idx
+;
+
+2523 
+UINT4
+ 
+u4Queued
+;
+
+2524 
+UINT4
+ 
+u4MsgLí
+;
+
+2525 
+UINT4
+ 
+u4NumM©ches
+ = 0;
+
+2526 
+UINT4
+ 
+u4U£dQueNumb
+ = 0, 
+u4FªeQueNumb
+ = 0;
+
+2528 c⁄° 
+CHR1
+ *
+pc1Hódög
+ =
+
+2532 
+	`PRINTF
+ ("%s", 
+pc1Hódög
+);
+
+2534 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+2536  (
+OSIX_FAILURE
+);
+
+2540 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_QUES
+; u4Idx++)
+
+2542 i‡((
+gaOsixQue
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_FALSE
+)
+
+2544 i‡(
+au1QName
+ &&
+
+2545 (
+	`UéSåCa£Cmp
+ ((
+CHR1
+ *Ë
+au1QName
+,
+
+2546 (
+CHR1
+ *Ë
+gaOsixQue
+[
+u4Idx
+].
+au1Name
+)))
+
+2549 
+u4NumM©ches
+++;
+
+2551 
+QueId
+ = &
+gaOsixQue
+[
+u4Idx
+];
+
+2552 
+pPthªadQ
+ = (
+tPthªadQ
+ *Ë
+gaOsixQue
+[
+u4Idx
+].
+pRscId
+;
+
+2554 
+u4MsgLí
+ = 
+pPthªadQ
+->u4MsgLen;
+
+2555 
+u4Queued
+ = (
+pPthªadQ
+->
+pQWrôe
+ -ÖPthªadQ->
+pQRód
+Ë/ 
+u4MsgLí
+;
+
+2557 
+	`PRINTF
+ ("%6s %10lx %10ld %10d %10d %10d\r\n",
+
+2558 
+gaOsixQue
+[
+u4Idx
+].
+au1Name
+,
+
+2559 (
+FS_ULONG
+Ë
+QueId
+,
+
+2560 (
+FS_ULONG
+Ë((
+pPthªadQ
+->
+pQEnd
+ -
+
+2561 
+pPthªadQ
+->
+pQBa£
+ - 1) /
+
+2562 (
+pPthªadQ
+->
+u4MsgLí
+)),
+
+2563 
+u4MsgLí
+, 
+u4Queued
+,
+
+2564 
+pPthªadQ
+->
+u4OvîFlows
+);
+
+2568 
+u4Idx
+ = 1; u4Idx <
+OSIX_MAX_QUES
+; u4Idx++)
+
+2570 i‡((
+gaOsixQue
+[
+u4Idx
+].
+u2Fªe
+Ë=
+OSIX_FALSE
+)
+
+2572 
+u4U£dQueNumb
+++;
+
+2576 
+u4FªeQueNumb
+++;
+
+2580 
+	`PRINTF
+("[%s][%d]U£dQueNumb:%d, FªeQueNumb:%d,TŸÆ:%d.\r\n", 
+__FUNCTION__
+, 
+__LINE__
+, 
+u4U£dQueNumb
+, 
+u4FªeQueNumb
+, (u4UsedQueNumb+u4FreeQueNumb));
+
+2582 i‡(!
+u4NumM©ches
+)
+
+2586 
+	`PRINTF
+ ("No such queue.\r\n");
+
+2589 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+2592 
+	}
+}
+
+2603 
+UINT4
+
+
+2604 
+	$FßpShowSem
+ (
+UINT1
+ 
+au1SemName
+[], UINT1 *
+pu1Resu…
+, 
+UINT4
+ *
+pu4NextIdx
+)
+
+2606 
+au1SemName
+ =áu1SemName;
+
+2607 
+pu4NextIdx
+ =Öu4NextIdx;
+
+2608 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+, "Not supported\r\n");
+
+2609  (
+OSIX_FAILURE
+);
+
+2610 
+	}
+}
+
+2622 
+	$FßpTø˚
+ (
+UINT4
+ 
+u4Fœg
+, UINT4 
+u4VÆue
+, UINT4 *
+pu4TrcLvl
+)
+
+2624 i‡(
+u4VÆue
+ == 0)
+
+2626 *
+pu4TrcLvl
+ = 
+OSIX_TRC_FLAG
+;
+
+2630 i‡(
+u4Fœg
+)
+
+2632 
+OSIX_TRC_FLAG
+ |
+u4VÆue
+;
+
+2636 
+OSIX_TRC_FLAG
+ &~
+u4VÆue
+;
+
+2638 *
+pu4TrcLvl
+ = 
+OSIX_TRC_FLAG
+;
+
+2641 
+	}
+}
+
+2650 
+UINT4
+
+
+2651 
+	$OsixGëTps
+ ()
+
+2653  (
+	`sysc⁄f
+ (
+_SC_CLK_TCK
+));
+
+2654 
+	}
+}
+
+2663 
+UINT4
+
+
+2664 
+	$OsixSëLoˇlTime
+ ()
+
+2666 
+time_t
+ 
+t
+;
+
+2667 
+tm
+ *tm;
+
+2669 
+	`time
+ (&
+t
+);
+
+2670 
+tm
+ = 
+	`loˇ…ime
+ (&
+t
+);
+
+2671 i‡(
+tm
+ =
+NULL
+)
+
+2673  (
+OSIX_FAILURE
+);
+
+2675 
+tm
+->
+tm_yór
+ += (1900);
+
+2682  (
+OSIX_SUCCESS
+);
+
+2683 
+	}
+}
+
+2692 
+UINT4
+
+
+2693 
+	$FßpShowTCB
+ (
+UINT1
+ *
+pu1Resu…
+)
+
+2695 
+UINT4
+ 
+u4Idx
+;
+
+2696 
+UINT4
+ 
+u4Pos
+ = 0;
+
+2698 i‡(
+	`±hªad_muãx_lock
+ (&
+gOsixMuãx
+) != 0)
+
+2700 
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+, "Cannot AccessÅhe TCB \n");
+
+2701  (
+OSIX_FAILURE
+);
+
+2703 
+u4Idx
+ = 1; (u4Idx <
+OSIX_MAX_TSKS
+) &&
+
+2704 (
+gaOsixTsk
+[
+u4Idx
+].
+u2Fªe
+ =
+OSIX_FALSE
+); u4Idx++)
+
+2706 
+u4Pos
+ +
+	`SPRINTF
+ ((
+CHR1
+ *Ë
+pu1Resu…
+ + u4Pos,
+
+2708 
+gaOsixTsk
+[
+u4Idx
+].
+au1Name
+, gaOsixTsk[u4Idx].
+u4Pid
+);
+
+2710 
+	`±hªad_muãx_u∆ock
+ (&
+gOsixMuãx
+);
+
+2711  (
+OSIX_SUCCESS
+);
+
+2712 
+	}
+}
+
+	@src/srmmem.c
+
+28 
+	~"osxöc.h
+"
+
+29 
+	~"osix.h
+"
+
+30 
+	~"osx°d.h
+"
+
+31 
+	~"§mmem.h
+"
+
+32 
+	~"§mmemi.h
+"
+
+38 
+VOID
+ 
+mmi_¥ötf
+ (c⁄° *
+fmt
+, ...);
+
+40 
+	#PARAM_UNUSED
+(
+x
+Ë((
+VOID
+)x)
+
+	)
+
+52 
+PRIVATE
+ 
+INT4
+ 
+MemGëFªePoﬁId
+ ();
+
+53 
+PRIVATE
+ 
+UINT4
+ 
+MemPoﬁInôV¨
+ (
+tMemPoﬁCfg
+ * 
+pMemPoﬁCfg
+);
+
+54 
+PRIVATE
+ 
+UINT4
+ 
+MemIsVÆidBlock
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ *
+pu1Block
+);
+
+55 
+PRIVATE
+ 
+UINT4
+ 
+MemPoﬁInôülizeFªePoﬁLi°
+ ();
+
+56 
+PRIVATE
+ 
+UINT4
+ 
+MemPoﬁVÆid©eCª©eP¨am
+ (UINT4 
+u4BlockSize
+,
+
+57 
+UINT4
+ 
+u4NumbîOfBlocks
+,
+
+58 
+UINT4
+ 
+u4Ty≥OfMem‹y
+);
+
+64 
+UINT4
+ 
+	ggu4MemPoﬁInôülized
+ = 0;
+
+65 
+tMemPoﬁCfg
+ 
+	ggtMemPoﬁCfg
+;
+
+66 
+tMemTy≥Cfg
+ *
+	gg±MemTy≥Aºay
+ = 
+NULL
+;
+
+67 
+tMemFªePoﬁRec
+ *
+	gpMemFªePoﬁRecLi°
+ = 
+NULL
+;
+
+68 
+tOsixSemId
+ 
+	gMemMuãx
+;
+
+69 #i‡(
+DEBUG_MEM
+ =
+FSAP_ON
+)
+
+70 
+UINT4
+ 
+	ggu4MemDbg
+ = 
+MEM_DBG_MAJOR
+ | 
+MEM_DBG_CRITICAL
+ |
+
+71 
+MEM_DBG_FATAL
+ | 
+MEM_DBG_ALWAYS
+;
+
+90 
+UINT4
+
+
+91 
+	$MemInôMemPoﬁ
+ (
+tMemPoﬁCfg
+ * 
+pMemPoﬁCfg
+)
+
+93 
+UINT4
+ 
+u4rc
+;
+
+94 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+96 i‡(
+gu4MemPoﬁInôülized
+)
+
+97  
+MEM_FAILURE
+;
+
+99 i‡(
+	`MemPoﬁInôV¨
+ (
+pMemPoﬁCfg
+Ë=
+MEM_FAILURE
+)
+
+100  (
+MEM_FAILURE
+);
+
+102 i‡((
+u4rc
+ = 
+	`MemPoﬁInôülizeFªePoﬁLi°
+ ()Ë=
+MEM_FAILURE
+)
+
+104 
+	`POOL_MEM_FREE
+ (
+g±MemTy≥Aºay
+);
+
+105  
+MEM_FAILURE
+;
+
+109 
+	`MEMSET
+ (
+au1Name
+, '\0', 
+OSIX_NAME_LEN
+ + 4);
+
+110 
+	`STRCPY
+ (
+au1Name
+, 
+MEM_MUTEX_NAME
+);
+
+111 
+u4rc
+ = 
+	`OsixSemCπ
+ (
+au1Name
+, &
+MemMuãx
+);
+
+112 i‡(
+u4rc
+)
+
+114 
+	`POOL_MEM_FREE
+ (
+g±MemTy≥Aºay
+);
+
+115  
+MEM_FAILURE
+;
+
+117 
+	`OsixSemGive
+ (
+MemMuãx
+);
+
+118 
+gu4MemPoﬁInôülized
+ = 1;
+
+119  
+MEM_SUCCESS
+;
+
+120 
+	}
+}
+
+145 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+147 
+UINT4
+
+
+148 
+	$MemCª©eMemPoﬁDbg
+ (
+UINT4
+ 
+u4BlockSize
+,
+
+149 
+UINT4
+ 
+u4NumbîOfBlocks
+,
+
+150 
+UINT4
+ 
+u4Ty≥OfMem‹y
+, 
+tMemPoﬁId
+ * 
+pPoﬁId
+,
+
+151  c⁄° 
+CHR1
+ * 
+pu1FuncName
+,
+
+152 
+UINT4
+ 
+u4LöeNo
+ )
+
+154 
+UINT4
+
+
+155 
+	$MemCª©eMemPoﬁ
+ (
+UINT4
+ 
+u4BlockSize
+,
+
+156 
+UINT4
+ 
+u4NumbîOfBlocks
+,
+
+157 
+UINT4
+ 
+u4Ty≥OfMem‹y
+, 
+tMemPoﬁId
+ * 
+pPoﬁId
+)
+
+160 
+UINT1
+ *
+pu1PoﬁBa£
+;
+
+161 
+UINT1
+ *
+pu1BufSèπ
+;
+
+162 
+UINT4
+ 
+u4CuºObj
+;
+
+163 
+INT4
+ 
+i4PoﬁId
+;
+
+164 
+UINT1
+ 
+au1Name
+[
+OSIX_NAME_LEN
+ + 4];
+
+165 
+UINT4
+ 
+u4InBlockSize
+ = 
+u4BlockSize
+;
+
+166 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+171 i‡((
+u4BlockSize
+ =0Ë|| (
+u4NumbîOfBlocks
+ =0Ë|| (
+pPoﬁId
+ =
+NULL
+))
+
+172  (
+MEM_FAILURE
+);
+
+175 
+u4BlockSize
+ = (u4BlockSizê+ 
+MEM_ALIGN_BYTE
+Ë& 
+MEM_ALIGN
+;
+
+177 
+u4InBlockSize
+ = 
+u4BlockSize
+;
+
+180 i‡((
+u4Ty≥OfMem‹y
+ !
+MEM_DEFAULT_MEMORY_TYPE
+) &&
+
+181 ((
+u4Ty≥OfMem‹y
+ & 
+MEM_HEAP_MEMORY_TYPE
+) != MEM_HEAP_MEMORY_TYPE))
+
+183 i‡(
+	`MemPoﬁVÆid©eCª©eP¨am
+ (
+u4BlockSize
+, 
+u4NumbîOfBlocks
+,
+
+184 
+u4Ty≥OfMem‹y
+Ë=
+MEM_FAILURE
+)
+
+185  (
+MEM_FAILURE
+);
+
+188 i‡((
+i4PoﬁId
+ = 
+	`MemGëFªePoﬁId
+ ()Ë=(
+INT4
+Ë
+MEM_FAILURE
+)
+
+190 
+	`MEM_DBG
+ ((
+MEM_DBG_FLAG
+, 
+MEM_DBG_MAJOR
+, 
+MEM_MODNAME
+,
+
+192  
+MEM_FAILURE
+;
+
+201 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+202 
+u4BlockSize
+ +(( (
+tMemDebugInfo
+Ë+ 
+MEM_ALIGN_BYTE
+Ë& 
+MEM_ALIGN
+);
+
+206 i‡(!(
+pu1PoﬁBa£
+ = 
+	`POOL_MEM_CALLOC
+ (
+u4BlockSize
+, 
+u4NumbîOfBlocks
+ + 1, 
+UINT1
+)))
+
+208 
+	`MEM_DBG
+ ((
+MEM_DBG_FLAG
+, 
+MEM_DBG_MAJOR
+, 
+MEM_MODNAME
+,
+
+210  
+MEM_FAILURE
+;
+
+214 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4MemTy≥
+ = 
+u4Ty≥OfMem‹y
+;
+
+217 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+pu1A˘uÆBa£
+ = 
+pu1PoﬁBa£
+;
+
+220 
+pu1PoﬁBa£
+ =
+
+221 (
+UINT1
+ *Ë(((
+FS_ULONG
+Ë
+pu1PoﬁBa£
+ + 
+MEM_ALIGN_BYTE
+Ë& 
+MEM_ALIGN
+);
+
+223 
+pu1BufSèπ
+ = 
+pu1PoﬁBa£
+;
+
+224 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+BufLi°
+.
+pu1Ba£
+ = 
+pu1PoﬁBa£
+;
+
+225 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+BufLi°
+.
+pu1Hód
+ = 
+pu1PoﬁBa£
+;
+
+227 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4Size
+ = 
+u4InBlockSize
+;
+
+238 
+u4CuºObj
+ = 1; u4CuºObj < 
+u4NumbîOfBlocks
+; u4CurrObj++)
+
+241 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+242 #i‚de‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+244 
+UINT2
+ 
+u2QueId
+ = (UINT2Ë
+i4PoﬁId
+;
+
+246 
+	`MEM_DEBUG_SYSTEM_DATA
+ (
+pu1PoﬁBa£
+Ë
+mem_debug_block_‰ì
+;
+
+247 
+	`MEM_DEBUG_SIGNATURE
+ (
+pu1PoﬁBa£
+) =
+
+248 
+MEM_DEBUG_SIGNATURE_VAL
+ + 
+u2QueId
+;
+
+252 ((
+tCRU_SLL_NODE
+ *Ë(
+VOID
+ *Ë
+pu1PoﬁBa£
+)->
+pNext
+ =
+
+253 (
+pu1PoﬁBa£
+ + 
+u4BlockSize
+);
+
+254 
+pu1PoﬁBa£
+ +
+u4BlockSize
+;
+
+257 ((
+tCRU_SLL_NODE
+ *Ë(
+VOID
+ *Ë
+pu1PoﬁBa£
+)->
+pNext
+ = 
+NULL
+;
+
+259 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+260 #i‚de‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+263 
+UINT2
+ 
+u2QueId
+ = (UINT2Ë
+i4PoﬁId
+;
+
+265 
+	`MEM_DEBUG_SYSTEM_DATA
+ (
+pu1PoﬁBa£
+Ë
+mem_debug_block_‰ì
+;
+
+266 
+	`MEM_DEBUG_SIGNATURE
+ (
+pu1PoﬁBa£
+Ë
+MEM_DEBUG_SIGNATURE_VAL
+ + 
+u2QueId
+;
+
+275 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4UnôsCou¡
+ = 
+u4NumbîOfBlocks
+;
+
+276 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4FªeUnôsCou¡
+ = 
+u4NumbîOfBlocks
+;
+
+277 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4Size
+ = 
+u4InBlockSize
+;
+
+278 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+pu1SèπAddr
+ = (
+UINT1
+ *Ë
+pu1BufSèπ
+;
+
+279 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+pu1EndAddr
+ =
+
+280 (
+UINT1
+ *Ë(
+pu1BufSèπ
+ + ((
+u4NumbîOfBlocks
+ * 
+u4BlockSize
+) - 1));
+
+282 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+283 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4AŒocCou¡
+ = 0;
+
+284 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4Rñó£Cou¡
+ = 0;
+
+285 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4AŒocFaûCou¡
+ = 0;
+
+286 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4HópAŒocFaûCou¡
+ = 0;
+
+287 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4Rñó£FaûCou¡
+ = 0;
+
+288 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4PókUßgeCou¡
+ = 0;
+
+289 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4LöeNo
+ = u4LineNo;
+
+309 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+pu1Func
+ = 
+pu1FuncName
+;
+
+316 
+	`MEMSET
+ (
+au1Name
+, '\0', 
+OSIX_NAME_LEN
+ + 4);
+
+317 
+au1Name
+[0] = (
+UINT1
+Ë((UINT1Ë(
+i4PoﬁId
+ >> 16) + '0');
+
+318 
+au1Name
+[1] = (
+UINT1
+Ë((UINT1Ë(
+i4PoﬁId
+ >> 8) + '0');
+
+319 
+au1Name
+[2] = (
+UINT1
+Ë((UINT1Ë(
+i4PoﬁId
+) + '0');
+
+320 
+au1Name
+[3] = 'm';
+
+322 i‡(
+	`OsixSemCπ
+ (
+au1Name
+, &(
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+SemId
+)) !=
+
+323 
+OSIX_SUCCESS
+)
+
+325 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4FªeUnôsCou¡
+ = 0;
+
+326 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4MemTy≥
+ = 
+MEM_DEFAULT_MEMORY_TYPE
+;
+
+327 
+	`POOL_MEM_FREE
+ (
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+pu1A˘uÆBa£
+);
+
+328 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+BufLi°
+.
+pu1Ba£
+ = 
+NULL
+;
+
+329 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+BufLi°
+.
+pu1Hód
+ = 
+NULL
+;
+
+330 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4Size
+ = 0;
+
+332 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+pu1SèπAddr
+ = 
+NULL
+;
+
+333 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+pu1EndAddr
+ = 
+NULL
+;
+
+334 
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+u4UnôsCou¡
+ = 0;
+
+336 
+	`MEM_DBG
+ ((
+MEM_DBG_FLAG
+, 
+MEM_DBG_MAJOR
+, 
+MEM_MODNAME
+,
+
+338  
+MEM_FAILURE
+;
+
+341 
+	`OsixSemGive
+ (
+pMemFªePoﬁRecLi°
+[
+i4PoﬁId
+].
+SemId
+);
+
+342 *
+pPoﬁId
+ = (
+i4PoﬁId
+ + 1);
+
+344  
+MEM_SUCCESS
+;
+
+345 
+	}
+}
+
+355 
+UINT4
+
+
+356 
+	$MemDñëeMemPoﬁ
+ (
+tMemPoﬁId
+ 
+PoﬁId
+)
+
+358 
+UINT2
+ 
+u2PoﬁId
+ = 0;
+
+360 i‡((
+PoﬁId
+ =0Ë|| (PoﬁId > 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+))
+
+361  
+MEM_FAILURE
+;
+
+363 
+u2PoﬁId
+ = (
+UINT2
+Ë(
+PoﬁId
+ - 1);
+
+365 i‡(
+u2PoﬁId
+ >(
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+))
+
+366  
+MEM_FAILURE
+;
+
+368 i‡(
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4UnôsCou¡
+ == 0)
+
+369  
+MEM_FAILURE
+;
+
+371 
+	`OsixSemDñ
+ (
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+SemId
+);
+
+373 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4FªeUnôsCou¡
+ = 0;
+
+374 
+	`POOL_MEM_FREE
+ (
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+pu1A˘uÆBa£
+);
+
+375 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+BufLi°
+.
+pu1Ba£
+ = 
+NULL
+;
+
+376 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+BufLi°
+.
+pu1Hód
+ = 
+NULL
+;
+
+377 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4Size
+ = 0;
+
+379 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+380 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4AŒocCou¡
+ = 0;
+
+381 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4Rñó£Cou¡
+ = 0;
+
+382 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4AŒocFaûCou¡
+ = 0;
+
+383 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4Rñó£FaûCou¡
+ = 0;
+
+384 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4PókUßgeCou¡
+ = 0;
+
+385 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4LöeNo
+ = 0;
+
+386 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+pu1Func
+ = 
+NULL
+;
+
+389 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+pu1SèπAddr
+ = 
+NULL
+;
+
+390 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+pu1EndAddr
+ = 
+NULL
+;
+
+397 
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+].
+u4UnôsCou¡
+ = 0;
+
+398  
+MEM_SUCCESS
+;
+
+399 
+	}
+}
+
+413 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+415 
+UINT4
+
+
+416 
+	$MemAŒoˇãMemBlockLók
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ **
+µu1Block
+,
+
+417  
+UINT4
+ 
+u4LöeNo
+,
+
+418 c⁄° 
+CHR1
+ * 
+pFunc
+)
+
+420 
+UINT4
+
+
+421 
+	$MemAŒoˇãMemBlock
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ **
+µu1Block
+)
+
+424 
+UINT2
+ 
+u2QueId
+;
+
+425 
+UINT1
+ *
+pNode
+;
+
+426 
+UINT1
+ *
+pu1Blk
+;
+
+427 
+tCRU_SLL
+ *
+pPoﬁ
+;
+
+428 
+tMemFªePoﬁRec
+ *
+pPoﬁRecPå
+;
+
+429 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+435 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+436 i‡((
+PoﬁId
+ =0Ë|| (PoﬁId > 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+))
+
+437  
+MEM_FAILURE
+;
+
+439 i‡(
+µu1Block
+ =
+NULL
+)
+
+440  
+MEM_FAILURE
+;
+
+442 i‡(
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4UnôsCou¡
+ == 0)
+
+443  
+MEM_FAILURE
+;
+
+447 
+u2QueId
+ = (
+UINT2
+Ë(
+PoﬁId
+ - 1);
+
+449 
+	`MEM_ENTER_CS
+ (
+u2QueId
+);
+
+451 
+pPoﬁRecPå
+ = &
+pMemFªePoﬁRecLi°
+[
+u2QueId
+];
+
+452 
+pPoﬁ
+ = &
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+BufLi°
+;
+
+453 
+pNode
+ = 
+pPoﬁ
+->
+pu1Hód
+;
+
+455 i‡(
+pNode
+)
+
+457 *
+µu1Block
+ = 
+pNode
+;
+
+458 
+pPoﬁRecPå
+->
+u4FªeUnôsCou¡
+--;
+
+459 
+pPoﬁ
+->
+pu1Hód
+ = ((
+tCRU_SLL_NODE
+ *Ë(
+VOID
+ *Ë
+pNode
+)->
+pNext
+;
+
+461 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+462 
+pPoﬁRecPå
+->
+u4AŒocCou¡
+++;
+
+463 
+pPoﬁRecPå
+->
+u4PókUßgeCou¡
+ =
+
+464 (
+pPoﬁRecPå
+->
+u4PókUßgeCou¡
+ <ÖPoﬁRecPå->
+u4AŒocCou¡
+) ?
+
+465 
+pPoﬁRecPå
+->
+u4PókUßgeCou¡
+ :ÖPoﬁRecPå->
+u4AŒocCou¡
+;
+
+483 
+	`MEM_DEBUG_FUNC
+ (*
+µu1Block
+Ë
+pFunc
+;
+
+484 #ifde‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+485 
+	`PARAM_UNUSED
+ (
+u4LöeNo
+);
+
+487 
+	`MEM_DEBUG_LINE
+ (*
+µu1Block
+Ë
+u4LöeNo
+;
+
+488 
+	`MEM_DEBUG_SYSTEM_DATA
+ (*
+µu1Block
+Ë
+mem_debug_block_Æloˇãd
+;
+
+489 
+	`OsixGëSysTime
+ (&
+	`MEM_DEBUG_TIMESTAMP
+ (*
+µu1Block
+));
+
+491 #i‚de‡
+MEMTRACE_WANTED
+
+
+496 i‡(1.0 * 
+pPoﬁRecPå
+->
+u4FªeUnôsCou¡
+ /ÖPoﬁRecPå->
+u4UnôsCou¡
+
+
+497 < 
+MEM_THRESHOLD_VAL
+)
+
+499 
+	`MEM_DBG
+ ((
+MEM_DBG_FLAG
+, 
+MEM_DBG_CRITICAL
+, 
+MEM_MODNAME
+,
+
+501 
+PoﬁId
+));
+
+506 i‡(
+	`MemIsVÆidBlock
+ (
+PoﬁId
+, *
+µu1Block
+Ë=
+MEM_FAILURE
+)
+
+508 *
+µu1Block
+ = 
+NULL
+;
+
+509 
+	`MEM_PRNT
+ ("-E-: Spotted Corruption during MemAllocate.\n");
+
+510 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+511  
+MEM_FAILURE
+;
+
+514 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+515  
+MEM_SUCCESS
+;
+
+519 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+520 
+pPoﬁRecPå
+->
+u4AŒocFaûCou¡
+++;
+
+522 i‡((
+pPoﬁRecPå
+->
+u4MemTy≥
+Ë& 
+MEM_HEAP_MEMORY_TYPE
+)
+
+524 
+pu1Blk
+ = 
+	`POOL_MEM_CALLOC
+ ( (
+UINT1
+), 
+pPoﬁRecPå
+->
+u4Size
+, UINT1);
+
+525 i‡(
+pu1Blk
+)
+
+527 *
+µu1Block
+ = 
+pu1Blk
+;
+
+528 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+529 
+pPoﬁRecPå
+->
+u4AŒocCou¡
+++;
+
+531 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+532  
+MEM_SUCCESS
+;
+
+536 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+537 
+pPoﬁRecPå
+->
+u4HópAŒocFaûCou¡
+++;
+
+539 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+540  
+MEM_FAILURE
+;
+
+545 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+546  
+MEM_FAILURE
+;
+
+549 
+	}
+}
+
+563 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+565 
+VOID
+ *
+
+566 
+	$MemAŒocMemBlkLók
+ (
+tMemPoﬁId
+ 
+PoﬁId
+,
+
+567  
+UINT4
+ 
+u4LöeNo
+,
+
+568 c⁄° 
+CHR1
+ * 
+pFunc
+)
+
+570 
+VOID
+ *
+
+571 
+	$MemAŒocMemBlk
+ (
+tMemPoﬁId
+ 
+PoﬁId
+)
+
+574 
+UINT1
+ *
+pu1Block
+ = 
+NULL
+;
+
+575 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+576 i‡(
+MemAŒoˇãMemBlockLók
+
+
+577 (
+PoﬁId
+, &
+pu1Block
+, 
+u4LöeNo
+, 
+pFunc
+Ë!
+MEM_SUCCESS
+)
+
+579 i‡(
+	`MemAŒoˇãMemBlock
+ (
+PoﬁId
+, &
+pu1Block
+Ë!
+MEM_SUCCESS
+)
+
+582  
+NULL
+;
+
+584  (
+VOID
+ *Ë
+pu1Block
+;
+
+585 
+	}
+}
+
+596 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+597 
+UINT4
+
+
+598 
+	$MemRñó£MemBlockDbg
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ *
+pu1Block
+,
+
+599 c⁄° 
+CHR1
+ * 
+pFunc
+, 
+UINT4
+ 
+u4LöeNo
+)
+
+601 
+UINT4
+
+
+602 
+	$MemRñó£MemBlock
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ *
+pu1Block
+)
+
+605 
+UINT2
+ 
+u2QueId
+;
+
+606 
+tMemFªePoﬁRec
+ *
+pPoﬁRecPå
+;
+
+607 
+CHR1
+ 
+au1Så
+ [64];
+
+609 
+u2QueId
+ = (
+UINT2
+Ë(
+PoﬁId
+ - 1);
+
+611 
+	`MEM_ENTER_CS
+ (
+u2QueId
+);
+
+612 
+pPoﬁRecPå
+ = &
+pMemFªePoﬁRecLi°
+[
+u2QueId
+];
+
+614 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+615 i‡((
+PoﬁId
+ =0Ë|| (PoﬁId > 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+))
+
+617 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+618  
+MEM_FAILURE
+;
+
+620 i‡(!
+pu1Block
+)
+
+622 
+pPoﬁRecPå
+->
+u4Rñó£FaûCou¡
+++;
+
+623 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+624  
+MEM_FAILURE
+;
+
+629 i‡(
+	`MemIsVÆidBlock
+ (
+PoﬁId
+, 
+pu1Block
+Ë=
+MEM_FAILURE
+)
+
+632 i‡((
+pPoﬁRecPå
+->
+u4MemTy≥
+Ë& 
+MEM_HEAP_MEMORY_TYPE
+)
+
+634 
+	`POOL_MEM_FREE
+ (
+pu1Block
+);
+
+636 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+637 
+pPoﬁRecPå
+->
+u4Rñó£Cou¡
+++;
+
+639 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+640  
+MEM_SUCCESS
+;
+
+644 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+645 
+	`PRINTF
+ ("[%s-%d]\n", 
+pFunc
+, 
+u4LöeNo
+);
+
+648 
+	`SPRINTF
+(
+au1Så
+, "[%d]%s\n", 
+PoﬁId
+, "-E-: Invalid MemRelease.");
+
+649 
+	`MEM_PRNT
+ ((c⁄° 
+CHR1
+ *)
+au1Så
+);
+
+651 
+	`OsixSemTake
+ (
+MemMuãx
+);
+
+652 
+	`OsixGëBackTø˚
+ ();
+
+653 
+	`OsixSemGive
+ (
+MemMuãx
+);
+
+654 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+655  
+MEM_FAILURE
+;
+
+659 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+660 #i‚de‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+662 i‡(
+	`MEM_DEBUG_SYSTEM_DATA
+ (
+pu1Block
+Ë=
+mem_debug_block_‰ì
+)
+
+664 *
+p
+ = 0;
+
+665 
+	`PRINTF
+ ("[%s-%d]releaseÖool %d block %p(allocated by %s-%d) failed\n",
+
+666 
+pFunc
+, 
+u4LöeNo
+, 
+PoﬁId
+, 
+pu1Block
+,
+
+667 
+	`MEM_DEBUG_FUNC
+ (
+pu1Block
+), 
+	`MEM_DEBUG_LINE
+ (pu1Block));
+
+668 *
+p
+ = 0;
+
+672 
+UINT4
+ 
+u4Sig
+;
+
+673 *
+p
+ = 0;
+
+675 
+u4Sig
+ = 
+	`MEM_DEBUG_SIGNATURE
+ (
+pu1Block
+);
+
+676 i‡(
+	`MEM_DEBUG_SIGNATURE
+ (
+pu1Block
+) !=
+
+677 (
+UINT4
+Ë
+MEM_DEBUG_SIGNATURE_VAL
+ + 
+u2QueId
+)
+
+679 
+	`PRINTF
+ ("[%s-%d]releaseÖool %d block %p(allocated by %s-%d) failed\n",
+
+680 
+pFunc
+, 
+u4LöeNo
+, 
+PoﬁId
+, 
+pu1Block
+,
+
+681 
+	`MEM_DEBUG_FUNC
+ (
+pu1Block
+), 
+	`MEM_DEBUG_LINE
+ (pu1Block));
+
+682 *
+p
+ = 0;
+
+687 
+UINT4
+ 
+u4Time
+;
+
+689 
+	`OsixGëSysTime
+ (&
+u4Time
+);
+
+690 
+u4Time
+ -
+	`MEM_DEBUG_TIMESTAMP
+ (
+pu1Block
+);
+
+693 
+	`MEMSET
+ (
+pu1Block
+, '\0', 
+pPoﬁRecPå
+->
+u4Size
+);
+
+694 
+	`MEM_DEBUG_LINE
+ (
+pu1Block
+) = 0;
+
+698 ((
+tCRU_SLL_NODE
+ *Ë(
+VOID
+ *Ë
+pu1Block
+)->
+pNext
+ = 
+pPoﬁRecPå
+->
+BufLi°
+.
+pu1Hód
+;
+
+699 
+pPoﬁRecPå
+->
+BufLi°
+.
+pu1Hód
+ = 
+pu1Block
+;
+
+700 
+pPoﬁRecPå
+->
+u4FªeUnôsCou¡
+++;
+
+702 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+703 
+pPoﬁRecPå
+->
+u4Rñó£Cou¡
+++;
+
+706 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+707 
+	`MEM_DEBUG_FUNC
+ (
+pu1Block
+Ë
+NULL
+;
+
+708 #i‚de‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+709 
+	`MEM_DEBUG_SYSTEM_DATA
+ (
+pu1Block
+Ë
+mem_debug_block_‰ì
+;
+
+712 
+	`MEM_LEAVE_CS
+ (
+u2QueId
+);
+
+713  (
+MEM_SUCCESS
+);
+
+714 
+	}
+}
+
+725 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+727 
+	$MemLók
+ (
+tMemPoﬁId
+ 
+PoﬁId
+)
+
+729 
+tCRU_SLL_NODE
+ *
+pNode
+;
+
+730 
+tMemFªePoﬁRec
+ *
+pPoﬁRecPå
+;
+
+731 
+UINT2
+ 
+u2QueId
+;
+
+732 
+UINT4
+ 
+u4NumbîOfBlocks
+;
+
+733 
+UINT4
+ 
+u4BlockSize
+;
+
+734 
+UINT4
+ 
+u4CuºObj
+;
+
+735 
+UINT1
+ 
+au1Buf
+[200];
+
+737 
+u2QueId
+ = 
+PoﬁId
+ ? PoolId - 1 : 0;
+
+738 (
+u2QueId
+ < 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+) &&
+
+739 (
+PoﬁId
+ ? 
+u2QueId
+ != PoolId : 1); u2QueId++)
+
+749 
+u4NumbîOfBlocks
+ = 
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4UnôsCou¡
+;
+
+750 
+u4BlockSize
+ = 
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4Size
+;
+
+751 
+u4BlockSize
+ +(( (
+tMemDebugInfo
+Ë+ 
+MEM_ALIGN_BYTE
+Ë& 
+MEM_ALIGN
+);
+
+752 
+pNode
+ = (
+tCRU_SLL_NODE
+ *)(
+VOID
+ *Ë
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+BufLi°
+.
+pu1Ba£
+;
+
+753 
+pPoﬁRecPå
+ = &
+pMemFªePoﬁRecLi°
+[
+u2QueId
+];
+
+755 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, "\npool %d, size %d,Çum %d, ",
+
+756 
+u2QueId
+ + 1, 
+u4BlockSize
+, 
+u4NumbîOfBlocks
+);
+
+757 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+758 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, "%s:%d\n",
+
+759  
+pPoﬁRecPå
+->
+pu1Func
+,
+
+760 
+pPoﬁRecPå
+->
+u4LöeNo
+ );
+
+761 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+762 
+u4CuºObj
+ = 1; u4CuºObj <
+u4NumbîOfBlocks
+; u4CurrObj++)
+
+776 (
+	`MEM_DEBUG_FUNC
+ (
+pNode
+Ë!
+NULL
+))
+
+778 #ifde‡
+CAMEO_MEMTRACE_MINMEM_WANTED
+
+
+779 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, "%x %s\n",
+
+780 (
+UINT4
+Ë
+pNode
+, 
+	`MEM_DEBUG_FUNC
+ (pNode));
+
+782 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, "%p %s %d\n",
+
+783 
+pNode
+,
+
+785 
+	`MEM_DEBUG_FUNC
+ (
+pNode
+), 
+	`MEM_DEBUG_LINE
+ (pNode));
+
+788 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+791 
+pNode
+ = (
+tCRU_SLL_NODE
+ *)(
+VOID
+ *Ë((
+UINT1
+ *ËpNodê+ 
+u4BlockSize
+);
+
+794 
+	}
+}
+
+796 
+UINT4
+
+
+797 
+	$MemPrötMemPoﬁSèti°ics
+ (
+tMemPoﬁId
+ 
+PoﬁId
+)
+
+799 
+UINT4
+ 
+u4PoﬁId
+ = 0;
+
+800 
+UINT1
+ 
+au1Buf
+[200];
+
+801 
+UINT4
+ 
+u4TŸÆ
+ = 0, 
+u4TŸÆUnôs
+ = 0;
+
+803 i‡(
+PoﬁId
+ > 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+)
+
+804  (
+MEM_FAILURE
+);
+
+806 
+	`mmi_¥ötf
+ (" |*******|*******|*******|*******|*****|***************\n");
+
+807 
+	`mmi_¥ötf
+ (" |Pool |TOTAL |FREE |UNIT |Line |Func \n");
+
+808 
+	`mmi_¥ötf
+ (" | ID |UNITS |UNITS |SIZES |Num |Name \n");
+
+810 i‡(
+PoﬁId
+ == 0)
+
+812 
+u4PoﬁId
+ = 0; u4PoﬁId < (
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+); u4PoolId++)
+
+815 i‡(
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Size
+)
+
+817 
+u4TŸÆ
+ +(
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4UnôsCou¡
+ *
+
+818 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Size
+);
+
+819 
+u4TŸÆUnôs
+ +
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4UnôsCou¡
+;
+
+821 
+mmi_¥ötf
+
+
+823 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, " |%6d |%6d |%6d |%6d |%4d |%s\n",
+
+824 (
+u4PoﬁId
+ + 1),
+
+825 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4UnôsCou¡
+,
+
+826 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4FªeUnôsCou¡
+,
+
+827 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Size
+,
+
+829 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4LöeNo
+,
+
+830 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+pu1Func
+);
+
+832 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+838 
+u4TŸÆ
+ +(
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4UnôsCou¡
+ *
+
+839 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4Size
+);
+
+840 
+u4TŸÆUnôs
+ +
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4UnôsCou¡
+;
+
+842 
+	`mmi_¥ötf
+ (" |-------|-------|-------|-------|-----|---------------\n");
+
+844 
+	`SPRINTF
+ ((*Ë
+au1Buf
+,
+
+846 
+PoﬁId
+, 
+pMemFªePoﬁRecLi°
+[PoﬁId - 1].
+u4UnôsCou¡
+,
+
+847 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4FªeUnôsCou¡
+,
+
+848 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4Size
+,
+
+850 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4LöeNo
+,
+
+851 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+pu1Func
+);
+
+853 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+856 
+mmi_¥ötf
+
+
+858 
+mmi_¥ötf
+
+
+859 ("TŸÆ: UINTS %u, %u BYTES\n\n", 
+u4TŸÆUnôs
+, 
+u4TŸÆ
+);
+
+861  
+MEM_SUCCESS
+;
+
+862 
+	}
+}
+
+868 
+UINT4
+
+
+869 
+	$MemPrötMemPoﬁSèti°ics
+ (
+tMemPoﬁId
+ 
+PoﬁId
+)
+
+871 
+UINT4
+ 
+u4PoﬁId
+ = 0;
+
+872 
+UINT1
+ 
+au1Buf
+[200];
+
+873 
+UINT4
+ 
+u4TŸÆ
+ = 0, 
+u4TŸÆUnôs
+ = 0;
+
+875 i‡(
+PoﬁId
+ > 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+)
+
+876  (
+MEM_FAILURE
+);
+
+878 
+	`mmi_¥ötf
+ (" |*******|*******|*******|*******\n");
+
+879 
+	`mmi_¥ötf
+ (" |Pool |TOTAL |FREE |UNIT \n");
+
+880 
+	`mmi_¥ötf
+ (" | ID |UNITS |UNITS |SIZES \n");
+
+882 i‡(
+PoﬁId
+ == 0)
+
+884 
+u4PoﬁId
+ = 0; u4PoﬁId < (
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+); u4PoolId++)
+
+886 i‡(
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Size
+)
+
+888 
+u4TŸÆ
+ +(
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4UnôsCou¡
+ *
+
+889 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Size
+);
+
+890 
+u4TŸÆUnôs
+ +
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4UnôsCou¡
+;
+
+892 
+mmi_¥ötf
+
+
+894 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, " |%6d |%6d |%6d |%6d \n",
+
+895 (
+u4PoﬁId
+ + 1),
+
+896 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4UnôsCou¡
+,
+
+897 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4FªeUnôsCou¡
+,
+
+898 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Size
+);
+
+900 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+906 
+u4TŸÆ
+ +(
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4UnôsCou¡
+ *
+
+907 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4Size
+);
+
+908 
+u4TŸÆUnôs
+ +
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4UnôsCou¡
+;
+
+910 
+	`mmi_¥ötf
+ (" |-------|-------|-------|-------\n");
+
+912 
+	`SPRINTF
+ ((*Ë
+au1Buf
+,
+
+914 
+PoﬁId
+, 
+pMemFªePoﬁRecLi°
+[PoﬁId - 1].
+u4UnôsCou¡
+,
+
+915 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4FªeUnôsCou¡
+,
+
+916 
+pMemFªePoﬁRecLi°
+[
+PoﬁId
+ - 1].
+u4Size
+);
+
+918 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+921 
+mmi_¥ötf
+
+
+923 
+mmi_¥ötf
+
+
+924 ("TŸÆ: UINTS %u, %u BYTES\n\n", 
+u4TŸÆUnôs
+, 
+u4TŸÆ
+);
+
+926  
+MEM_SUCCESS
+;
+
+927 
+	}
+}
+
+931 
+UINT4
+ 
+	$MemPrötMemPoﬁC⁄ã¡
+ (
+tMemPoﬁId
+ 
+PoﬁId
+)
+
+933 
+tCRU_SLL_NODE
+ *
+pNode
+;
+
+934 
+UINT2
+ 
+u2QueId
+;
+
+935 
+UINT4
+ 
+u4NumbîOfBlocks
+;
+
+936 
+UINT4
+ 
+u4BlockSize
+, 
+u4BlockDSize
+;
+
+937 
+UINT4
+ 
+u4CuºObj
+, 
+u4D©aIndex
+;
+
+938 
+UINT1
+ 
+au1Buf
+[200];
+
+939 
+UINT1
+ *
+pu1PoﬁHód
+;
+
+940 
+UINT1
+ *
+pu1Sèπ
+;
+
+941 
+UINT1
+ *
+pu1End
+;
+
+942 
+UINT4
+ *
+pu4D©a
+;
+
+943 
+UINT1
+ 
+au1D©aBuf
+[128 + 4];
+
+945 i‡(
+PoﬁId
+ < 1 || PoﬁId > 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+)
+
+946  (
+MEM_FAILURE
+);
+
+948 
+u2QueId
+ = 
+PoﬁId
+ - 1;
+
+950 
+pu1Sèπ
+ = 
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+pu1SèπAddr
+;
+
+951 
+pu1End
+ = 
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+pu1EndAddr
+;
+
+952 
+u4NumbîOfBlocks
+ = 
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4UnôsCou¡
+;
+
+953 
+u4BlockDSize
+ = 
+u4BlockSize
+ = 
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+u4Size
+;
+
+955 i‡(
+u4BlockDSize
+ > 64) u4BlockDSize = 64;
+
+956 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+957 
+u4BlockSize
+ +(( (
+tMemDebugInfo
+Ë+ 
+MEM_ALIGN_BYTE
+Ë& 
+MEM_ALIGN
+);
+
+959 
+pNode
+ = (
+tCRU_SLL_NODE
+ *)(
+VOID
+ *Ë
+pMemFªePoﬁRecLi°
+[
+u2QueId
+].
+BufLi°
+.
+pu1Ba£
+;
+
+961 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, "\npool %d, size %d,Çum %d\n",
+
+962 
+PoﬁId
+, 
+u4BlockSize
+, 
+u4NumbîOfBlocks
+);
+
+963 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+965 
+u4CuºObj
+ = 1; u4CuºObj <
+u4NumbîOfBlocks
+; u4CurrObj++)
+
+967 
+pu1PoﬁHód
+ = * ((
+UINT1
+ **)
+pNode
+);
+
+968 
+pu4D©a
+ = (
+UINT4
+ *)
+pNode
+;
+
+972 i‡(!(
+pu1PoﬁHód
+ >
+pu1Sèπ
+ &&Öu1PoﬁHód <
+pu1End
+))
+
+974 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, "block %d @ %p\n", 
+u4CuºObj
+, 
+pNode
+);
+
+975 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+976 
+	`MEMSET
+ (
+au1D©aBuf
+, 0,  (au1DataBuf));
+
+977 
+u4D©aIndex
+ = 0; u4D©aIndex < (
+u4BlockDSize
+ / 4); u4DataIndex ++)
+
+979 
+	`SPRINTF
+ ((*Ë
+au1Buf
+, "%08x", *(
+pu4D©a
+ + 
+u4D©aIndex
+));
+
+980 
+	`STRCAT
+ (
+au1D©aBuf
+, 
+au1Buf
+);
+
+982 
+	`mmi_¥ötf
+ ("[%s]\n\n", (c⁄° *)
+au1D©aBuf
+);
+
+985 
+pNode
+ = (
+tCRU_SLL_NODE
+ *)(
+VOID
+ *Ë((
+UINT1
+ *ËpNodê+ 
+u4BlockSize
+);
+
+988  
+MEM_SUCCESS
+;
+
+989 
+	}
+}
+
+991 
+VOID
+
+
+992 
+	$DebugShowMemPoﬁDëaûs
+(
+VOID
+)
+
+994 
+UINT4
+ 
+u4PoﬁId
+ = 0;
+
+995 
+UINT4
+ 
+u4InU£Cou¡
+ = 0;
+
+996 
+UINT1
+ 
+au1Buf
+[200];
+
+997 c⁄° * 
+¶iDi•œyIds
+[] ={
+
+1012 c⁄° * 
+t˝Di•œyIds
+[] ={
+
+1027 
+	`mmi_¥ötf
+ (" |***********CRU MemPool Details************|\n");
+
+1029 
+	`mmi_¥ötf
+ (" |***********************|*****|*****|*****|\n");
+
+1030 
+	`mmi_¥ötf
+ (" |Pool |TOTAL|FREE |Used |\n");
+
+1031 
+	`mmi_¥ötf
+ (" |Name |UNITS|UNITS|UNITS|\n");
+
+1033 
+u4InU£Cou¡
+ = (
+pMemFªePoﬁRecLi°
+[0].
+u4UnôsCou¡
+ -
+
+1034 
+pMemFªePoﬁRecLi°
+[0].
+u4FªeUnôsCou¡
+);
+
+1035 
+	`mmi_¥ötf
+ (" |-----------------------|-----|-----|-----|\n");
+
+1036 
+	`SNPRINTF
+ ((*Ë
+au1Buf
+, (au1Buf), " |%22s |%4d |%4d |%4d |\n",
+
+1038 
+pMemFªePoﬁRecLi°
+[0].
+u4UnôsCou¡
+,
+
+1039 
+pMemFªePoﬁRecLi°
+[0].
+u4FªeUnôsCou¡
+,
+
+1040 
+u4InU£Cou¡
+);
+
+1041 
+	`mmi_¥ötf
+ ("%s", (c⁄° *Ë
+au1Buf
+);
+
+1042 
+	`mmi_¥ötf
+ (" |*****************************************|\n\n\n");
+
+1046 
+	`mmi_¥ötf
+ (" |**********TCPMemPool Details*************|\n");
+
+1048 
+	`mmi_¥ötf
+ (" |***********************|*****|*****|*****|\n");
+
+1049 
+	`mmi_¥ötf
+ (" |Pool |TOTAL|FREE |Used |\n");
+
+1050 
+	`mmi_¥ötf
+ (" |Name |UNITS|UNITS|UNITS|\n");
+
+1069 
+	`mmi_¥ötf
+ (" |*****************************************|\n\n");
+
+1070 
+	}
+}
+
+1080 
+UINT4
+
+
+1081 
+	$MemShutDownMemPoﬁ
+ ()
+
+1083 
+UINT4
+ 
+u4_PoﬁId
+;
+
+1085 i‡(!
+gu4MemPoﬁInôülized
+)
+
+1087  (
+MEM_FAILURE
+);
+
+1090 
+	`OsixSemDñ
+ (
+MemMuãx
+);
+
+1092 
+u4_PoﬁId
+ = 0; u4_PoﬁId < (
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+); u4_PoolId++)
+
+1094 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4UnôsCou¡
+ = 0;
+
+1095 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4FªeUnôsCou¡
+ = 0;
+
+1096 
+	`POOL_MEM_FREE
+ (
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+BufLi°
+.
+pu1Ba£
+);
+
+1097 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+BufLi°
+.
+pu1Ba£
+ = 
+NULL
+;
+
+1098 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+BufLi°
+.
+pu1Hód
+ = 
+NULL
+;
+
+1099 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4Size
+ = 0;
+
+1101 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+1102 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4AŒocCou¡
+ = 0;
+
+1103 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4Rñó£Cou¡
+ = 0;
+
+1104 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4AŒocFaûCou¡
+ = 0;
+
+1105 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4HópAŒocFaûCou¡
+ = 0;
+
+1106 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4Rñó£FaûCou¡
+ = 0;
+
+1107 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4PókUßgeCou¡
+ = 0;
+
+1110 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+pu1SèπAddr
+ = 
+NULL
+;
+
+1111 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+pu1EndAddr
+ = 
+NULL
+;
+
+1112 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4MemTy≥
+ = 
+MEM_DEFAULT_MEMORY_TYPE
+;
+
+1115 
+	`POOL_MEM_FREE
+ (
+pMemFªePoﬁRecLi°
+);
+
+1116 
+	`POOL_MEM_FREE
+ (
+g±MemTy≥Aºay
+);
+
+1117 
+gu4MemPoﬁInôülized
+ = 0;
+
+1118 
+MemMuãx
+ = 0;
+
+1119  
+MEM_SUCCESS
+;
+
+1120 
+	}
+}
+
+1134 
+PRIVATE
+ 
+UINT4
+
+
+1135 
+	$MemPoﬁInôV¨
+ (
+tMemPoﬁCfg
+ * 
+pMemPoﬁCfg
+)
+
+1137 
+UINT4
+ 
+u4MemTy≥Index
+ = 0;
+
+1138 
+UINT4
+ 
+u4ByãsToAŒoˇã
+ = 0;
+
+1140 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+ = 
+pMemPoﬁCfg
+->u4MaxMemPools;
+
+1141 
+gtMemPoﬁCfg
+.
+u4NumbîOfMemTy≥s
+ = 
+pMemPoﬁCfg
+->u4NumberOfMemTypes;
+
+1143 i‡(
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+ == 0)
+
+1144  
+MEM_FAILURE
+;
+
+1146 i‡(
+gtMemPoﬁCfg
+.
+u4NumbîOfMemTy≥s
+ == 0)
+
+1147  
+MEM_SUCCESS
+;
+
+1150 
+u4MemTy≥Index
+ = 0; u4MemTy≥Index < 
+gtMemPoﬁCfg
+.
+u4NumbîOfMemTy≥s
+;
+
+1151 
+u4MemTy≥Index
+++)
+
+1154 
+u4ByãsToAŒoˇã
+ +((
+gtMemPoﬁCfg
+.
+MemTy≥s
+[
+u4MemTy≥Index
+].
+u4NumbîOfChunks
+ *  (
+tMemChunkCfg
+)Ë+  (
+UINT4
+) +
+
+1155  (
+UINT4
+));
+
+1159 i‡(
+u4ByãsToAŒoˇã
+)
+
+1161 
+g±MemTy≥Aºay
+ = 
+	`MEM_MALLOC
+ (
+u4ByãsToAŒoˇã
+, 
+tMemTy≥Cfg
+);
+
+1162 i‡(
+g±MemTy≥Aºay
+ =
+NULL
+)
+
+1163  
+MEM_FAILURE
+;
+
+1165 
+	`MEMCPY
+ (
+g±MemTy≥Aºay
+, 
+pMemPoﬁCfg
+->
+MemTy≥s
+, 
+u4ByãsToAŒoˇã
+);
+
+1168  
+MEM_SUCCESS
+;
+
+1169 
+	}
+}
+
+1181 
+PRIVATE
+ 
+UINT4
+
+
+1182 
+	$MemPoﬁVÆid©eCª©eP¨am
+ (
+UINT4
+ 
+u4BlockSize
+,
+
+1183 
+UINT4
+ 
+u4NumbîOfBlocks
+, UINT4 
+u4Ty≥OfMem‹y
+)
+
+1185 
+UINT4
+ 
+u4MemTy≥Index
+ = 0;
+
+1188 
+u4BlockSize
+ = u4BlockSize;
+
+1189 
+u4NumbîOfBlocks
+ = u4NumberOfBlocks;
+
+1191 
+u4MemTy≥Index
+ = 0; u4MemTy≥Index < 
+gtMemPoﬁCfg
+.
+u4NumbîOfMemTy≥s
+;
+
+1192 
+u4MemTy≥Index
+++)
+
+1195 i‡(
+u4Ty≥OfMem‹y
+ ==
+
+1196 (
+gtMemPoﬁCfg
+.
+MemTy≥s
+[
+u4MemTy≥Index
+]).
+u4Mem‹yTy≥
+)
+
+1203 i‡(
+u4MemTy≥Index
+ =
+gtMemPoﬁCfg
+.
+u4NumbîOfMemTy≥s
+)
+
+1204  (
+MEM_FAILURE
+);
+
+1205  
+MEM_SUCCESS
+;
+
+1206 
+	}
+}
+
+1217 
+PRIVATE
+ 
+INT4
+
+
+1218 
+	$MemGëFªePoﬁId
+ ()
+
+1220 
+UINT4
+ 
+u4_PoﬁId
+;
+
+1222 
+	`OsixSemTake
+ (
+MemMuãx
+);
+
+1224 
+u4_PoﬁId
+ = 0; u4_PoﬁId < (
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+); u4_PoolId++)
+
+1225 i‡(!
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4UnôsCou¡
+)
+
+1227 
+pMemFªePoﬁRecLi°
+[
+u4_PoﬁId
+].
+u4UnôsCou¡
+ = 1;
+
+1228 
+	`OsixSemGive
+ (
+MemMuãx
+);
+
+1229  
+u4_PoﬁId
+;
+
+1232 
+	`OsixSemGive
+ (
+MemMuãx
+);
+
+1233  (
+INT4
+Ë(
+MEM_FAILURE
+);
+
+1234 
+	}
+}
+
+1244 
+PRIVATE
+ 
+UINT4
+
+
+1245 
+	$MemPoﬁInôülizeFªePoﬁLi°
+ ()
+
+1247 
+UINT4
+ 
+u4PoﬁId
+;
+
+1249 
+pMemFªePoﬁRecLi°
+ = 
+	`POOL_MEM_CALLOC
+ ( (
+tMemFªePoﬁRec
+),
+
+1250 (
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+),
+
+1251 
+tMemFªePoﬁRec
+);
+
+1252 i‡(!
+pMemFªePoﬁRecLi°
+)
+
+1253  
+MEM_FAILURE
+;
+
+1255 
+u4PoﬁId
+ = 0; u4PoﬁId < (
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+); u4PoolId++)
+
+1257 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Size
+ = 0;
+
+1258 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4UnôsCou¡
+ = 0;
+
+1259 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4FªeUnôsCou¡
+ = 0;
+
+1260 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+1261 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4AŒocCou¡
+ = 0;
+
+1262 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Rñó£Cou¡
+ = 0;
+
+1263 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4AŒocFaûCou¡
+ = 0;
+
+1264 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4HópAŒocFaûCou¡
+ = 0;
+
+1265 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4Rñó£FaûCou¡
+ = 0;
+
+1266 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4PókUßgeCou¡
+ = 0;
+
+1268 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+pu1SèπAddr
+ = 
+NULL
+;
+
+1269 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+pu1EndAddr
+ = 
+NULL
+;
+
+1271 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+BufLi°
+.
+pu1Ba£
+ = 
+NULL
+;
+
+1272 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+BufLi°
+.
+pu1Hód
+ = 
+NULL
+;
+
+1274 
+pMemFªePoﬁRecLi°
+[
+u4PoﬁId
+].
+u4MemTy≥
+ = 
+MEM_DEFAULT_MEMORY_TYPE
+;
+
+1277  
+MEM_SUCCESS
+;
+
+1278 
+	}
+}
+
+1288 
+UINT4
+
+
+1289 
+	$MemIsVÆidMem‹yTy≥
+ (
+UINT4
+ 
+u4Ty≥
+)
+
+1292 
+u4Ty≥
+ = u4Type;
+
+1294 
+	}
+}
+
+1303 
+UINT4
+
+
+1304 
+	$MemGëFªeUnôs
+ (
+UINT4
+ 
+u4QueID
+)
+
+1306  (
+pMemFªePoﬁRecLi°
+[(
+u4QueID
+ - 1)].
+u4FªeUnôsCou¡
+);
+
+1307 
+	}
+}
+
+1316 
+UINT4
+
+
+1317 
+	$MemGëTŸÆUnôs
+ (
+UINT4
+ 
+u4QueID
+)
+
+1319  (
+pMemFªePoﬁRecLi°
+[(
+u4QueID
+ - 1)].
+u4UnôsCou¡
+);
+
+1320 
+	}
+}
+
+1330 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+1331 
+VOID
+
+
+1332 
+	$MemSëDbg
+ (
+UINT4
+ 
+u4VÆ
+)
+
+1334 
+MEM_DBG_FLAG
+ = 
+u4VÆ
+;
+
+1335 
+	}
+}
+
+1350 
+PRIVATE
+ 
+UINT4
+
+
+1351 
+	$MemIsVÆidBlock
+ (
+tMemPoﬁId
+ 
+PoﬁId
+, 
+UINT1
+ *
+pu1Block
+)
+
+1353 
+tMemFªePoﬁRec
+ *
+pPoﬁRecPå
+;
+
+1354 
+UINT4
+ 
+u4BlockSize
+;
+
+1355 
+UINT2
+ 
+u2QueId
+;
+
+1356 
+UINT1
+ *
+pu1Sèπ
+;
+
+1357 
+UINT1
+ *
+pu1End
+;
+
+1359 i‡((
+PoﬁId
+ =0Ë|| (PoﬁId > 
+gtMemPoﬁCfg
+.
+u4MaxMemPoﬁs
+))
+
+1360  
+MEM_FAILURE
+;
+
+1362 i‡(!
+pu1Block
+)
+
+1363  
+MEM_FAILURE
+;
+
+1365 
+u2QueId
+ = (
+UINT2
+Ë(
+PoﬁId
+ - 1);
+
+1366 
+pPoﬁRecPå
+ = &
+pMemFªePoﬁRecLi°
+[
+u2QueId
+];
+
+1367 
+pu1Sèπ
+ = 
+pPoﬁRecPå
+->
+pu1SèπAddr
+;
+
+1368 
+pu1End
+ = 
+pPoﬁRecPå
+->
+pu1EndAddr
+;
+
+1370 
+u4BlockSize
+ = 
+pPoﬁRecPå
+->
+u4Size
+;
+
+1371 #i‡
+DEBUG_MEM
+ =
+FSAP_ON
+
+
+1372 
+u4BlockSize
+ +(( (
+tMemDebugInfo
+Ë+ 
+MEM_ALIGN_BYTE
+Ë& 
+MEM_ALIGN
+);
+
+1380 i‡(
+pu1Block
+ >
+pu1Sèπ
+ && (pu1Block < 
+pu1End
+))
+
+1382 i‡((
+pu1Block
+ - 
+pu1Sèπ
+Ë% 
+u4BlockSize
+ == 0)
+
+1383  
+MEM_SUCCESS
+;
+
+1385  
+MEM_OK_BUT_NOT_ALIGNED
+;
+
+1388  
+MEM_FAILURE
+;
+
+1390 
+	}
+}
+
+1406 
+BOOL1
+
+
+1407 
+	$CmMemIsCruPoﬁOvîLimô
+ (
+UINT1
+ 
+u1Pî˚¡
+)
+
+1409 
+UINT2
+ 
+u2AºIndex
+ = 0,
+
+1410 
+u2PoﬁId
+ = 0;
+
+1411 
+tMemFªePoﬁRec
+ *
+pPoﬁRecPå
+ = 
+NULL
+;;
+
+1413 
+UINT2
+ 
+u2AºPoﬁId
+[] = {
+
+1414 
+pCRU_BUF_Chaö_FªeQueDesc
+->
+u2_QueId
+,
+
+1415 
+pCRU_BUF_D©aDesc_FªeQueDesc
+->
+u2_QueId
+,
+
+1416 
+pCRU_BUF_D©aBlk_FªeQueDesc
+[0].
+u2_QueId
+
+
+1422 if(
+u1Pî˚¡
+/100 >= 1)
+
+1423  
+FALSE
+;
+
+1425 
+u2AºIndex
+ = 0; u2AºIndex < ((
+u2AºPoﬁId
+)/(
+UINT2
+)); ++u2ArrIndex)
+
+1428 
+u2PoﬁId
+ = 
+u2AºPoﬁId
+[
+u2AºIndex
+] - 1;
+
+1430 
+	`MEM_ENTER_CS
+ (
+u2PoﬁId
+);
+
+1431 
+pPoﬁRecPå
+ = &
+pMemFªePoﬁRecLi°
+[
+u2PoﬁId
+];
+
+1432 if(
+pPoﬁRecPå
+ =
+NULL
+)
+
+1434 
+	`MEM_LEAVE_CS
+ (
+u2PoﬁId
+);
+
+1437  
+FALSE
+;
+
+1444 i‡(1.0 * 
+pPoﬁRecPå
+->
+u4FªeUnôsCou¡
+ /ÖPoﬁRecPå->
+u4UnôsCou¡
+
+
+1445 < (1.0 - 1.0*
+u1Pî˚¡
+/100))
+
+1447 
+	`MEM_LEAVE_CS
+ (
+u2PoﬁId
+);
+
+1451  
+TRUE
+;
+
+1454 
+	`MEM_LEAVE_CS
+ (
+u2PoﬁId
+);
+
+1457  
+FALSE
+;
+
+1458 
+	}
+}
+
+	@src/taska.c
+
+2 #i‚de‡
+TASKA_C
+
+
+3 
+	#TASKA_C
+
+
+	)
+
+5 
+	~"ma¸o.h
+"
+
+6 
+	~"¥Ÿo.h
+"
+
+7 
+	~"osxöc.h
+"
+
+8 
+	~"osix.h
+"
+
+10 
+tOsixQId
+ 
+	ggTe°QId
+ = 0;
+
+11 
+tOsixTaskId
+ 
+	ggTaskAId
+ = 0;
+
+12 
+	#TASKA_EVENTA
+ 0x1
+
+	)
+
+14 
+VOID
+ 
+	$Te°QueMsgH™dÀ
+()
+
+16 
+CHR1
+ *
+pchSåTmp
+ = 
+NULL
+;
+
+18 
+	`DEBUG
+();
+
+20 
+	`OsixQueRecv
+(
+gTe°QId
+, (
+UINT1
+*Ë&
+pchSåTmp
+, 
+OSIX_DEF_MSG_LEN
+, 
+OSIX_WAIT
+Ë=
+OSIX_SUCCESS
+)
+
+22 
+	`DEBUG
+();
+
+23 
+	`PRINTF
+("[%s][%d] Recv Så:%s, Så Poöt:%p.\n", 
+__FUNCTION__
+, 
+__LINE__
+, 
+pchSåTmp
+,ÖchStrTmp);
+
+26 
+	}
+}
+
+41 
+VOID
+ 
+	$TaskAMaö
+(
+VOID
+)
+
+43 
+UINT4
+ 
+u4Evít
+ = 0;
+
+45 
+	`TaskAInô
+();
+
+48 
+	`ÃInôCom∂ëe
+ (
+OSIX_SUCCESS
+);
+
+52 
+	`DEBUG
+();
+
+53 if(
+	`OsixEvtRecvV1
+(
+gTaskAId
+, 
+TASKA_EVENTA
+, 
+OSIX_WAIT
+, &
+u4Evít
+Ë=
+OSIX_SUCCESS
+)
+
+55 
+	`DEBUG
+();
+
+56 i‡(
+u4Evít
+ & 
+TASKA_EVENTA
+)
+
+58 
+	`DEBUG
+();
+
+59 
+	`PRINTF
+("Receive TASKA_EVENTA \n");
+
+60 
+	`Te°QueMsgH™dÀ
+();
+
+65 
+	}
+}
+
+69 
+INT4
+ 
+	$TaskAInô
+(
+VOID
+)
+
+71 
+	`OsixTskIdSñf
+(&
+gTaskAId
+);
+
+72 
+	`DEBUG
+();
+
+73 
+	`PRINTF
+("TaskAInô gTaskAId:%d \n", 
+gTaskAId
+);
+
+74 if(
+	`OsixQueCπ
+("TESTQ", 4 , 100, &
+gTe°QId
+Ë=
+OSIX_FAILURE
+)
+
+75 
+	`DEBUG
+();
+
+77 
+	}
+}
+
+80 
+INT4
+ 
+	$Evít2TaskASíd
+(
+VOID
+)
+
+82 
+CHR1
+ *
+pchSå
+ = "Test Message!";
+
+84 
+	`DEBUG
+();
+
+85 
+	`OsixQueSíd
+(
+gTe°QId
+, (
+UINT1
+*)&
+pchSå
+, 4 );
+
+86 
+	`PRINTF
+("[%s][%d], så:%s, SåÖoöt:%p(DoubÀÖoöt:%p).\n", 
+__FUNCTION__
+, 
+__LINE__
+, 
+pchSå
+,ÖchSå, (
+UINT1
+*)&pchStr);
+
+88 i‡(
+	`OsixEvtSídV1
+(
+gTaskAId
+, 
+TASKA_EVENTA
+Ë!
+OSIX_SUCCESS
+)
+
+90 
+	`DEBUG
+();
+
+91  
+OSIX_FAILURE
+;
+
+94 
+	`DEBUG
+();
+
+95  
+OSIX_SUCCESS
+;
+
+96 
+	}
+}
+
+	@src/taskb.c
+
+1 #i‚de‡
+TASKB_C
+
+
+2 
+	#TASKB_C
+
+
+	)
+
+4 
+	~"ma¸o.h
+"
+
+5 
+	~"¥Ÿo.h
+"
+
+6 
+	~"osxöc.h
+"
+
+7 
+	~"osix.h
+"
+
+9 
+tOsixTaskId
+ 
+	ggTaskBId
+ = 0;
+
+10 
+	#TASKB_EVENTA
+ 0x1
+
+	)
+
+25 
+VOID
+ 
+	$TaskAMaö
+(
+VOID
+)
+
+27 
+UINT4
+ 
+u4Evít
+ = 0;
+
+29 
+	`TaskBInô
+();
+
+32 
+	`ÃInôCom∂ëe
+ (
+OSIX_SUCCESS
+);
+
+36 
+	`DEBUG
+();
+
+37 if(
+	`OsixEvtRecv
+(
+gTaskBId
+, 
+TASKB_EVENTA
+, 
+OSIX_WAIT
+, &
+u4Evít
+Ë=
+OSIX_SUCCESS
+)
+
+39 
+	`DEBUG
+();
+
+40 i‡(
+u4Evít
+ & 
+TASKB_EVENTA
+)
+
+42 
+	`DEBUG
+();
+
+43 
+	`PRINTF
+("Receive TASKB_EVENTA \n");
+
+48 
+	}
+}
+
+51 
+INT4
+ 
+	$TaskBInô
+(
+VOID
+)
+
+53 
+	`OsixTskIdSñf
+(&
+gTaskBId
+);
+
+54 
+	`DEBUG
+();
+
+55 
+	`PRINTF
+("TaskBInô gTaskBId:%d \n", 
+gTaskBId
+);
+
+56 
+	}
+}
+
+59 
+INT4
+ 
+	$Evít2TaskBSíd
+(
+VOID
+)
+
+61 
+	`DEBUG
+();
+
+62 i‡(
+	`OsixEvtSíd
+(
+gTaskBId
+, 
+TASKB_EVENTA
+Ë!
+OSIX_SUCCESS
+)
+
+64 
+	`DEBUG
+();
+
+65  
+OSIX_FAILURE
+;
+
+68 
+	`DEBUG
+();
+
+69  
+OSIX_SUCCESS
+;
+
+70 
+	}
+}
+
+	@src/utility.c
+
+1 #i‚de‡
+ARCH_SYS_C
+
+
+2 
+	#ARCH_SYS_C
+
+
+	)
+
+25 
+	~"ma¸o.h
+"
+
+26 
+	~"¥Ÿo.h
+"
+
+36 
+INT4
+ 
+	$UtûôyTe°
+(
+VOID
+)
+
+38 
+	`¥ötf
+("[%s][%d] \n", 
+__FUNCTION__
+, 
+__LINE__
+);
+
+40  
+SUCCESS
+;
+
+41 
+	}
+}
+
+	@
+1
+.
+0
+17
+213
+inc/macro.h
+inc/osix.h
+inc/osxinc.h
+inc/osxprot.h
+inc/osxstd.h
+inc/osxsys.h
+inc/proto.h
+inc/srmmem.h
+inc/srmmemi.h
+inc/utlmacro.h
+make.h
+src/main.c
+src/osixpth.c
+src/srmmem.c
+src/taska.c
+src/taskb.c
+src/utility.c
