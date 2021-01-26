@@ -28,7 +28,7 @@ VOID TestQueMsgHandle()
     while(OsixQueRecv(gTestQId, (UINT1*) &pchStrTmp, OSIX_DEF_MSG_LEN, OSIX_NO_WAIT) == OSIX_SUCCESS)
     {
         DEBUG();
-        PRINTF("[%s][%d] Recv Str:%s, Str Point:%p.\n", __FUNCTION__, __LINE__, pchStrTmp, pchStrTmp);
+        PRINTF("[%s][%d] Handle Recv Str:%s, Str Point:%p.\n", __FUNCTION__, __LINE__, pchStrTmp, pchStrTmp);
     }
 
 }
