@@ -86,7 +86,7 @@ int main()
 	INT4                (*pModEntFn) (INT1 *) = NULL;
     INT1                i1Param = 0;
 	
-    printf("main start:%d \n", SUCCESS);
+    printf("main start v2:%d \n", SUCCESS);
     UtilityTest();
     OsixInitialize ();
 
